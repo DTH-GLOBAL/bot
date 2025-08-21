@@ -25,7 +25,7 @@ CHANNELS = [
 ]
 
 def find_working_domain(start=6, end=100):
-    print("Sporcafe domainleri taranıyor...")
+    print("sporcafe domainleri taranıyor")
     for i in range(start, end + 1):
         url = f"https://www.sporcafe{i}.xyz/"
         try:
@@ -46,12 +46,12 @@ def extract_base_url(html):
     match = re.search(r'this\.adsBaseUrl\s*=\s*[\'"]([^\'"]+)', html)
     return match.group(1) if match else None
 
-def fetch_streams(domain):
+def fetch_streams(domain, referer):
     result = []
     for ch in CHANNELS:
         full_url = f"{domain}/index.php?id={ch['source_id']}"
         try:
-            r = requests.get(full_url, headers=HEADERS, timeout=5)  # Referer kaldırıldı
+            r = requests.get(full_url, headers={**HEADERS, "Referer": referer}, timeout=5)
             if r.status_code == 200:
                 base = extract_base_url(r.text)
                 if base:
@@ -73,7 +73,7 @@ def write_m3u(links, filename="selcuk.m3u"):
     print("Tamamlandı. Kanal sayısı:", len(links))
 
 def main():
-    html, _ = find_working_domain()
+    html, referer = find_working_domain()
     if not html:
         return
     stream_domain = find_stream_domain(html)
@@ -81,7 +81,7 @@ def main():
         print("Yayın domaini bulunamadı.")
         return
     print(f"Yayın domaini: {stream_domain}")
-    streams = fetch_streams(stream_domain)
+    streams = fetch_streams(stream_domain, referer)
     if streams:
         write_m3u(streams)
     else:
