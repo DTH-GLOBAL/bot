@@ -1,41 +1,40 @@
-name: Selcuk kontrol
+name: Selcuk M3U Güncelleme
 
 on:
-  workflow_dispatch:   # Elle çalıştırmak için
   schedule:
-    - cron: '*/15 * * * *'   # 15 dakikada bir çalıştır
+    - cron: "*/15 * * * *"   # Her 15 dakikada bir çalışır
+  workflow_dispatch:          # Elle çalıştırabilmen için
 
 jobs:
-  BirlesikGuncelleme:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Depoyu Klonla
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Tüm geçmişi indir, yoksa push hatası olur
 
-      - name: Python 3.11 Yükle
+      - name: Python Kur
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.x"
 
-      - name: Gereksinimleri Kur
-        run: |
-          python -m pip install --upgrade pip
-          pip install Kekik httpx parsel requests
+      - name: Gerekli Kütüphaneleri Kur
+        run: pip install requests
 
-      - name: selcuk.py Çalıştır
-        run: python selcuk.py
+      - name: Botu Çalıştır
+        run: python bot.py   # Burada bot.py senin m3u yazan scriptin
 
-      - name: Değişiklikleri Commit Et
+      - name: Değişiklikleri Commit Et ve Pushla
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add selcuk.m3u
             git commit -m "🔄 Selcuk güncellendi ($(date '+%Y-%m-%d %H:%M:%S'))"
+            git pull --rebase
             git push
           else
-            echo "Değişiklik yok, commit atılmadı."
+            echo "📂 Değişiklik yok, commit atılmadı."
           fi
