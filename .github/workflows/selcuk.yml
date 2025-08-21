@@ -1,40 +1,45 @@
-name: Selcuk M3U Güncelleme
+name: Selcuk kontrol
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"   # Her 15 dakikada bir çalışır
-  workflow_dispatch:          # Elle çalıştırabilmen için
+    - cron: '*/15 * * * *'  # 15 dakikada bir çalışır
 
 jobs:
-  build:
+  BirlesikGuncelleme:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - name: Depoyu Klonla
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # Tüm geçmişi indir, yoksa push hatası olur
+          fetch-depth: 0   # önemli, yoksa pull yapamaz
 
-      - name: Python Kur
+      - name: Python 3.11.8 Yükle
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
-
-      - name: Gerekli Kütüphaneleri Kur
-        run: pip install requests
-
-      - name: Botu Çalıştır
-        run: python bot.py   # Burada bot.py senin m3u yazan scriptin
-
-      - name: Değişiklikleri Commit Et ve Pushla
+          python-version: 3.11.8
+          
+      - name: Gereksinimleri Kur
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add selcuk.m3u
-            git commit -m "🔄 Selcuk güncellendi ($(date '+%Y-%m-%d %H:%M:%S'))"
-            git pull --rebase
-            git push
-          else
-            echo "📂 Değişiklik yok, commit atılmadı."
-          fi
+          python -m pip install --upgrade pip
+          pip install -U setuptools wheel Kekik httpx parsel requests
+          
+      - name: selcuk.py Çalıştır
+        run: python selcuk.py
+
+      - name: Git Ayarları
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Remote Güncelle ve Pushla
+        run: |
+          git add .
+          git commit -m "🔄 Selcuk güncellendi - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
+          git pull --rebase origin main
+          git push origin main
