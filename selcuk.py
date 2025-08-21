@@ -25,7 +25,7 @@ CHANNELS = [
 ]
 
 def find_working_domain(start=6, end=100):
-    print("sporcafe domainleri taranıyor")
+    print("Sporcafe domainleri taranıyor...")
     for i in range(start, end + 1):
         url = f"https://www.sporcafe{i}.xyz/"
         try:
@@ -35,7 +35,7 @@ def find_working_domain(start=6, end=100):
                 return res.text, url
         except:
             continue
-    print(" Aktif domain bulunamadı.")
+    print("Aktif domain bulunamadı.")
     return None, None
 
 def find_stream_domain(html):
@@ -46,45 +46,44 @@ def extract_base_url(html):
     match = re.search(r'this\.adsBaseUrl\s*=\s*[\'"]([^\'"]+)', html)
     return match.group(1) if match else None
 
-def fetch_streams(domain, referer):
+def fetch_streams(domain):
     result = []
     for ch in CHANNELS:
         full_url = f"{domain}/index.php?id={ch['source_id']}"
         try:
-            r = requests.get(full_url, headers={**HEADERS, "Referer": referer}, timeout=5)
+            r = requests.get(full_url, headers=HEADERS, timeout=5)  # Referer kaldırıldı
             if r.status_code == 200:
                 base = extract_base_url(r.text)
                 if base:
                     stream = f"{base}{ch['source_id']}/playlist.m3u8"
-                    print(f" {ch['name']} → {stream}")
+                    print(f"{ch['name']} → {stream}")
                     result.append((ch, stream))
         except:
             pass
     return result
 
-def write_m3u(links, filename="selcuk.m3u", referer=""):
-    print(f"\n M3U dosyası yazılıyor: {filename}")
+def write_m3u(links, filename="selcuk.m3u"):
+    print(f"\nM3U dosyası yazılıyor: {filename}")
     lines = ["#EXTM3U"]
     for ch, url in links:
         lines.append(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}')
-        lines.append(f"#EXTVLCOPT:http-referrer={referer}")
         lines.append(url)
     with open(filename, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    print(" Tamamlandı. Kanal sayısı:", len(links))
+    print("Tamamlandı. Kanal sayısı:", len(links))
 
 def main():
-    html, referer = find_working_domain()
+    html, _ = find_working_domain()
     if not html:
         return
     stream_domain = find_stream_domain(html)
     if not stream_domain:
-        print(" Yayın domaini bulunamadı.")
+        print("Yayın domaini bulunamadı.")
         return
     print(f"Yayın domaini: {stream_domain}")
-    streams = fetch_streams(stream_domain, referer)
+    streams = fetch_streams(stream_domain)
     if streams:
-        write_m3u(streams, referer=referer)
+        write_m3u(streams)
     else:
         print("Hiçbir yayın alınamadı.")
 
