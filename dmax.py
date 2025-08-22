@@ -3,9 +3,8 @@ import re
 import time
 import requests
 
-PLAYLIST_DIR = "playlists"
-PLAYLIST_FILE = os.path.join(PLAYLIST_DIR, "dmax.m3u")
-LOG_FILE = os.path.join(PLAYLIST_DIR, "progress.log")
+PLAYLIST_FILE = "dmax.m3u"
+LOG_FILE = "progress.log"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
@@ -14,7 +13,6 @@ HEADERS = {
 }
 
 def curl_get(url):
-    """Get page source with requests"""
     try:
         resp = requests.get(url, headers=HEADERS, verify=False, timeout=15)
         time.sleep(1)
@@ -24,7 +22,6 @@ def curl_get(url):
         return ""
 
 def write_log(message):
-    os.makedirs(PLAYLIST_DIR, exist_ok=True)
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(message + "\n")
     print(message)
@@ -92,7 +89,6 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
     return episode_count, m3u8_content, result
 
 def main():
-    os.makedirs(PLAYLIST_DIR, exist_ok=True)
     with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
 
