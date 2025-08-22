@@ -1,42 +1,26 @@
-name: Update M3U8 Playlist
-
+name: Run DMAX Scraper
 on:
   schedule:
-    - cron: '0 0 * * *'  # Her gün gece yarısı çalışır (UTC)
-  workflow_dispatch:  # Manuel çalıştırma seçeneği
-
+    - cron: '0 * * * *'  # Runs every hour
 jobs:
-  update-playlist:
+  scrape:
     runs-on: ubuntu-latest
-
     steps:
-      # Depoyu klonla
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # Python ortamını kur
+      - uses: actions/checkout@v3
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
-
-      # Gerekli Python paketlerini kur
+          python-version: '3.x'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
-
-      # Python scriptini çalıştır
-      - name: Run scraper script
+          pip install requests
+      - name: Run scraper
         run: python dmax.py
-
-      # Değişiklikleri commit et
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add playlists/dmax.m3u playlists/progress.log
-          git diff --staged --quiet || git commit -m "Update dmax.m3u playlist and progress log"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add dmax.m3u playlists/progress.log
+          git commit -m "Update M3U8 playlist and log [skip ci]" || echo "No changes to commit"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
