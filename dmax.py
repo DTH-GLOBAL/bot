@@ -22,13 +22,13 @@ def curl_get(url):
         time.sleep(1)
         return resp.text
     except Exception as e:
-        print(f"Hata: {e}")
+        print(f"Hata: {e}", flush=True)
         return ""
 
 def write_log(message):
+    print(message, flush=True)  # GitHub Actions logunda anlık görünür
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(message + "\n")
-    print(message)
 
 def get_series_list():
     url = "https://www.dmax.com.tr/kesfet?size=80"
@@ -74,11 +74,13 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
             code = code_match.group(1)
             m3u8 = f"https://dygvideo.dygdigital.com/api/redirect?PublisherId=27&ReferenceId={code}&SecretKey=NtvApiSecret2014*&.m3u8"
 
-            m3u8_content += (
+            m3u8_line = (
                 f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {series_name} {season} Sezon {episode} Bölüm" '
                 f'tvg-logo="{logo}" group-title="DMAX BELGESELLER",TR: {series_name} {season} Sezon {episode} Bölüm\n'
                 f'{m3u8}\n'
             )
+
+            m3u8_content += m3u8_line
 
             result.setdefault(series_name, {}).setdefault(season, {})[episode] = {
                 "code": code,
@@ -87,6 +89,9 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
 
             with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
                 f.write(m3u8_content)
+
+            # Anlık olarak GitHub loguna yaz
+            print(f"[{series_name} S{season}E{episode}] {m3u8}", flush=True)
 
             episode_count += 1
 
