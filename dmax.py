@@ -1,126 +1,128 @@
-import requests
-import re
 import os
+import re
 import time
-import warnings
-from urllib.parse import urlparse
-from urllib3.exceptions import InsecureRequestWarning
+import requests
 
-# SSL uyarılarını bastırmak için
-warnings.filterwarnings("ignore", category=InsecureRequestWarning)
+PLAYLIST_DIR = "playlists"
+PLAYLIST_FILE = os.path.join(PLAYLIST_DIR, "dmax.m3u")
+LOG_FILE = os.path.join(PLAYLIST_DIR, "progress.log")
 
-# Sayfa kaynağını çeken fonksiyon
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+                  " AppleWebKit/537.36 (KHTML, like Gecko)"
+                  " Chrome/91.0.4472.124 Safari/537.36"
+}
+
 def curl_get(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-    }
-    response = requests.get(url, headers=headers, allow_redirects=True, verify=False)
-    time.sleep(1)  # İstekler arasında 1 saniye bekle
-    return response.text
+    """Get page source with requests"""
+    try:
+        resp = requests.get(url, headers=HEADERS, verify=False, timeout=15)
+        time.sleep(1)
+        return resp.text
+    except Exception as e:
+        print(f"Hata: {e}")
+        return ""
 
-# Dizi listesini çekme
+def write_log(message):
+    os.makedirs(PLAYLIST_DIR, exist_ok=True)
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(message + "\n")
+    print(message)
+
 def get_series_list():
     url = "https://www.dmax.com.tr/kesfet?size=80"
     html = curl_get(url)
     series = []
-    unique_urls = []
+    seen = set()
 
-    matches = re.findall(r'<div class="poster">.*?<a.*?href="(https:\/\/www\.dmax\.com\.tr\/[a-z0-9-]+)".*?<img src="(https:\/\/img-tlctv1\.mncdn\.com\/.*?)" alt=""', html, re.DOTALL)
+    matches = re.findall(
+        r'<div class="poster">.*?<a.*?href="(https://www\.dmax\.com\.tr/[a-z0-9-]+)".*?<img src="(https://img-tlctv1\.mncdn\.com/.*?)" alt=""',
+        html, re.S
+    )
 
-    for match in matches:
-        series_url = match[0]
-        if series_url not in unique_urls:
-            unique_urls.append(series_url)
+    for series_url, logo in matches:
+        if series_url not in seen:
+            seen.add(series_url)
             series.append({
-                'url': series_url,
-                'logo': match[1],
-                'name': urlparse(series_url).path.split('/')[-1]
+                "url": series_url,
+                "logo": logo,
+                "name": os.path.basename(series_url)
             })
     return series
 
-# Sezon sayısını çekme
 def get_season_count(url):
     html = curl_get(url)
-    matches = re.findall(r'<option value="(\d+)">', html)
-    return list(reversed(matches or []))
+    seasons = re.findall(r'<option value="(\d+)">', html)
+    return list(reversed(seasons)) if seasons else []
 
-# Bölüm bilgilerini çekme
-def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log):
+def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
     episode_count = 0
-    filename = 'dmax.m3u'
-    
-    for episode in range(1, 5):  # 5 bölüme düşürüldü
-        if series_name in result and season in result[series_name] and str(episode) in result[series_name][season]:
+
+    for episode in range(1, 101):
+        if episode in result.get(series_name, {}).get(season, {}):
             continue
 
         episode_url = f"{base_url}/{season}-sezon-{episode}-bolum"
-        episode_html = curl_get(episode_url)
+        html = curl_get(episode_url)
 
-        if 'video-player vod-player' in episode_html:
-            code_match = re.search(r'data-video-code="(.*?)"', episode_html)
-            if code_match:
-                code = code_match.group(1)
-                m3u8 = f"https://dygvideo.dygdigital.com/api/redirect?PublisherId=27&ReferenceId={code}&SecretKey=NtvApiSecret2014*&.m3u8"
-
-                m3u8_content.append(f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {series_name} {season} Sezon {episode} Bölüm" tvg-logo="{logo}" group-title="DMAX BELGESELLER",TR: {series_name} {season} Sezon {episode} Bölüm')
-                m3u8_content.append(m3u8)
-
-                if series_name not in result:
-                    result[series_name] = {}
-                if season not in result[series_name]:
-                    result[series_name][season] = {}
-                result[series_name][season][str(episode)] = {'code': code, 'm3u8': m3u8}
-
-                os.makedirs('playlists', exist_ok=True)
-                with open(filename, 'w', encoding='utf-8') as f:
-                    f.write('\n'.join(m3u8_content))
-
-                episode_count += 1
-        else:
+        if "video-player vod-player" not in html:
             break
 
-    return episode_count, m3u8_content
+        code_match = re.search(r'data-video-code="(.*?)"', html)
+        if code_match:
+            code = code_match.group(1)
+            m3u8 = f"https://dygvideo.dygdigital.com/api/redirect?PublisherId=27&ReferenceId={code}&SecretKey=NtvApiSecret2014*&.m3u8"
 
-# İlerleme logunu yaz
-def write_log(message):
-    log_file = 'playlists/progress.log'
-    os.makedirs('playlists', exist_ok=True)
-    with open(log_file, 'a', encoding='utf-8') as f:
-        f.write(message + '\n')
+            m3u8_content += (
+                f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {series_name} {season} Sezon {episode} Bölüm" '
+                f'tvg-logo="{logo}" group-title="DMAX BELGESELLER",TR: {series_name} {season} Sezon {episode} Bölüm\n'
+                f'{m3u8}\n'
+            )
 
-# Ana işlem
+            result.setdefault(series_name, {}).setdefault(season, {})[episode] = {
+                "code": code,
+                "m3u8": m3u8
+            }
+
+            with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+                f.write(m3u8_content)
+
+            episode_count += 1
+
+    return episode_count, m3u8_content, result
+
 def main():
-    result = {}
-    m3u8_content = ['#EXTM3U']
-    log = ''
+    os.makedirs(PLAYLIST_DIR, exist_ok=True)
+    with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
 
-    filename = 'dmax.m3u'
-    os.makedirs('playlists', exist_ok=True)
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write('#EXTM3U\n')
+    with open(LOG_FILE, "w", encoding="utf-8") as f:
+        f.write("")
+
+    result = {}
+    m3u8_content = "#EXTM3U\n"
 
     series_list = get_series_list()
     total_series = len(series_list)
     write_log(f"Toplam {total_series} dizi bulundu.")
 
-    for index, series in enumerate(series_list):
-        base_url = series['url'].rstrip('/')
+    for idx, series in enumerate(series_list, start=1):
+        base_url = series["url"].rstrip("/")
         main_html = curl_get(base_url)
 
-        title_match = re.search(r'<title>(.*?)</title>', main_html)
-        series_name = title_match.group(1) if title_match else urlparse(base_url).path.split('/')[-1]
-        series_name = series_name.replace(' | DMAX', '')
-        series['name'] = series_name
+        title_match = re.search(r"<title>(.*?)</title>", main_html)
+        series_name = title_match.group(1).replace(" | DMAX", "") if title_match else os.path.basename(base_url)
+        series["name"] = series_name
 
-        write_log(f"{index + 1}. dizi ({series_name}) çekiliyor...")
+        write_log(f"{idx}. dizi ({series_name}) çekiliyor...")
 
         seasons = get_season_count(base_url)
         result[series_name] = {}
         total_episodes = 0
 
         for season in seasons:
-            episode_count, m3u8_content = get_episodes(base_url, season, series_name, series['logo'], m3u8_content, result, log)
-            total_episodes += episode_count
+            ep_count, m3u8_content, result = get_episodes(base_url, season, series_name, series["logo"], m3u8_content, result)
+            total_episodes += ep_count
 
         write_log(f"{series_name} tamamlandı, {total_episodes} bölüm bulundu.")
 
