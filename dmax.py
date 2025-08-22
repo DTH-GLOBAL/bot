@@ -4,9 +4,10 @@ import os
 import time
 import warnings
 from urllib.parse import urlparse
+from urllib3.exceptions import InsecureRequestWarning  # Doğru modül eklendi
 
 # SSL uyarılarını bastırmak için
-warnings.filterwarnings("ignore", category=requests.exceptions.InsecureRequestWarning)
+warnings.filterwarnings("ignore", category=InsecureRequestWarning)
 
 # Sayfa kaynağını çeken fonksiyon
 def curl_get(url):
@@ -48,9 +49,9 @@ def get_season_count(url):
 # Bölüm bilgilerini çekme
 def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log):
     episode_count = 0
-    filename = 'dmax.m3u'  # Çıktı dosyasını dmax.m3u olarak ayarla
+    filename = 'dmax.m3u'  # Çıktı dosyasını dmax.mu olarak ayarla
     
-    for episode in range(1, 101):  # 100 bölüm kontrolü
+    for episode in range(1, 11):  # 10 bölüm kontrolü (100 yerine 10 ile sınırlandı)
         # Bölüm zaten eklenmişse atla
         if series_name in result and season in result[series_name] and str(episode) in result[series_name][season]:
             continue
