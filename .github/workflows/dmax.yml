@@ -3,7 +3,7 @@ name: DMAX M3U Builder
 on:
   workflow_dispatch:   # Elle tetikleme
   schedule:
-    - cron: "0 0 * * *"   # Her gün gece 00:00'da otomatik çalışır (UTC)
+    - cron: "0 0 * * *"   # Her gün gece 00:00'da (UTC) otomatik çalışır
 
 jobs:
   build:
@@ -30,6 +30,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add playlists/dmax.m3u playlists/progress.log
+          git add dmax.m3u progress.log
           git commit -m "📺 DMAX playlist otomatik güncellendi" || echo "No changes to commit"
           git push
