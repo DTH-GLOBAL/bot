@@ -28,7 +28,7 @@ jobs:
 
       # Python scriptini çalıştır
       - name: Run scraper script
-        run: python series_scraper.py
+        run: python dmax.py
 
       # Değişiklikleri commit et
       - name: Commit changes
