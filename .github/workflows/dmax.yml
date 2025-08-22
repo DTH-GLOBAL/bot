@@ -1,4 +1,4 @@
-name: Update M3U Playlist
+name: Update M3U8 Playlist
 
 on:
   schedule:
@@ -35,8 +35,8 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add playlists-dmax.m3u playlists/progress.log
-          git diff --staged --quiet || git commit -m "Update M3U playlist and progress log"
+          git add playlists/dmax.m3u playlists/progress.log
+          git diff --staged --quiet || git commit -m "Update dmax.m3u playlist and progress log"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
