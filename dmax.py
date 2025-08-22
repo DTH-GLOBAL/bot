@@ -1,9 +1,10 @@
 import os
 import re
-import time
 import requests
 import urllib3
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # SSL uyarılarını kapat
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -17,9 +18,23 @@ HEADERS = {
                   " Chrome/91.0.4472.124 Safari/537.36"
 }
 
+# Session + Retry ayarı
+session = requests.Session()
+retries = Retry(
+    total=5,                # En fazla 5 tekrar
+    backoff_factor=1,       # 1, 2, 4, 8 sn bekleme
+    status_forcelist=[500, 502, 503, 504],
+    allowed_methods=["HEAD", "GET", "OPTIONS"]
+)
+adapter = HTTPAdapter(max_retries=retries)
+session.mount("http://", adapter)
+session.mount("https://", adapter)
+
 def curl_get(url):
+    """Sağlamlaştırılmış GET isteği"""
     try:
-        resp = requests.get(url, headers=HEADERS, verify=False, timeout=10)
+        resp = session.get(url, headers=HEADERS, verify=False, timeout=10)
+        resp.raise_for_status()
         return resp.text
     except Exception as e:
         print(f"Hata: {e}", flush=True)
@@ -62,7 +77,7 @@ def get_episodes(base_url, season, series_name, logo):
         episode_url = f"{base_url}/{season}-sezon-{episode}-bolum"
         html = curl_get(episode_url)
 
-        if "video-player vod-player" not in html:
+        if not html or "video-player vod-player" not in html:
             break
 
         code_match = re.search(r'data-video-code="(.*?)"', html)
