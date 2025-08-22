@@ -1,27 +1,27 @@
 name: Run DMAX Scraper
-on:
-  schedule:
-    - cron: '*/15 * * * *'  # Runs every 15 minutes
-  workflow_dispatch:  # Adds manual trigger option
-jobs:
-  scrape:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
-      - name: Run scraper
-        run: python dmax.py
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add dmax.m3u playlists/progress.log
-          git commit -m "Update M3U8 playlist and log [skip ci]" || echo "No changes to commit"
-          git push
+  on:
+    schedule:
+      - cron: '*/15 * * * *'  # Runs every 15 minutes
+    workflow_dispatch:  # Adds manual trigger option
+  jobs:
+    scrape:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.x'
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install requests
+        - name: Run scraper
+          run: python dmax.py
+        - name: Commit and push changes
+          run: |
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add dmax.m3u playlists/progress.log
+            git commit -m "Update M3U8 playlist and log [skip ci]" || echo "No changes to commit"
+            git push
