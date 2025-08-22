@@ -3,6 +3,7 @@ import re
 import time
 import requests
 import urllib3
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # SSL uyarılarını kapat
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -18,15 +19,14 @@ HEADERS = {
 
 def curl_get(url):
     try:
-        resp = requests.get(url, headers=HEADERS, verify=False, timeout=15)
-        time.sleep(1)
+        resp = requests.get(url, headers=HEADERS, verify=False, timeout=10)
         return resp.text
     except Exception as e:
         print(f"Hata: {e}", flush=True)
         return ""
 
 def write_log(message):
-    print(message, flush=True)  # GitHub Actions logunda anlık görünür
+    print(message, flush=True)
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(message + "\n")
 
@@ -56,13 +56,9 @@ def get_season_count(url):
     seasons = re.findall(r'<option value="(\d+)">', html)
     return list(reversed(seasons)) if seasons else []
 
-def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
-    episode_count = 0
-
+def get_episodes(base_url, season, series_name, logo):
+    m3u8_lines = []
     for episode in range(1, 101):
-        if episode in result.get(series_name, {}).get(season, {}):
-            continue
-
         episode_url = f"{base_url}/{season}-sezon-{episode}-bolum"
         html = curl_get(episode_url)
 
@@ -80,56 +76,49 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
                 f'{m3u8}\n'
             )
 
-            m3u8_content += m3u8_line
-
-            result.setdefault(series_name, {}).setdefault(season, {})[episode] = {
-                "code": code,
-                "m3u8": m3u8
-            }
-
-            with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
-                f.write(m3u8_content)
-
-            # Anlık olarak GitHub loguna yaz
+            m3u8_lines.append(m3u8_line)
             print(f"[{series_name} S{season}E{episode}] {m3u8}", flush=True)
 
-            episode_count += 1
+    return m3u8_lines
 
-    return episode_count, m3u8_content, result
+def process_series(series):
+    base_url = series["url"].rstrip("/")
+    main_html = curl_get(base_url)
+
+    title_match = re.search(r"<title>(.*?)</title>", main_html)
+    series_name = title_match.group(1).replace(" | DMAX", "") if title_match else os.path.basename(base_url)
+
+    write_log(f"{series_name} çekiliyor...")
+
+    m3u8_lines = []
+    seasons = get_season_count(base_url)
+
+    for season in seasons:
+        m3u8_lines.extend(get_episodes(base_url, season, series_name, series["logo"]))
+
+    write_log(f"{series_name} tamamlandı, {len(m3u8_lines)} bölüm bulundu.")
+    return m3u8_lines
 
 def main():
-    # Başlangıç dosyalarını temizle
     with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         f.write("")
 
-    result = {}
-    m3u8_content = "#EXTM3U\n"
-
     series_list = get_series_list()
-    total_series = len(series_list)
-    write_log(f"Toplam {total_series} dizi bulundu.")
+    write_log(f"Toplam {len(series_list)} dizi bulundu.")
 
-    for idx, series in enumerate(series_list, start=1):
-        base_url = series["url"].rstrip("/")
-        main_html = curl_get(base_url)
+    all_lines = ["#EXTM3U\n"]
 
-        title_match = re.search(r"<title>(.*?)</title>", main_html)
-        series_name = title_match.group(1).replace(" | DMAX", "") if title_match else os.path.basename(base_url)
-        series["name"] = series_name
+    # Çoklu iş parçacığı ile hızlandır
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = [executor.submit(process_series, series) for series in series_list]
+        for future in as_completed(futures):
+            all_lines.extend(future.result())
 
-        write_log(f"{idx}. dizi ({series_name}) çekiliyor...")
-
-        seasons = get_season_count(base_url)
-        result[series_name] = {}
-        total_episodes = 0
-
-        for season in seasons:
-            ep_count, m3u8_content, result = get_episodes(base_url, season, series_name, series["logo"], m3u8_content, result)
-            total_episodes += ep_count
-
-        write_log(f"{series_name} tamamlandı, {total_episodes} bölüm bulundu.")
+    # Tüm içerik en sonda dosyaya yaz
+    with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+        f.writelines(all_lines)
 
     write_log("Tüm diziler işlendi!")
 
