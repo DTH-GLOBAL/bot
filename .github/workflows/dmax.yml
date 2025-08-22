@@ -1,35 +1,36 @@
 name: DMAX M3U Builder
 
+# Elle ve otomatik cron tetikleme
 on:
-  workflow_dispatch:   # Elle tetikleme
+  workflow_dispatch:   # Elle tetiklemek için
   schedule:
-    - cron: "0 0 * * *"   # Her gün gece 00:00'da (UTC) otomatik çalışır
+    - cron: '0 0 * * *' # UTC saatiyle her gün gece 00:00
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Repo çekiliyor
+      - name: Repo'yu checkout et
         uses: actions/checkout@v3
 
-      - name: Python kurulumu
+      - name: Python kur
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - name: Bağımlılıkların kurulması
+      - name: Gerekli kütüphaneleri yükle
         run: |
+          python -m pip install --upgrade pip
           pip install requests
 
-      - name: Script çalıştır
-        run: |
-          python dmax.py
+      - name: DMAX scriptini çalıştır
+        run: python dmax.py
 
-      - name: Playlist commit et ve pushla
+      - name: Commit ve push (otomatik)
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add dmax.m3u progress.log
-          git commit -m "📺 DMAX playlist otomatik güncellendi" || echo "No changes to commit"
+          git commit -m "DMAX M3U güncellendi: $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push
