@@ -16,8 +16,8 @@ HEADERS = {
                   " Chrome/91.0.4472.124 Safari/537.36"
 }
 
-# Atlanacak başlıklar
-SKIP_TITLES = ["Bölümler", "Kısa Videolar", "Haberler"]
+# Başlıktan silinecek ifadeler
+REMOVE_TITLES = ["Bölümler", "Kısa Videolar", "Haberler"]
 
 def curl_get(url):
     try:
@@ -58,6 +58,11 @@ def get_season_count(url):
     html = curl_get(url)
     seasons = re.findall(r'<option value="(\d+)">', html)
     return list(reversed(seasons)) if seasons else []
+
+def clean_series_name(name):
+    for word in REMOVE_TITLES:
+        name = name.replace(word, "")
+    return name.strip()
 
 def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
     episode_count = 0
@@ -120,12 +125,10 @@ def main():
 
         title_match = re.search(r"<title>(.*?)</title>", main_html)
         series_name = title_match.group(1).replace(" | DMAX", "") if title_match else os.path.basename(base_url)
-        series["name"] = series_name
 
-        # İstenmeyen başlıkları atla
-        if any(skip in series_name for skip in SKIP_TITLES):
-            write_log(f"{idx}. dizi ({series_name}) atlandı (istenmeyen başlık).")
-            continue
+        # Fazlalıkları sil
+        series_name = clean_series_name(series_name)
+        series["name"] = series_name
 
         write_log(f"{idx}. dizi ({series_name}) çekiliyor...")
 
