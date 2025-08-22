@@ -4,7 +4,7 @@ import os
 import time
 import warnings
 from urllib.parse import urlparse
-from urllib3.exceptions import InsecureRequestWarning  # Doğru modül eklendi
+from urllib3.exceptions import InsecureRequestWarning
 
 # SSL uyarılarını bastırmak için
 warnings.filterwarnings("ignore", category=InsecureRequestWarning)
@@ -23,20 +23,18 @@ def get_series_list():
     url = "https://www.dmax.com.tr/kesfet?size=80"
     html = curl_get(url)
     series = []
-    unique_urls = []  # Yinelenen URL'leri kontrol etmek için
+    unique_urls = []
 
-    # Regex ile tüm poster linklerini ve logoları çek
     matches = re.findall(r'<div class="poster">.*?<a.*?href="(https:\/\/www\.dmax\.com\.tr\/[a-z0-9-]+)".*?<img src="(https:\/\/img-tlctv1\.mncdn\.com\/.*?)" alt=""', html, re.DOTALL)
 
     for match in matches:
         series_url = match[0]
-        # URL zaten eklenmişse atla
         if series_url not in unique_urls:
             unique_urls.append(series_url)
             series.append({
                 'url': series_url,
                 'logo': match[1],
-                'name': urlparse(series_url).path.split('/')[-1]  # Geçici isim
+                'name': urlparse(series_url).path.split('/')[-1]
             })
     return series
 
@@ -44,15 +42,14 @@ def get_series_list():
 def get_season_count(url):
     html = curl_get(url)
     matches = re.findall(r'<option value="(\d+)">', html)
-    return list(reversed(matches or []))  # 1’den başlasın
+    return list(reversed(matches or []))
 
 # Bölüm bilgilerini çekme
 def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log):
     episode_count = 0
-    filename = 'dmax.m3u'  # Çıktı dosyasını dmax.mu olarak ayarla
+    filename = 'dmax.m3u'
     
-    for episode in range(1, 11):  # 10 bölüm kontrolü (100 yerine 10 ile sınırlandı)
-        # Bölüm zaten eklenmişse atla
+    for episode in range(1, 5):  # 5 bölüme düşürüldü
         if series_name in result and season in result[series_name] and str(episode) in result[series_name][season]:
             continue
 
@@ -65,28 +62,22 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log)
                 code = code_match.group(1)
                 m3u8 = f"https://dygvideo.dygdigital.com/api/redirect?PublisherId=27&ReferenceId={code}&SecretKey=NtvApiSecret2014*&.m3u8"
 
-                # M3U8 satırı
                 m3u8_content.append(f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {series_name} {season} Sezon {episode} Bölüm" tvg-logo="{logo}" group-title="DMAX BELGESELLER",TR: {series_name} {season} Sezon {episode} Bölüm')
                 m3u8_content.append(m3u8)
 
-                # Sonuçları sakla
                 if series_name not in result:
                     result[series_name] = {}
                 if season not in result[series_name]:
                     result[series_name][season] = {}
-                result[series_name][season][str(episode)] = {
-                    'code': code,
-                    'm3u8': m3u8
-                }
+                result[series_name][season][str(episode)] = {'code': code, 'm3u8': m3u8}
 
-                # Anlık olarak M3U8 dosyasına yaz
                 os.makedirs('playlists', exist_ok=True)
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write('\n'.join(m3u8_content))
 
                 episode_count += 1
         else:
-            break  # Bölüm yoksa döngüyü kır
+            break
 
     return episode_count, m3u8_content
 
@@ -103,8 +94,7 @@ def main():
     m3u8_content = ['#EXTM3U']
     log = ''
 
-    # İlk olarak M3U8 dosyasını başlıkla başlat
-    filename = 'dmax.mu'
+    filename = 'dmax.m3u'
     os.makedirs('playlists', exist_ok=True)
     with open(filename, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
@@ -117,26 +107,21 @@ def main():
         base_url = series['url'].rstrip('/')
         main_html = curl_get(base_url)
 
-        # Dizi adını çek
         title_match = re.search(r'<title>(.*?)</title>', main_html)
         series_name = title_match.group(1) if title_match else urlparse(base_url).path.split('/')[-1]
         series_name = series_name.replace(' | DMAX', '')
         series['name'] = series_name
 
-        # İlerleme logu
         write_log(f"{index + 1}. dizi ({series_name}) çekiliyor...")
 
-        # Sezonları çek
         seasons = get_season_count(base_url)
         result[series_name] = {}
         total_episodes = 0
 
-        # Bölümleri çek ve M3U8’a ekle
         for season in seasons:
             episode_count, m3u8_content = get_episodes(base_url, season, series_name, series['logo'], m3u8_content, result, log)
             total_episodes += episode_count
 
-        # Dizi tamamlandı
         write_log(f"{series_name} tamamlandı, {total_episodes} bölüm bulundu.")
 
     write_log("Tüm diziler işlendi!")
