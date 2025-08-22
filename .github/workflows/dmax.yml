@@ -21,6 +21,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add dmaxx.m3u playlists/progress.log
+          git add dmax.m3u playlists/progress.log
           git commit -m "Update M3U8 playlist and log [skip ci]" || echo "No changes to commit"
           git push
