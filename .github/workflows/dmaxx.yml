@@ -17,7 +17,7 @@ name: Run DMAX Scraper
                python -m pip install --upgrade pip
                pip install requests
            - name: Run scraper
-             run: python dmax.py
+             run: python dmaxx.py
            - name: Commit and push changes
              run: |
                git config --global user.name 'github-actions[bot]'
