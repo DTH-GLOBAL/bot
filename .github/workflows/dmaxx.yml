@@ -1,7 +1,7 @@
-name: Run DMAX Scraper
+name: DMAX
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
+    - cron: '*/15 * * * *'  # Runs every 15 minutes
 jobs:
   scrape:
     runs-on: ubuntu-latest
