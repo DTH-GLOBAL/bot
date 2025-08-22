@@ -2,6 +2,10 @@ import os
 import re
 import time
 import requests
+import urllib3
+
+# SSL uyarılarını kapat
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 PLAYLIST_FILE = "dmax.m3u"
 LOG_FILE = "progress.log"
@@ -89,9 +93,9 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result):
     return episode_count, m3u8_content, result
 
 def main():
+    # Başlangıç dosyalarını temizle
     with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         f.write("")
 
