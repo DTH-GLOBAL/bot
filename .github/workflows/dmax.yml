@@ -1,10 +1,9 @@
 name: DMAX M3U Builder
 
-# Elle ve otomatik cron tetikleme
 on:
   workflow_dispatch:   # Elle tetiklemek için
   schedule:
-    - cron: '0 0 * * *' # UTC saatiyle her gün gece 00:00
+    - cron: '0 0 * * *' # Her gün 00:00 UTC'de otomatik çalışır
 
 jobs:
   build:
