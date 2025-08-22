@@ -1,7 +1,7 @@
 name: Run DMAX Scraper
 on:
   schedule:
-    - cron: '0 1 * * *'  # Her gün saat 01:00'da çalışır (UTC+3 için)
+    - cron: '0 22 * * *'  # Her gün Türkiye saatiyle 01:00'da çalışır (UTC 22:00)
   workflow_dispatch:  # Manuel çalıştırma seçeneği
 jobs:
   scrape:
