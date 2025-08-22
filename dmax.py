@@ -2,58 +2,50 @@ import requests
 import re
 import os
 import time
-from bs4 import BeautifulSoup
-from datetime import datetime
+from urllib.parse import urlparse
 
-# cURL ile sayfa kaynağını çeken fonksiyon
+# Function to fetch page content using requests
 def curl_get(url):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
-    try:
-        response = requests.get(url, verify=False, allow_redirects=True, headers=headers)
-        response.raise_for_status()
-        time.sleep(1)  # İstekler arasında 1 saniye bekle
-        return response.text
-    except requests.RequestException:
-        return ""
+    response = requests.get(url, headers=headers, allow_redirects=True, verify=False)
+    time.sleep(1)  # Wait 1 second between requests
+    return response.text
 
-# Dizi listesini çekme
+# Function to get series list
 def get_series_list():
     url = "https://www.dmax.com.tr/kesfet?size=80"
     html = curl_get(url)
     series = []
-    unique_urls = []  # Yinelenen URL'leri kontrol etmek için
+    unique_urls = []  # To check for duplicate URLs
 
-    # Regex ile tüm poster linklerini ve logoları çek
-    pattern = r'<div class="poster">.*?<a.*?href="(https:\/\/www\.dmax\.com\.tr\/[a-z0-9-]+)".*?<img src="(https:\/\/img-tlctv1\.mncdn\.com\/.*?)" alt=""'
-    matches = re.finditer(pattern, html, re.DOTALL)
-
+    # Regex to extract all poster links and logos
+    matches = re.findall(r'<div class="poster">.*?<a.*?href="(https:\/\/www\.dmax\.com\.tr\/[a-z0-9-]+)".*?<img src="(https:\/\/img-tlctv1\.mncdn\.com\/.*?)" alt=""', html, re.DOTALL)
+    
     for match in matches:
-        series_url = match.group(1)
-        # URL zaten eklenmişse atla
+        series_url = match[0]
         if series_url not in unique_urls:
             unique_urls.append(series_url)
             series.append({
                 'url': series_url,
-                'logo': match.group(2),
-                'name': series_url.split('/')[-1]  # Geçici isim
+                'logo': match[1],
+                'name': urlparse(series_url).path.split('/')[-1]  # Temporary name
             })
     return series
 
-# Sezon sayısını çekme
+# Function to get season count
 def get_season_count(url):
     html = curl_get(url)
-    season_matches = re.findall(r'<option value="(\d+)">', html)
-    return list(reversed(season_matches))  # 1’den başlasın
+    matches = re.findall(r'<option value="(\d+)">', html)
+    return list(reversed(matches or []))  # Start from 1
 
-# Bölüm bilgilerini çekme
+# Function to get episode information
 def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log):
     episode_count = 0
-    filename = 'playlists/dmax.m3u'
+    filename = 'dmax.m3u'
     
-    for episode in range(1, 101):
-        # Bölüm zaten eklenmişse atla
+    for episode in range(1, 101):  # Check up to 100 episodes
         if series_name in result and season in result[series_name] and str(episode) in result[series_name][season]:
             continue
 
@@ -66,11 +58,11 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log)
                 code = code_match.group(1)
                 m3u8 = f"https://dygvideo.dygdigital.com/api/redirect?PublisherId=27&ReferenceId={code}&SecretKey=NtvApiSecret2014*&.m3u8"
 
-                # M3U8 satırı
-                m3u8_content.append(f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {series_name} {season} Sezon {episode} Bölüm" tvg-logo="{logo}" group-title="DMAX BELGESELLER",TR: {series_name} {season} Sezon {episode} Bölüm\n')
-                m3u8_content.append(f"{m3u8}\n")
+                # M3U8 line
+                m3u8_content.append(f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {series_name} {season} Sezon {episode} Bölüm" tvg-logo="{logo}" group-title="DMAX BELGESELLER",TR: {series_name} {season} Sezon {episode} Bölüm')
+                m3u8_content.append(m3u8)
 
-                # Sonuçları sakla
+                # Store results
                 if series_name not in result:
                     result[series_name] = {}
                 if season not in result[series_name]:
@@ -80,62 +72,66 @@ def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log)
                     'm3u8': m3u8
                 }
 
-                # Anlık olarak M3U8 dosyasına yaz
-                if not os.path.exists('playlists'):
-                    os.makedirs('playlists', mode=0o777)
-                with open(filename, 'w') as f:
-                    f.write(''.join(m3u8_content))
+                # Write to M3U8 file incrementally
+                os.makedirs('playlists', exist_ok=True)
+                with open(filename, 'w', encoding='utf-8') as f:
+                    f.write('\n'.join(m3u8_content))
 
                 episode_count += 1
         else:
-            break  # Bölüm yoksa döngüyü kır
+            break  # No more episodes
     return episode_count, m3u8_content
 
-# İlerleme logunu yaz
+# Function to write progress log
 def write_log(message):
     log_file = 'playlists/progress.log'
-    with open(log_file, 'a') as f:
-        f.write(f"{message}\n")
+    os.makedirs('playlists', exist_ok=True)
+    with open(log_file, 'a', encoding='utf-8') as f:
+        f.write(message + '\n')
 
-# İşlem
-result = {}
-m3u8_content = ["#EXTM3U\n"]
-log = []
+# Main process
+def main():
+    result = {}
+    m3u8_content = ['#EXTM3U']
+    log = ''
 
-# İlk olarak M3U8 dosyasını başlıkla başlat
-filename = 'playlists/dmax.m3u'
-if not os.path.exists('playlists'):
-    os.makedirs('playlists', mode=0o777)
-with open(filename, 'w') as f:
-    f.write("#EXTM3U\n")
+    # Initialize M3U8 file
+    filename = 'dmax.m3u'
+    os.makedirs('playlists', exist_ok=True)
+    with open(filename, 'w', encoding='utf-8') as f:
+        f.write('#EXTM3U\n')
 
-series_list = get_series_list()
-total_series = len(series_list)
-write_log(f"Toplam {total_series} dizi bulundu.")
+    series_list = get_series_list()
+    total_series = len(series_list)
+    write_log(f"Toplam {total_series} dizi bulundu.")
 
-for index, series in enumerate(series_list):
-    base_url = series['url'].rstrip('/')
-    main_html = curl_get(base_url)
+    for index, series in enumerate(series_list):
+        base_url = series['url'].rstrip('/')
+        main_html = curl_get(base_url)
 
-    # Dizi adını çek
-    title_match = re.search(r'<title>(.*?)</title>', main_html)
-    series_name = title_match.group(1).replace(' | DMAX', '') if title_match else base_url.split('/')[-1]
-    series['name'] = series_name
+        # Extract series name
+        title_match = re.search(r'<title>(.*?)</title>', main_html)
+        series_name = title_match.group(1) if title_match else urlparse(base_url).path.split('/')[-1]
+        series_name = series_name.replace(' | DMAX', '')
+        series['name'] = series_name
 
-    # İlerleme logu
-    write_log(f"{index + 1}. dizi ({series_name}) çekiliyor...")
+        # Log progress
+        write_log(f"{index + 1}. dizi ({series_name}) çekiliyor...")
 
-    # Sezonları çek
-    seasons = get_season_count(base_url)
-    result[series_name] = {}
-    total_episodes = 0
+        # Get seasons
+        seasons = get_season_count(base_url)
+        result[series_name] = {}
+        total_episodes = 0
 
-    # Bölümleri çek ve M3U8’a ekle
-    for season in seasons:
-        episode_count, m3u8_content = get_episodes(base_url, season, series_name, series['logo'], m3u8_content, result, log)
-        total_episodes += episode_count
+        # Get episodes and add to M3U8
+        for season in seasons:
+            episode_count, m3u8_content = get_episodes(base_url, season, series_name, series['logo'], m3u8_content, result, log)
+            total_episodes += episode_count
 
-    # Dizi tamamlandı
-    write_log(f"{series_name} tamamlandı, {total_episodes} bölüm bulundu.")
+        # Series completed
+        write_log(f"{series_name} tamamlandı, {total_episodes} bölüm bulundu.")
 
-write_log("Tüm diziler işlendi!")
+    write_log("Tüm diziler işlendi!")
+
+if __name__ == "__main__":
+    main()
