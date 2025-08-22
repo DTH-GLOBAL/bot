@@ -50,7 +50,7 @@ def get_season_count(url):
 # Bölüm bilgilerini çekme
 def get_episodes(base_url, season, series_name, logo, m3u8_content, result, log):
     episode_count = 0
-    filename = 'playlists/all_series.m3u8'
+    filename = 'playlists-dmax.m3u'
     
     for episode in range(1, 101):
         # Bölüm zaten eklenmişse atla
@@ -103,7 +103,7 @@ m3u8_content = ["#EXTM3U\n"]
 log = []
 
 # İlk olarak M3U8 dosyasını başlıkla başlat
-filename = 'playlists/all_series.m3u8'
+filename = 'playlists-dmax.m3u'
 if not os.path.exists('playlists'):
     os.makedirs('playlists', mode=0o777)
 with open(filename, 'w') as f:
