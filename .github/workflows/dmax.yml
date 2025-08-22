@@ -1,27 +1,35 @@
-name: Run DMAX Scraper
+name: DMAX M3U Builder
+
 on:
+  workflow_dispatch:   # Elle tetikleme
   schedule:
-    - cron: '0 22 * * *'  # Her gün Türkiye saatiyle 01:00'da çalışır (UTC 22:00)
-  workflow_dispatch:  # Manuel çalıştırma seçeneği
+    - cron: "0 0 * * *"   # Her gün gece 00:00'da otomatik çalışır (UTC)
+
 jobs:
-  scrape:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
+      - name: Repo çekiliyor
+        uses: actions/checkout@v3
+
+      - name: Python kurulumu
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-      - name: Install dependencies
+          python-version: "3.11"
+
+      - name: Bağımlılıkların kurulması
         run: |
-          python -m pip install --upgrade pip
           pip install requests
-      - name: Run scraper
-        run: python dmax.py
-      - name: Commit and push changes
+
+      - name: Script çalıştır
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add dmax.m3u playlists/progress.log
-          git commit -m "Update M3U8 playlist and log [skip ci]" || echo "No changes to commit"
+          python dmax.py
+
+      - name: Playlist commit et ve pushla
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add playlists/dmax.m3u playlists/progress.log
+          git commit -m "📺 DMAX playlist otomatik güncellendi" || echo "No changes to commit"
           git push
