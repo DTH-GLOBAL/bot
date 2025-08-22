@@ -16,6 +16,9 @@ HEADERS = {
                   " Chrome/91.0.4472.124 Safari/537.36"
 }
 
+# Atlanacak başlıklar
+SKIP_TITLES = ["Bölümler", "Kısa Videolar", "Haberler"]
+
 def curl_get(url):
     try:
         resp = requests.get(url, headers=HEADERS, verify=False, timeout=15)
@@ -118,6 +121,11 @@ def main():
         title_match = re.search(r"<title>(.*?)</title>", main_html)
         series_name = title_match.group(1).replace(" | DMAX", "") if title_match else os.path.basename(base_url)
         series["name"] = series_name
+
+        # İstenmeyen başlıkları atla
+        if any(skip in series_name for skip in SKIP_TITLES):
+            write_log(f"{idx}. dizi ({series_name}) atlandı (istenmeyen başlık).")
+            continue
 
         write_log(f"{idx}. dizi ({series_name}) çekiliyor...")
 
