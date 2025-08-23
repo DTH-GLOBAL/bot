@@ -7,7 +7,7 @@ concurrency:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *'  # Her 2 saatte bir çalışır
+    - cron: '0 */2 * * *'  # Her 2 saatte bir çalışır
 
 jobs:
   KabloGuncelle:
@@ -32,12 +32,7 @@ jobs:
           pip install -U setuptools wheel Kekik httpx parsel requests
 
       - name: API'den M3U Listesini Al
-        run: python Pythonlar/kablo.py  
-
-      - name: M3U Güncellemelerini Yap
-        run: |
-          
-          python Pythonlar/vettel.py
+        run: python kablo.py  
 
       - name: Değişiklik Kontrolü
         id: degisiklik_kontrol
