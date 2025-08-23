@@ -1,7 +1,7 @@
 import requests
 import re
 
-def find_active_site(start=1829, end=1999):
+def find_active_site(start=1904, end=1999):
     print("🔎 Domainler taranıyor...")
     headers = {"User-Agent": "Mozilla/5.0"}
     for i in range(start, end + 1):
