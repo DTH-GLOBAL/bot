@@ -1,7 +1,7 @@
 import requests
 import re
 
-def find_active_site(start=1829, end=1999):
+def find_active_site(start=1904, end=1999):
     print("🔎 Domainler taranıyor...")
     headers = {"User-Agent": "Mozilla/5.0"}
     for i in range(start, end + 1):
@@ -43,7 +43,7 @@ def fetch_stream_url(url, channel_id):
 
     return None
 
-def build_m3u(active_site, base_url, channels):
+def build_m3u(base_url, channels):
     m3u_content = "#EXTM3U\n"
     for cid in channels:
         url = base_url + cid
@@ -60,7 +60,6 @@ def build_m3u(active_site, base_url, channels):
             f'tvg-logo="https://i.hizliresim.com/b6xqz10.jpg" '
             f'group-title="SPOR KANALLARI",{channel_name} HD\n'
         )
-        m3u_content += f"#EXTVLCOPT:http-referrer={active_site}\n"
         m3u_content += f"{stream_url}\n"
     return m3u_content
 
@@ -83,9 +82,10 @@ if __name__ == "__main__":
         print("❌ base_url bulunamadı!")
         exit()
 
-    m3u_content = build_m3u(active_site, base_url, channels)
+    m3u_content = build_m3u(base_url, channels)
 
-    with open("DeaTHLesS-Sucuk.m3u", "w", encoding="utf-8") as f:
+    # Çıktıyı selcuk.m3u olarak kaydediyoruz
+    with open("selcuk.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_content)
 
-    print("✅ M3U dosyası oluşturuldu: DeaTHLesS-Sucuk.m3u")
+    print("✅ M3U dosyası oluşturuldu: selcuk.m3u")
