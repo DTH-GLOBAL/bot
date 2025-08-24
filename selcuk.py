@@ -1,8 +1,21 @@
 import requests
 import re
 
-# Sabit domain
-ACTIVE_SITE = "https://www.selcuksportshd3d16b304.xyz"
+# Sabit başlangıç URL (artık sadece burayı açıyoruz)
+START_URL = "https://www.selcuksportshd78.is"
+
+def get_active_site(start_url):
+    try:
+        source = requests.get(start_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10).text
+    except:
+        return None
+    # meta refresh ile yönlendirilen URL'yi bul
+    match = re.search(r'<meta http-equiv="refresh" content="[^"]*url=([^"]+)"', source, re.IGNORECASE)
+    if match:
+        active_site = match.group(1)
+        print(f"✅ Aktif domain bulundu: {active_site}")
+        return active_site
+    return None
 
 def get_base_url(active_site):
     try:
@@ -61,7 +74,12 @@ if __name__ == "__main__":
         "selcuktivibuspor2", "selcuktivibuspor3", "selcuktivibuspor4"
     ]
 
-    base_url = get_base_url(ACTIVE_SITE)
+    active_site = get_active_site(START_URL)
+    if not active_site:
+        print("❌ Aktif site bulunamadı!")
+        exit()
+
+    base_url = get_base_url(active_site)
     if not base_url:
         print("❌ base_url bulunamadı!")
         exit()
