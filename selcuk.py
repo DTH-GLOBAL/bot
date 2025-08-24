@@ -1,19 +1,8 @@
 import requests
 import re
 
-def find_active_site(start=1904, end=1999):
-    print("🔎 Domainler taranıyor...")
-    headers = {"User-Agent": "Mozilla/5.0"}
-    for i in range(start, end + 1):
-        test_url = f"https://www.selcuksportshd{i}.xyz/"
-        try:
-            r = requests.head(test_url, headers=headers, timeout=5)
-            if r.status_code == 200:
-                print(f"✅ Aktif site bulundu: {test_url}")
-                return test_url
-        except:
-            continue
-    return None
+# Sabit domain
+ACTIVE_SITE = "https://www.selcuksportshd3d16b304.xyz"
 
 def get_base_url(active_site):
     try:
@@ -72,12 +61,7 @@ if __name__ == "__main__":
         "selcuktivibuspor2", "selcuktivibuspor3", "selcuktivibuspor4"
     ]
 
-    active_site = find_active_site()
-    if not active_site:
-        print("❌ Hiçbir site aktif değil!")
-        exit()
-
-    base_url = get_base_url(active_site)
+    base_url = get_base_url(ACTIVE_SITE)
     if not base_url:
         print("❌ base_url bulunamadı!")
         exit()
