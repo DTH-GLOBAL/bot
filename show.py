@@ -1,127 +1,129 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import time
+import json  # For potential JSON parsing if needed, but not used here
 
-# Base URL
-base_url = "https://www.showtv.com.tr"
-
-# Headers to mimic a browser
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-}
-
-# Function to get all series from the main page
-def get_series():
-    print("Fetching series list from:", base_url + "/diziler")
-    try:
-        response = requests.get(f"{base_url}/diziler", headers=headers, timeout=10)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        series_list = []
-        swiper_wrapper = soup.find('div', class_='swiper-wrapper')
-        if swiper_wrapper:
-            slides = swiper_wrapper.find_all('div', class_='swiper-slide')
-            for slide in slides:
-                a_tag = slide.find('a')
-                if a_tag:
-                    relative_href = a_tag['href']
-                    full_link = base_url + relative_href if relative_href.startswith('/') else relative_href
-                    name = a_tag['title']
-                    img_tag = slide.find('img')
-                    logo = img_tag['src'] if img_tag else ''
-                    logo = re.sub(r'\?v=\d+', '', logo)
-                    series_list.append({
-                        'name': name,
-                        'logo': logo,
-                        'link': full_link
-                    })
-                    print(f"Found series: {name} ({full_link})")
-        
-        print(f"Total series found: {len(series_list)}")
-        return series_list
-    except Exception as e:
-        print(f"Error fetching series list: {e}")
+# Function to fetch and parse the main series page
+def get_series_list():
+    url = "https://www.showtv.com.tr/diziler"
+    response = requests.get(url)
+    if response.status_code != 200:
+        print(f"Failed to fetch {url}")
         return []
+    
+    soup = BeautifulSoup(response.text, 'html.parser')
+    series = []
+    
+    # Find all swiper-slide divs in the swiper-wrapper
+    swiper_wrapper = soup.find('div', class_='swiper-wrapper')
+    if not swiper_wrapper:
+        print("No swiper-wrapper found")
+        return []
+    
+    for slide in swiper_wrapper.find_all('div', class_='swiper-slide'):
+        a_tag = slide.find('a')
+        if not a_tag:
+            continue
+        title = a_tag.get('title', '').strip()
+        href = a_tag.get('href', '').strip()
+        if not title or not href:
+            continue
+        # Full link
+        full_href = "https://www.showtv.com.tr" + href if not href.startswith('http') else href
+        
+        img_tag = slide.find('img')
+        logo = img_tag.get('src', '').strip() if img_tag else ''
+        
+        series.append({
+            'name': title,
+            'link': full_href,
+            'logo': logo
+        })
+    
+    return series
 
-# Function to get episodes for a series
+# Function to get episodes from a series page
 def get_episodes(series_link):
-    print(f"Fetching episodes for: {series_link}")
-    try:
-        response = requests.get(series_link, headers=headers, timeout=10)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        episodes = []
-        options = soup.find_all('option', {'data-href': True, 'data-season-id': True})
-        for option in options:
-            relative_href = option['data-href']
-            full_episode_link = base_url + relative_href if relative_href.startswith('/') else relative_href
-            season_id = option['data-season-id']
-            episode_text = option.text.strip()
-            episode_num = re.search(r'(\d+)\.', episode_text).group(1) if re.search(r'(\d+)\.', episode_text) else ''
-            episodes.append({
-                'season': season_id,
-                'episode': episode_num,
-                'link': full_episode_link
-            })
-            print(f"Found episode: Season {season_id}, Episode {episode_num} ({full_episode_link})")
-        
-        print(f"Total episodes found for this series: {len(episodes)}")
-        return episodes
-    except Exception as e:
-        print(f"Error fetching episodes for {series_link}: {e}")
+    response = requests.get(series_link)
+    if response.status_code != 200:
+        print(f"Failed to fetch {series_link}")
         return []
+    
+    soup = BeautifulSoup(response.text, 'html.parser')
+    episodes = []
+    
+    # Find the select with options for episodes
+    select_tag = soup.find('select', id='episode-selector')  # Assuming it has this ID, adjust if needed
+    if not select_tag:
+        # Fallback: search for all <option> with data-href containing 'tum_bolumler'
+        options = soup.find_all('option', attrs={'data-href': re.compile(r'/dizi/tum_bolumler/')})
+    else:
+        options = select_tag.find_all('option')
+    
+    for option in options:
+        data_href = option.get('data-href', '').strip()
+        if not data_href:
+            continue
+        # Extract season and episode from text or data-href
+        episode_text = option.text.strip()  # e.g., "10. Bölüm"
+        season_id = option.get('data-season-id', '').strip()
+        
+        # Parse episode number
+        match = re.search(r'(\d+)\. Bölüm', episode_text)
+        episode_num = match.group(1) if match else 'Unknown'
+        
+        # Full episode link
+        full_episode_link = "https://www.showtv.com.tr" + data_href if not data_href.startswith('http') else data_href
+        
+        # Infer season from data-season-id or data-href
+        href_match = re.search(r'sezon-(\d+)', data_href)
+        season = href_match.group(1) if href_match else season_id
+        
+        episodes.append({
+            'season': season,
+            'episode': episode_num,
+            'link': full_episode_link
+        })
+    
+    return episodes
 
 # Function to get m3u8 from episode page
 def get_m3u8(episode_link):
-    print(f"Fetching m3u8 for: {episode_link}")
-    try:
-        response = requests.get(episode_link, headers=headers, timeout=10)
-        response.raise_for_status()
-        text = response.text
-        
-        # Try multiple regex patterns to find m3u8
-        m3u8_matches = re.findall(r'https?://[^\s\'"]+\.m3u8', text)
-        if not m3u8_matches:
-            # Try searching for escaped URLs
-            m3u8_matches = re.findall(r'https?\\:\\/\\/[^\s\'"]+\\.m3u8', text)
-        
-        if m3u8_matches:
-            m3u8_url = m3u8_matches[0].replace('\\', '')
-            print(f"Found m3u8: {m3u8_url}")
-            return m3u8_url
-        
-        print("No m3u8 found for this episode. Page content sample:")
-        print(text[:500])  # Log first 500 chars for debugging
+    response = requests.get(episode_link)
+    if response.status_code != 200:
+        print(f"Failed to fetch {episode_link}")
         return None
-    except Exception as e:
-        print(f"Error fetching m3u8 for {episode_link}: {e}")
-        return None
+    
+    # Search for the pattern in the page source
+    match = re.search(r'https:\/\/vmcdn\.ciner\.com\.tr\/ht\/.*?\/(.*?\.m3u8)', response.text)
+    if match:
+        m3u8_url = "https://vmcdn.ciner.com.tr/ht/" + match.group(0).split('/ht/')[-1]  # Reconstruct clean URL
+        return m3u8_url.replace('\\', '')  # Remove escapes
+    return None
 
 # Main function to generate M3U
 def generate_m3u():
-    print("Starting M3U generation...")
-    series = get_series()
+    series_list = get_series_list()
     m3u_content = "#EXTM3U\n"
     
-    for ser in series:
-        print(f"\nProcessing series: {ser['name']}")
-        episodes = get_episodes(ser['link'])
+    for series in series_list:
+        print(f"Processing series: {series['name']}")
+        episodes = get_episodes(series['link'])
+        
         for ep in episodes:
-            time.sleep(1)  # Add delay to avoid rate-limiting
             m3u8 = get_m3u8(ep['link'])
-            if m3u8:
-                title = f"TR: {ser['name']} {ep['season']}. Sezon {ep['episode']}. Bölüm"
-                m3u_content += f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="{title}" tvg-logo="{ser["logo"]}" group-title="SHOWTV DIZILER",{title}\n'
-                m3u_content += f"{m3u8}\n"
-                print(f"Added to M3U: {title}")
+            if not m3u8:
+                continue
+            
+            title = f"TR: {series['name']} {ep['season']}. Sezon {ep['episode']}. Bölüm"
+            m3u_content += f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="{title}" tvg-logo="{series["logo"]}" group-title="SHOWTV DIZILER",{title}\n'
+            m3u_content += f"{m3u8}\n"
     
+    # Write to file
     with open('showtv_diziler.m3u', 'w', encoding='utf-8') as f:
         f.write(m3u_content)
     
-    print("\nM3U file generated: showtv_diziler.m3u")
+    print("M3U file generated: showtv_diziler.m3u")
 
 # Run the script
 if __name__ == "__main__":
