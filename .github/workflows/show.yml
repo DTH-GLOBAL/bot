@@ -21,12 +21,12 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run scraper
-        run: python scraper.py
+        run: python show.py   # <- burada show.py çalışıyor
 
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add showtv.m3u
-          git commit -m "Update playlist"
+          git commit -m "Update playlist" || echo "No changes to commit"
           git push
