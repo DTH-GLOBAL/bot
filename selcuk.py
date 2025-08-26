@@ -1,93 +1,58 @@
 import requests
+from bs4 import BeautifulSoup
 import re
 
-# Sabit başlangıç URL (artık sadece burayı açıyoruz)
-START_URL = "https://www.selcuksportshd78.is"
+BASE_URL = "https://www.showtv.com.tr"
 
-def get_active_site(start_url):
-    try:
-        source = requests.get(start_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10).text
-    except:
-        return None
-    # meta refresh ile yönlendirilen URL'yi bul
-    match = re.search(r'<meta http-equiv="refresh" content="[^"]*url=([^"]+)"', source, re.IGNORECASE)
-    if match:
-        active_site = match.group(1)
-        print(f"✅ Aktif domain bulundu: {active_site}")
-        return active_site
-    return None
+def get_soup(url):
+    r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+    r.raise_for_status()
+    return BeautifulSoup(r.text, "html.parser")
 
-def get_base_url(active_site):
-    try:
-        source = requests.get(active_site, headers={"User-Agent": "Mozilla/5.0"}, timeout=10).text
-    except:
-        return None
-    match = re.search(r'https:\/\/[^"]+\/index\.php\?id=selcukbeinsports1', source)
-    if not match:
-        return None
-    return match.group(0).replace("selcukbeinsports1", "")
+def scrape():
+    m3u_lines = ["#EXTM3U"]
 
-def fetch_stream_url(url, channel_id):
-    try:
-        source = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10).text
-    except:
-        return None
+    # 1. Ana diziler sayfasını al
+    soup = get_soup(f"{BASE_URL}/diziler")
 
-    # Tam m3u8 linkini ara
-    match = re.search(r'(https:\/\/[^\'"]+\/live\/[^\'"]+\/playlist\.m3u8)', source)
-    if match:
-        return match.group(1)
+    for a in soup.select("a[title]"):
+        title = a.get("title")
+        href = a.get("href")
+        img_tag = a.find("img")
 
-    # Alternatif yöntem
-    base_match = re.search(r'(https:\/\/[^\'"]+\/live\/)', source)
-    if base_match:
-        return f"{base_match.group(1)}{channel_id}/playlist.m3u8"
-
-    return None
-
-def build_m3u(base_url, channels):
-    m3u_content = "#EXTM3U\n"
-    for cid in channels:
-        url = base_url + cid
-        stream_url = fetch_stream_url(url, cid)
-        if not stream_url:
+        if not href or not img_tag:
+            continue
+        if "/dizi/tanitim/" not in href:
             continue
 
-        # Gereksiz ekleri temizle
-        stream_url = re.sub(r"[\'\";].*$", "", stream_url).strip()
+        dizi_url = href if href.startswith("http") else BASE_URL + href
+        logo_url = img_tag.get("src").split("(")[0].replace("[","").replace("]","")
+        print(f"[+] Dizi bulundu: {title} -> {dizi_url}")
 
-        channel_name = cid.replace("selcuk", "TR:").upper()
-        m3u_content += (
-            f'#EXTINF:-1 tvg-id="" tvg-name="{channel_name} HD" '
-            f'tvg-logo="https://i.hizliresim.com/b6xqz10.jpg" '
-            f'group-title="SPOR KANALLARI",{channel_name} HD\n'
-        )
-        m3u_content += f"{stream_url}\n"
-    return m3u_content
+        # 2. Dizi tanıtım sayfasına gir
+        dizi_soup = get_soup(dizi_url)
+
+        for option in dizi_soup.select("option[data-href]"):
+            bolum_href = option.get("data-href")
+            bolum_name = option.text.strip()
+
+            if not bolum_href:
+                continue
+
+            bolum_url = BASE_URL + bolum_href
+            print(f"    [-] Bölüm: {bolum_name} -> {bolum_url}")
+
+            # 3. Bölüm sayfasına girip m3u8 çek
+            bolum_soup = get_soup(bolum_url)
+            matches = re.findall(r'https:\\/\\/vmcdn\.ciner\.com\.tr[^"]+\.m3u8', str(bolum_soup))
+
+            for raw in matches:
+                m3u8_url = raw.replace("\\/", "/")
+                line = f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {title} {bolum_name}" tvg-logo="{logo_url}" group-title="SHOWTV DIZILER",TR: {title} {bolum_name}\n{m3u8_url}'
+                m3u_lines.append(line)
+
+    with open("showtv.m3u", "w", encoding="utf-8") as f:
+        f.write("\n".join(m3u_lines))
 
 if __name__ == "__main__":
-    channels = [
-        "selcukbeinsports1", "selcukbeinsports2", "selcukbeinsports3",
-        "selcukbeinsports4", "selcukbeinsports5", "selcukbeinsportsmax1",
-        "selcukbeinsportsmax2", "selcukssport", "selcukssport2",
-        "selcuksmartspor", "selcuksmartspor2", "selcuktivibuspor1",
-        "selcuktivibuspor2", "selcuktivibuspor3", "selcuktivibuspor4"
-    ]
-
-    active_site = get_active_site(START_URL)
-    if not active_site:
-        print("❌ Aktif site bulunamadı!")
-        exit()
-
-    base_url = get_base_url(active_site)
-    if not base_url:
-        print("❌ base_url bulunamadı!")
-        exit()
-
-    m3u_content = build_m3u(base_url, channels)
-
-    # Çıktıyı selcuk.m3u olarak kaydediyoruz
-    with open("selcuk.m3u", "w", encoding="utf-8") as f:
-        f.write(m3u_content)
-
-    print("✅ M3U dosyası oluşturuldu: selcuk.m3u")
+    scrape()
