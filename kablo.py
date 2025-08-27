@@ -1,38 +1,37 @@
 import requests
-import json
 import gzip
 from io import BytesIO
 
 def get_canli_tv_m3u():
-    """"""
+    """
+    Canlı TV m3u dosyasını oluşturur.
+    HEADERS kısmı VOD tarzı token, Referer ve Origin içerir.
+    """
     
     url = "https://core-api.kablowebtv.com/api/channels"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    HEADERS = {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbnYiOiJMSVZFIiwiaXBiIjoiMCIsImNnZCI6IjA5M2Q3MjBhLTUwMmMtNDFlZC1hODBmLTJiODE2OTg0ZmI5NSIsImNzaCI6IlRSS1NUIiwiZGN0IjoiM0VGNzUiLCJkaSI6IjMwYTM5YzllLWE4ZDYtNGEwMC05NDBmLTFjMTE4NDgzZDcxMiIsInNnZCI6ImJkNmUyNmY5LWJkMzYtNDE2ZC05YWQzLTYzNjhlNGZkYTMyMiIsInNwZ2QiOiJjYjZmZGMwMi1iOGJlLTQ3MTYtYTZjYi1iZTEyYTg4YjdmMDkiLCJpY2giOiIwIiwiaWRtIjoiMCIsImlhIjoiOjpmZmZmOjEwLjAuMC4yMDYiLCJhcHYiOiIxLjAuMCIsImFibiI6IjEwMDAiLCJuYmYiOjE3NTE3MDMxODQsImV4cCI6MTc1MTcwMzI0NCwiaWF0IjoxNzUxNzAzMTg0fQ.SGC_FfT7cU1RVM4E5rMYO2IsA4aYUoYq2SXl51-PZwM",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
         "Referer": "https://tvheryerde.com",
-        "Origin": "https://tvheryerde.com",
-        "Cache-Control": "max-age=0",
-        "Connection": "keep-alive",
-        "Accept-Encoding": "gzip",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbnYiOiJMSVZFIiwiaXBiIjoiMCIsImNnZCI6IjA5M2Q3MjBhLTUwMmMtNDFlZC1hODBmLTJiODE2OTg0ZmI5NSIsImNzaCI6IlRSS1NUIiwiZGN0IjoiM0VGNzUiLCJkaSI6IjMwYTM5YzllLWE4ZDYtNGEwMC05NDBmLTFjMTE4NDgzZDcxMiIsInNnZCI6ImJkNmUyNmY5LWJkMzYtNDE2ZC05YWQzLTYzNjhlNGZkYTMyMiIsInNwZ2QiOiJjYjZmZGMwMi1iOGJlLTQ3MTYtYTZjYi1iZTEyYTg4YjdmMDkiLCJpY2giOiIwIiwiaWRtIjoiMCIsImlhIjoiOjpmZmZmOjEwLjAuMC4yMDYiLCJhcHYiOiIxLjAuMCIsImFibiI6IjEwMDAiLCJuYmYiOjE3NTE3MDMxODQsImV4cCI6MTc1MTcwMzI0NCwiaWF0IjoxNzUxNzAzMTg0fQ.SGC_FfT7cU1RVM4E5rMYO2IsA4aYUoYq2SXl51-PZwM"  # Güvenlik için normalde token burada gösterilmemeli
+        "Origin": "https://tvheryerde.com"
     }
     
     try:
-        print("📡 CanliTV API'den veri alınıyor...")
-        
-        response = requests.get(url, headers=headers, timeout=30)
+        print("📡 Canlı TV API'den veri alınıyor...")
+        response = requests.get(url, headers=HEADERS, timeout=30)
         response.raise_for_status()
         
+        # Eğer gzip ile gelirse aç
         try:
             with gzip.GzipFile(fileobj=BytesIO(response.content)) as gz:
                 content = gz.read().decode('utf-8')
         except:
             content = response.content.decode('utf-8')
         
-        data = json.loads(content)
+        data = response.json() if not 'content' in locals() else json.loads(content)
         
         if not data.get('IsSucceeded') or not data.get('Data', {}).get('AllChannels'):
-            print("❌ CanliTV API'den geçerli veri alınamadı!")
+            print("❌ Canlı TV API'den geçerli veri alınamadı!")
             return False
         
         channels = data['Data']['AllChannels']
@@ -76,4 +75,3 @@ def get_canli_tv_m3u():
 
 if __name__ == "__main__":
     get_canli_tv_m3u()
-          
