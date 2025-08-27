@@ -32,7 +32,7 @@ jobs:
           pip install -U setuptools wheel Kekik httpx parsel requests
 
       - name: API'den M3U Listesini Al
-        run: python kablo.py  
+        run: python kablto.py  
 
       - name: Değişiklik Kontrolü
         id: degisiklik_kontrol
