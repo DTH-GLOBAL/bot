@@ -1,3 +1,4 @@
+import sys
 import requests
 from tqdm import tqdm
 from bs4 import BeautifulSoup
@@ -120,7 +121,7 @@ def main(start=0, end=0):
                 stream_url = parse_bolum_page(ep["url"])
                 ep["stream_url"] = stream_url
                 if stream_url:
-                    # Full name: dizi adı + sezon ve bölüm numarası
+                    # Full name: dizi adı + sezon ve bölüm numarası (gereksiz boşluk kaldırıldı)
                     ep["full_name"] = f'{serie["name"]} {ep["name"].replace(" ", "")}'
                     temp_serie["episodes"].append(ep)
             if temp_serie["episodes"]:
