@@ -4,9 +4,12 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import json
 import yaml
+import os
 
 main_url = "https://puhutv.com/"
 diziler_url = "https://puhutv.com/dizi"
+m3u_file = "puhutv.m3u"
+yml_file = "puhutv.yml"
 
 def get_series_details(series_id):
     url = f"https://appservice.puhutv.com/service/serie/getSerieInformations?id={series_id}"
@@ -20,7 +23,6 @@ def get_stream_urls(season_slug):
     url = urljoin(main_url, season_slug)
     r = requests.get(url)
     if r.status_code != 200:
-        print(f"Error: {r.status_code}, URL: {url}")
         return []
 
     soup = BeautifulSoup(r.content, "html.parser")
@@ -33,7 +35,7 @@ def get_stream_urls(season_slug):
     for ep in content["episodes"]:
         episodes.append({
             "id": ep["id"],
-            "name": ep["name"],
+            "name": ep["name"],  # bölüm adı
             "img": ep["image"],
             "url": urljoin(main_url, ep["slug"]),
             "stream_url": f"https://dygvideo.dygdigital.com/api/redirect?PublisherId=29&ReferenceId={ep['video_id']}&SecretKey=NtvApiSecret2014*&.m3u8"
@@ -43,7 +45,6 @@ def get_stream_urls(season_slug):
 def get_all_content():
     r = requests.get(diziler_url)
     if r.status_code != 200:
-        print(f"Error: {r.status_code}")
         return []
 
     soup = BeautifulSoup(r.content, "html.parser")
@@ -80,26 +81,31 @@ def get_all_content():
             season_name = season["name"]
             episodes = get_stream_urls(season_slug)
             for ep in episodes:
-                ep["name"] = f"{season_name} - {ep['name']}"
+                # Burada dizinin adı + sezon + bölüm birleştirildi
+                ep["full_name"] = f"{series_name} {season_name} - {ep['name']}"
                 temp_series["episodes"].append(ep)
 
         all_series.append(temp_series)
 
     return all_series
 
-def create_m3u_file(data, filename="puhutv.m3u"):
-    with open(filename, "w", encoding="utf-8") as f:
+def create_m3u_file(data):
+    with open(m3u_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for series in data:
             for ep in series["episodes"]:
-                line = f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {ep["name"]}" tvg-logo="{ep["img"]}" group-title="PUHUTV DİZİLER",TR: {ep["name"]}\n{ep["stream_url"]}\n'
+                line = f'#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: {ep["full_name"]}" tvg-logo="{ep["img"]}" group-title="PUHUTV DİZİLER",TR: {ep["full_name"]}\n{ep["stream_url"]}\n'
                 f.write(line)
-    print(f"{filename} başarıyla oluşturuldu!")
+    print(f"{m3u_file} başarıyla güncellendi!")
 
-def create_yaml_file(data, filename="puhutv.yml"):
-    with open(filename, "w", encoding="utf-8") as f:
+def create_yaml_file(data):
+    if os.path.exists(yml_file):
+        # Eğer yml zaten varsa dokunma
+        print(f"{yml_file} zaten mevcut, oluşturulmadı.")
+        return
+    with open(yml_file, "w", encoding="utf-8") as f:
         yaml.dump(data, f, allow_unicode=True)
-    print(f"{filename} başarıyla oluşturuldu!")
+    print(f"{yml_file} başarıyla oluşturuldu!")
 
 def main():
     data = get_all_content()
