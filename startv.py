@@ -27,9 +27,8 @@ def get_items_page(url):
         if href and href not in seen:
             seen.add(href)
             item_url = base_url + href
-            # Dizi adı: linkten slug al
             slug = href.split("/")[-1]
-            name = slug.replace("-", "").strip()
+            name = slug.replace("-", "").strip()  # boşlukları temizle
             item_list.append({
                 "name": name,
                 "img": "",  # Daha sonra API’den ekle
@@ -60,8 +59,9 @@ def get_item_api(path):
             data = r.json()
             items = data.get("items", [])
             for item in items:
-                name = item["heading"] + " - " + item["title"]
-                name = name.replace(" ", "")  # boşlukları temizle
+                # '-' yerine boşluk koy
+                name = f'{item["heading"]} {item["title"]}'
+                name = name.replace("-", " ").replace("  ", " ").strip()
                 img = img_base_url + item["image"]["fullPath"] if item.get("image") else ""
                 stream_url = ""
                 if "video" in item:
