@@ -82,7 +82,10 @@ def get_all_content():
             episodes = get_stream_urls(season_slug)
             for ep in episodes:
                 # Burada dizinin adı + sezon + bölüm birleştirildi
-                ep["full_name"] = f"{series_name} {season_name} - {ep['name']}"
+                temp_name = f"{season_name} - {ep['name']}"
+                # Boşlukları kaldırıyoruz: "1. Sezon - 1. Bölüm" -> "1.Sezon 1.Bölüm"
+                temp_name = temp_name.replace(". ", ".").replace(" - ", " ")
+                ep["full_name"] = f"{series_name} {temp_name}"
                 temp_series["episodes"].append(ep)
 
         all_series.append(temp_series)
