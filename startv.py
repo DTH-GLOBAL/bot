@@ -3,7 +3,6 @@ from tqdm import tqdm
 from bs4 import BeautifulSoup
 import re
 import time
-import os
 
 base_url = "https://www.startv.com.tr"
 img_base_url = "https://media.startv.com.tr/star-tv"
@@ -17,31 +16,38 @@ api_params = {
 }
 
 def get_items_page(url):
+    """Ana sayfadan tüm dizi linklerini al"""
     item_list = []
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
-    items = soup.find_all("div", {"class": "poster-card"})
-    for item in items:
-        item_name = item.find("div", {"class":"text-left"}).get_text().strip()
-        item_img = item.find("img").get("src")
-        item_url = base_url + item.find("a").get("href")
-        item_list.append({
-            "name": item_name,
-            "img": item_img,
-            "url": item_url
-        })
+    links = soup.find_all("a", href=re.compile(r'^/dizi/'))
+    seen = set()
+    for a in links:
+        href = a.get("href")
+        if href and href not in seen:
+            seen.add(href)
+            item_url = base_url + href
+            # Dizi adı: linkten slug al
+            slug = href.split("/")[-1]
+            name = slug.replace("-", "").strip()
+            item_list.append({
+                "name": name,
+                "img": "",  # Daha sonra API’den ekle
+                "url": item_url
+            })
     return item_list
 
 def get_item_api_url(url):
+    """Dizi sayfasından apiUrl al"""
     api_path = ""
-    url = url + "/bolumler"
-    r = requests.get(url)
+    r = requests.get(url + "/bolumler")
     results = re.findall(pattern, r.text)
     if results:
         api_path = results[0]
     return api_path
 
 def get_item_api(path):
+    """API’den bölümleri çek"""
     item_list = []
     params = api_params.copy()
     flag = True
@@ -86,6 +92,8 @@ def main(start=0, end=0):
         serie = series_list[i]
         print(i+1, serie["name"])
         api_path = get_item_api_url(serie["url"])
+        if not api_path:
+            continue
         episodes = get_item_api(api_path)
         temp_serie = serie.copy()
         temp_serie["episodes"] = episodes
