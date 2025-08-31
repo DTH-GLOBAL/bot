@@ -1,0 +1,32 @@
+name: AndroIPTV
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # her 10 dakikada bir
+  workflow_dispatch:          # manuel çalıştırma için
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo indir
+        uses: actions/checkout@v3
+
+      - name: Python kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Gerekli paketler
+        run: pip install requests
+
+      - name: IPTV M3U oluştur
+        run: python androiptv.py
+
+      - name: Değişiklikleri commit et
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add androiptv.m3u
+          git commit -m "Update androiptv.m3u" || echo "No changes"
+          git push
