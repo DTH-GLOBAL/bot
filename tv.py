@@ -9,7 +9,7 @@ CHANNEL_LIST_URL = f"{BASE_URL}/tv"
 
 SECTIONS_TO_APPEND = {
     "/nba": "NBA",
-    "/mlb": "MLB",
+    "/mlb": "MLB", 
     "/wnba": "WNBA",
     "/nfl": "NFL",
     "/ncaaf": "NCAAF",
@@ -18,6 +18,15 @@ SECTIONS_TO_APPEND = {
     "/ppv": "PPV",
     "/events": "Events"
 }
+
+def extract_channel_name_from_url(url: str):
+    """URL'den kanal ismini çıkar: /hls/MLBNetwork/ -> MLBNetwork"""
+    if "/hls/" in url:
+        parts = url.split("/hls/")
+        if len(parts) > 1:
+            channel_part = parts[1].split("/")[0]
+            return channel_part
+    return None
 
 def extract_real_m3u8(url: str):
     if "ping.gif" in url and "mu=" in url:
@@ -36,93 +45,109 @@ async def scrape_tv_urls():
         browser = await p.firefox.launch(headless=True)
         context = await browser.new_context()
         page = await context.new_page()
-
+        
         print(f"🔄 Loading /tv channel list...")
-        await page.goto(CHANNEL_LIST_URL, timeout=60000)  # 60 seconds)
+        await page.goto(CHANNEL_LIST_URL, timeout=60000)
+        
         links = await page.locator("ol.list-group a").all()
         hrefs = [await link.get_attribute("href") for link in links if await link.get_attribute("href")]
+        
         await page.close()
 
         for href in hrefs:
             full_url = BASE_URL + href
             print(f"🎯 Scraping TV page: {full_url}")
+            
             for quality in ["SD", "HD"]:
                 stream_url = None
                 new_page = await context.new_page()
-
+                
                 async def handle_response(response):
                     nonlocal stream_url
                     real = extract_real_m3u8(response.url)
                     if real and not stream_url:
                         stream_url = real
-
+                
                 new_page.on("response", handle_response)
                 await new_page.goto(full_url)
+                
                 try:
                     await new_page.get_by_text(f"Load {quality} Stream", exact=True).click(timeout=5000)
                 except:
                     pass
+                
                 await asyncio.sleep(4)
                 await new_page.close()
-
+                
                 if stream_url:
-                    print(f"✅ {quality}: {stream_url}")
-                    urls.append(stream_url)
+                    # URL'den kanal ismini çıkar
+                    channel_name = extract_channel_name_from_url(stream_url)
+                    if not channel_name:
+                        channel_name = f"Channel_{len(urls)}"
+                    
+                    print(f"✅ {quality}: {stream_url} -> {channel_name}")
+                    urls.append((stream_url, channel_name))
                 else:
                     print(f"❌ {quality} not found")
-
+        
         await browser.close()
-    return urls
+        return urls
 
 async def scrape_section_urls(context, section_path, group_name):
     urls = []
     page = await context.new_page()
     section_url = BASE_URL + section_path
     print(f"\n📁 Loading section: {section_url}")
+    
     await page.goto(section_url, timeout=60000)
     links = await page.locator("ol.list-group a").all()
+    
     hrefs_and_titles = []
-
     for link in links:
         href = await link.get_attribute("href")
         title_raw = await link.text_content()
         if href and title_raw:
             title = " - ".join(line.strip() for line in title_raw.splitlines() if line.strip())
             hrefs_and_titles.append((href, title))
-
+    
     await page.close()
 
     for href, title in hrefs_and_titles:
         full_url = BASE_URL + href
         print(f"🎯 Scraping {group_name}: {title}")
-
+        
         for quality in ["SD", "HD"]:
             stream_url = None
             new_page = await context.new_page()
-
+            
             async def handle_response(response):
                 nonlocal stream_url
                 real = extract_real_m3u8(response.url)
                 if real and not stream_url:
                     stream_url = real
-
+            
             new_page.on("response", handle_response)
             await new_page.goto(full_url, timeout=60000)
-
+            
             try:
                 await new_page.get_by_text(f"Load {quality} Stream", exact=True).click(timeout=5000)
             except:
                 pass
-
+            
             await asyncio.sleep(4)
             await new_page.close()
-
+            
             if stream_url:
-                print(f"✅ {quality}: {stream_url}")
-                urls.append((stream_url, group_name, title))
+                # URL'den kanal ismini çıkar
+                channel_name = extract_channel_name_from_url(stream_url)
+                if not channel_name:
+                    channel_name = title  # Fallback to original title
+                
+                print(f"✅ {quality}: {stream_url} -> {channel_name}")
+                urls.append((stream_url, group_name, channel_name))
             else:
                 print(f"❌ {quality} not found")
-
+    
     return urls
 
 async def scrape_all_append_sections():
@@ -130,28 +155,41 @@ async def scrape_all_append_sections():
     async with async_playwright() as p:
         browser = await p.firefox.launch(headless=True)
         context = await browser.new_context()
-
+        
         for section_path, group_name in SECTIONS_TO_APPEND.items():
             urls = await scrape_section_urls(context, section_path, group_name)
             all_urls.extend(urls)
-
+        
         await browser.close()
-    return all_urls
+        return all_urls
 
 def replace_urls_in_tv_section(lines, tv_urls):
     result = []
     url_idx = 0
-    for line in lines:
-        if line.strip().startswith("http") and url_idx < len(tv_urls):
-            result.append(tv_urls[url_idx])
-            url_idx += 1
+    
+    i = 0
+    while i < len(lines):
+        if lines[i].startswith("#EXTINF:-1") and i + 1 < len(lines) and lines[i + 1].startswith("http"):
+            # Mevcut EXTINF satırını koru, sadece URL'yi değiştir
+            result.append(lines[i])
+            if url_idx < len(tv_urls):
+                result.append(tv_urls[url_idx][0])  # Sadece URL'yi ekle
+                url_idx += 1
+                i += 2
+            else:
+                # Eğer yeni URL yoksa eski URL'yi koru
+                result.append(lines[i + 1])
+                i += 2
         else:
-            result.append(line)
+            result.append(lines[i])
+            i += 1
+    
     return result
 
 def append_new_streams(lines, new_urls_with_groups):
     lines = [line for line in lines if line.strip() != "#EXTM3U"]
     existing = {}
+    
     i = 0
     while i < len(lines) - 1:
         if lines[i].startswith("#EXTINF:-1"):
@@ -159,22 +197,30 @@ def append_new_streams(lines, new_urls_with_groups):
             title = lines[i].split(",")[-1].strip()
             if 'group-title="' in lines[i]:
                 group = lines[i].split('group-title="')[1].split('"')[0]
-            if group:
-                existing[(group, title)] = i + 1
-        i += 1
-
-    for url, group, title in new_urls_with_groups:
-        key = (group, title)
-        if key in existing:
-            if lines[existing[key]] != url:
-                lines[existing[key]] = url
+            if group and i + 1 < len(lines) and lines[i + 1].startswith("http"):
+                existing[(group, title)] = (i, i + 1)  # EXTINF ve URL index'lerini sakla
+            i += 2
         else:
-            if group == "MLB":
-                lines.append(f'#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="{title}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",{title}')
-            else:
-                lines.append(f'#EXTINF:-1 group-title="{group}",{title}')
-            lines.append(url)
+            i += 1
 
+    for url, group, channel_name in new_urls_with_groups:
+        key = (group, channel_name)
+        
+        if key in existing:
+            # Mevcut kanalı güncelle
+            extinf_idx, url_idx = existing[key]
+            if lines[url_idx] != url:
+                lines[url_idx] = url
+        else:
+            # Yeni kanal ekle
+            if group == "MLB":
+                extinf_line = f'#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="{channel_name}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="{group}",{channel_name}'
+            else:
+                extinf_line = f'#EXTINF:-1 group-title="{group}",{channel_name}'
+            
+            lines.append(extinf_line)
+            lines.append(url)
+    
     lines = [line for line in lines if line.strip()]
     lines.insert(0, "#EXTM3U")
     return lines
@@ -183,27 +229,29 @@ async def main():
     if not Path(M3U8_FILE).exists():
         print(f"❌ File not found: {M3U8_FILE}")
         return
-
+    
     with open(M3U8_FILE, "r", encoding="utf-8") as f:
         lines = f.read().splitlines()
-
+    
     print("🔧 Replacing only /tv stream URLs...")
     tv_new_urls = await scrape_tv_urls()
+    
     if not tv_new_urls:
         print("❌ No TV URLs scraped.")
         return
-
+    
     updated_lines = replace_urls_in_tv_section(lines, tv_new_urls)
-
+    
     print("\n📦 Scraping all other sections (NBA, NFL, Events, etc)...")
     append_new_urls = await scrape_all_append_sections()
+    
     if append_new_urls:
         updated_lines = append_new_streams(updated_lines, append_new_urls)
-
+    
     with open(M3U8_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(updated_lines))
-
-    print(f"\n✅ {M3U8_FILE} updated: Clean top, no dups, proper logo/ID for MLB.")
+    
+    print(f"\n✅ {M3U8_FILE} updated with proper channel names from URLs!")
 
 if __name__ == "__main__":
     asyncio.run(main())
