@@ -1,11 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed SD" group-title="Live",A&E US Eastern Feed SD
-https://tvpass.org/live/AEEast/sd
+https://v16.thetvapp.to/hls/AEEast/tracks-v2a1/mono.m3u8?token=DqITShFvu5vMmsq9UAIbrg&expires=1756933674&user_id=NjguMjIwLjYxLjE3Nw==
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed HD" group-title="Live",A&E US Eastern Feed HD
-https://tvpass.org/live/AEEast/hd
+https://v16.thetvapp.to/hls/AEEast/tracks-v1a1/mono.m3u8?token=6TAWb8Xhyrwg1XUfKGxXhQ&expires=1756933675&user_id=NjguMjIwLjYxLjE3Nw==
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles SD" group-title="Live",ABC (KABC) Los Angeles SD
-https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
+https://v2.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v2a1/mono.m3u8?token=qvHxbk7jgJtXuCUPwbcFFQ&expires=1756933676&user_id=NjguMjIwLjYxLjE3Nw==
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles HD" group-title="Live",ABC (KABC) Los Angeles HD
-https://tvpass.org/live/abc-kabc-los-angeles-ca/hd
+https://v2.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=fhtfuT_WQp5N98qKt90RlA&expires=1756933677&user_id=NjguMjIwLjYxLjE3Nw==
 #EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY SD" group-title="Live",ABC (WABC) New York, NY SD
-https://tvpass.org/live/WABCDT1/sd
+https://v2.thetvapp.to/hls/WABCDT1/tracks-v2a1/mono.m3u8?token=CwTdsNGm8ABX5X9H0GDOvA&expires=1756933678&user_id=NjguMjIwLjYxLjE3Nw==
