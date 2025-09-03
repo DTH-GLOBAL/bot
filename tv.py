@@ -1,11 +1,8 @@
 # tv.py
 import requests
-import re
 
-# Çıktı dosya ismi
 OUTPUT_FILE = "TheTVApp.m3u"
 
-# Kanallar listesi (extinf, url ikilisi)
 CHANNELS = [
     ('#EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed SD" group-title="Live",A&E US Eastern Feed SD',
      'https://tvpass.org/live/AEEast/sd'),
@@ -19,18 +16,11 @@ CHANNELS = [
      'https://tvpass.org/live/WABCDT1/sd'),
 ]
 
-def fetch_token_url(url: str) -> str:
-    """Kanal sayfasını açıp içindeki tokenli gerçek m3u8 linkini bulur"""
+def fetch_final_url(url: str) -> str:
+    """Kanal URL’sini açıp yönlendirilmiş tokenli gerçek linki döndürür"""
     try:
-        resp = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
-        resp.raise_for_status()
-        # Örnek: içerde "https://...m3u8?token=..." tarzı link olur
-        match = re.search(r'https?://[^"\']+\.m3u8[^"\']*', resp.text)
-        if match:
-            return match.group(0)
-        else:
-            print(f"[!] Tokenli link bulunamadı: {url}")
-            return url  # fallback
+        resp = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"}, allow_redirects=True)
+        return resp.url  # yönlendirme sonrası gerçek tokenli link
     except Exception as e:
         print(f"[!] Hata: {url} -> {e}")
         return url  # fallback
@@ -39,7 +29,7 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for extinf, link in CHANNELS:
-            real_link = fetch_token_url(link)
+            real_link = fetch_final_url(link)
             f.write(f"{extinf}\n{real_link}\n")
     print(f"[+] {OUTPUT_FILE} oluşturuldu.")
 
