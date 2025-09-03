@@ -20,10 +20,12 @@ SECTIONS_TO_APPEND = {
 }
 
 def extract_channel_name_from_url(url: str):
-    """URL'den kanal ismini çıkar: /hls/MLBNetwork/ -> MLBNetwork"""
+    """URL'den kanal ismini çıkar: /hls/AEEast/ -> AEEast"""
     if "/hls/" in url:
+        # /hls/ sonrasındaki kısmı al
         parts = url.split("/hls/")
         if len(parts) > 1:
+            # İlk slash'a kadar olan kısmı al (AEEast/tracks-v2a1/mono.m3u8 -> AEEast)
             channel_part = parts[1].split("/")[0]
             return channel_part
     return None
@@ -83,9 +85,10 @@ async def scrape_tv_urls():
                     # URL'den kanal ismini çıkar
                     channel_name = extract_channel_name_from_url(stream_url)
                     if not channel_name:
-                        channel_name = f"Channel_{len(urls)}"
+                        # Eğer kanal ismi çıkarılamazsa, href'den çıkarım yap
+                        channel_name = href.split("/")[-1] if "/" in href else f"Channel_{len(urls)}"
                     
-                    print(f"✅ {quality}: {stream_url} -> {channel_name}")
+                    print(f"✅ {quality}: {channel_name} -> {stream_url}")
                     urls.append((stream_url, channel_name))
                 else:
                     print(f"❌ {quality} not found")
@@ -102,19 +105,13 @@ async def scrape_section_urls(context, section_path, group_name):
     await page.goto(section_url, timeout=60000)
     links = await page.locator("ol.list-group a").all()
     
-    hrefs_and_titles = []
-    for link in links:
-        href = await link.get_attribute("href")
-        title_raw = await link.text_content()
-        if href and title_raw:
-            title = " - ".join(line.strip() for line in title_raw.splitlines() if line.strip())
-            hrefs_and_titles.append((href, title))
+    hrefs = [await link.get_attribute("href") for link in links if await link.get_attribute("href")]
     
     await page.close()
 
-    for href, title in hrefs_and_titles:
+    for href in hrefs:
         full_url = BASE_URL + href
-        print(f"🎯 Scraping {group_name}: {title}")
+        print(f"🎯 Scraping {group_name} page: {full_url}")
         
         for quality in ["SD", "HD"]:
             stream_url = None
@@ -138,12 +135,13 @@ async def scrape_section_urls(context, section_path, group_name):
             await new_page.close()
             
             if stream_url:
-                # URL'den kanal ismini çıkar
+                # URL'den kanal ismini çıkar - BURASI ÖNEMLİ!
                 channel_name = extract_channel_name_from_url(stream_url)
                 if not channel_name:
-                    channel_name = title  # Fallback to original title
+                    # Eğer kanal ismi çıkarılamazsa, href'den çıkarım yap
+                    channel_name = href.split("/")[-1] if "/" in href else f"Channel_{len(urls)}"
                 
-                print(f"✅ {quality}: {stream_url} -> {channel_name}")
+                print(f"✅ {quality}: {channel_name} -> {stream_url}")
                 urls.append((stream_url, group_name, channel_name))
             else:
                 print(f"❌ {quality} not found")
@@ -170,16 +168,33 @@ def replace_urls_in_tv_section(lines, tv_urls):
     i = 0
     while i < len(lines):
         if lines[i].startswith("#EXTINF:-1") and i + 1 < len(lines) and lines[i + 1].startswith("http"):
-            # Mevcut EXTINF satırını koru, sadece URL'yi değiştir
-            result.append(lines[i])
-            if url_idx < len(tv_urls):
-                result.append(tv_urls[url_idx][0])  # Sadece URL'yi ekle
+            # EXTINF satırını koru ama tvg-name'i güncelle
+            extinf_line = lines[i]
+            
+            # Mevcut tvg-name'i bul ve değiştir
+            if 'tvg-name="' in extinf_line and url_idx < len(tv_urls):
+                # Eski tvg-name'i yeni kanal ismiyle değiştir
+                stream_url, channel_name = tv_urls[url_idx]
+                extinf_parts = extinf_line.split('tvg-name="')
+                if len(extinf_parts) > 1:
+                    new_extinf = extinf_parts[0] + f'tvg-name="{channel_name}"' + extinf_parts[1].split('"', 1)[1]
+                else:
+                    # tvg-name yoksa ekle
+                    new_extinf = extinf_line.replace('group-title="', f'tvg-name="{channel_name}" group-title="')
+                
+                result.append(new_extinf)
+                result.append(stream_url)
                 url_idx += 1
-                i += 2
             else:
-                # Eğer yeni URL yoksa eski URL'yi koru
-                result.append(lines[i + 1])
-                i += 2
+                # Sadece URL'yi değiştir
+                if url_idx < len(tv_urls):
+                    result.append(extinf_line)
+                    result.append(tv_urls[url_idx][0])
+                    url_idx += 1
+                else:
+                    result.append(extinf_line)
+                    result.append(lines[i + 1])
+            i += 2
         else:
             result.append(lines[i])
             i += 1
@@ -188,38 +203,39 @@ def replace_urls_in_tv_section(lines, tv_urls):
 
 def append_new_streams(lines, new_urls_with_groups):
     lines = [line for line in lines if line.strip() != "#EXTM3U"]
-    existing = {}
+    existing_channels = set()
     
+    # Mevcut kanalları bul
     i = 0
     while i < len(lines) - 1:
-        if lines[i].startswith("#EXTINF:-1"):
-            group = None
-            title = lines[i].split(",")[-1].strip()
-            if 'group-title="' in lines[i]:
-                group = lines[i].split('group-title="')[1].split('"')[0]
-            if group and i + 1 < len(lines) and lines[i + 1].startswith("http"):
-                existing[(group, title)] = (i, i + 1)  # EXTINF ve URL index'lerini sakla
+        if lines[i].startswith("#EXTINF:-1") and i + 1 < len(lines) and lines[i + 1].startswith("http"):
+            # Kanal ismini bul
+            channel_name = None
+            if 'tvg-name="' in lines[i]:
+                channel_name = lines[i].split('tvg-name="')[1].split('"')[0]
+            elif "," in lines[i]:
+                channel_name = lines[i].split(",")[-1].strip()
+            
+            if channel_name:
+                existing_channels.add(channel_name)
             i += 2
         else:
             i += 1
 
-    for url, group, channel_name in new_urls_with_groups:
-        key = (group, channel_name)
-        
-        if key in existing:
-            # Mevcut kanalı güncelle
-            extinf_idx, url_idx = existing[key]
-            if lines[url_idx] != url:
-                lines[url_idx] = url
-        else:
-            # Yeni kanal ekle
-            if group == "MLB":
-                extinf_line = f'#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="{channel_name}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="{group}",{channel_name}'
+    # Yeni kanalları ekle
+    for stream_url, group_name, channel_name in new_urls_with_groups:
+        if channel_name not in existing_channels:
+            if group_name == "MLB":
+                extinf_line = f'#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="{channel_name}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="{group_name}",{channel_name}'
             else:
-                extinf_line = f'#EXTINF:-1 group-title="{group}",{channel_name}'
+                extinf_line = f'#EXTINF:-1 tvg-name="{channel_name}" group-title="{group_name}",{channel_name}'
             
             lines.append(extinf_line)
-            lines.append(url)
+            lines.append(stream_url)
+            existing_channels.add(channel_name)
+            print(f"➕ Added new channel: {channel_name}")
+        else:
+            print(f"⏩ Channel already exists: {channel_name}")
     
     lines = [line for line in lines if line.strip()]
     lines.insert(0, "#EXTM3U")
