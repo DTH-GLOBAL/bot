@@ -1,31 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-01" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-01
-https://v5.thetvapp.to/hls/mlb-01/tracks-v2a1/mono.m3u8?token=U1IG_VfmEiFHi1r6rSNrkg&expires=1756931312&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-21" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-21
-https://v16.thetvapp.to/hls/mlb-21/tracks-v2a1/mono.m3u8?token=IW-2ZyXDr9BRHfxglLwnVQ&expires=1756931321&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-09" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-09
-https://v1.thetvapp.to/hls/mlb-09/tracks-v2a1/mono.m3u8?token=l4n4wN3xLAwO6M3jTR9pSQ&expires=1756931330&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-02" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-02
-https://v3.thetvapp.to/hls/mlb-02/tracks-v2a1/mono.m3u8?token=4S9AaJLL-bReyiajJO9DtQ&expires=1756931339&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-04" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-04
-https://v14.thetvapp.to/hls/mlb-04/tracks-v2a1/mono.m3u8?token=AqowxNoODlejm7L_4njIwA&expires=1756931349&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-26" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-26
-https://v17.thetvapp.to/hls/mlb-26/tracks-v2a1/mono.m3u8?token=0WVik3N4XJt8UWl6Wqh99A&expires=1756931358&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-22" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-22
-https://v8.thetvapp.to/hls/mlb-22/tracks-v2a1/mono.m3u8?token=zXTD_h8zTbekUq8jb0_jmw&expires=1756931367&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-11" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-11
-https://v16.thetvapp.to/hls/mlb-11/tracks-v2a1/mono.m3u8?token=JY-j7bLIMSPilH44lvQSeA&expires=1756931376&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-23" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-23
-https://v2.thetvapp.to/hls/mlb-23/tracks-v2a1/mono.m3u8?token=IxGbYAz8-Bcor0yIgRLEug&expires=1756931386&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-20" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-20
-https://v12.thetvapp.to/hls/mlb-20/tracks-v2a1/mono.m3u8?token=4JD9pXOKtf08KYBye9XhLA&expires=1756931395&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-05" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-05
-https://v17.thetvapp.to/hls/mlb-05/tracks-v2a1/mono.m3u8?token=G8hpE8KjnEvoXoDCLX8GkA&expires=1756931404&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-16" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-16
-https://v3.thetvapp.to/hls/mlb-16/tracks-v2a1/mono.m3u8?token=tFttRIcjJtAkhKgNmUZTDQ&expires=1756931413&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-08" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-08
-https://v18.thetvapp.to/hls/mlb-08/tracks-v2a1/mono.m3u8?token=GoLQNwbZOFauYHuFOzfQ4A&expires=1756931423&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-06" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-06
-https://v8.thetvapp.to/hls/mlb-06/tracks-v2a1/mono.m3u8?token=-Zd0NZED5G9Y-01CgDu_og&expires=1756931432&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="mlb-25" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",mlb-25
-https://v1.thetvapp.to/hls/mlb-25/tracks-v2a1/mono.m3u8?token=MOSErD14lP0jk8sxW___eA&expires=1756931441&user_id=MnJTS2N0V1d2WHVtUlpDeHJpc0pnUVlQTkVYdHJad0ZCV3pTWlRDag==
+#EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed SD" group-title="Live",A&E US Eastern Feed SD
+https://tvpass.org/live/AEEast/sd
+#EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed HD" group-title="Live",A&E US Eastern Feed HD
+https://tvpass.org/live/AEEast/hd
+#EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles SD" group-title="Live",ABC (KABC) Los Angeles SD
+https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
+#EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles HD" group-title="Live",ABC (KABC) Los Angeles HD
+https://tvpass.org/live/abc-kabc-los-angeles-ca/hd
+#EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY SD" group-title="Live",ABC (WABC) New York, NY SD
+https://tvpass.org/live/WABCDT1/sd
