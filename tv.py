@@ -1,37 +1,43 @@
 # tv.py
 import requests
 
+SOURCE_URL = "https://tvpass.org/playlist/m3u"
 OUTPUT_FILE = "TheTVApp.m3u"
 
-CHANNELS = [
-    ('#EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed SD" group-title="Live",A&E US Eastern Feed SD',
-     'https://tvpass.org/live/AEEast/sd'),
-    ('#EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed HD" group-title="Live",A&E US Eastern Feed HD',
-     'https://tvpass.org/live/AEEast/hd'),
-    ('#EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles SD" group-title="Live",ABC (KABC) Los Angeles SD',
-     'https://tvpass.org/live/abc-kabc-los-angeles-ca/sd'),
-    ('#EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles HD" group-title="Live",ABC (KABC) Los Angeles HD',
-     'https://tvpass.org/live/abc-kabc-los-angeles-ca/hd'),
-    ('#EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY SD" group-title="Live",ABC (WABC) New York, NY SD',
-     'https://tvpass.org/live/WABCDT1/sd'),
-]
-
 def fetch_final_url(url: str) -> str:
-    """Kanal URL’sini açıp yönlendirilmiş tokenli gerçek linki döndürür"""
+    """URL’yi açıp yönlendirilmiş tokenli gerçek linki döndürür"""
     try:
         resp = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"}, allow_redirects=True)
-        return resp.url  # yönlendirme sonrası gerçek tokenli link
+        return resp.url  # yönlendirme sonrası tokenli link
     except Exception as e:
         print(f"[!] Hata: {url} -> {e}")
-        return url  # fallback
+        return url
 
 def main():
+    try:
+        resp = requests.get(SOURCE_URL, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"[!] Playlist alınamadı: {e}")
+        return
+
+    lines = resp.text.strip().splitlines()
+    output_lines = ["#EXTM3U"]
+
+    # M3U dosyasında her #EXTINF’den sonra link var
+    for i in range(len(lines)):
+        line = lines[i].strip()
+        if line.startswith("#EXTINF"):
+            output_lines.append(line)
+            if i + 1 < len(lines):
+                original_link = lines[i + 1].strip()
+                real_link = fetch_final_url(original_link)
+                output_lines.append(real_link)
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        for extinf, link in CHANNELS:
-            real_link = fetch_final_url(link)
-            f.write(f"{extinf}\n{real_link}\n")
-    print(f"[+] {OUTPUT_FILE} oluşturuldu.")
+        f.write("\n".join(output_lines))
+
+    print(f"[+] {OUTPUT_FILE} oluşturuldu. Kanal sayısı: {len(output_lines)//2}")
 
 if __name__ == "__main__":
     main()
