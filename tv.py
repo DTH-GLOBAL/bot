@@ -19,6 +19,8 @@ SECTIONS_TO_APPEND = {
     "/events": "Events"
 }
 
+DEFAULT_LOGO = "https://r2.thesportsdb.com/images/media/channel/logo/5rhmw31628798883.png"
+
 def extract_real_m3u8(url: str):
     if "ping.gif" in url and "mu=" in url:
         parsed = urllib.parse.urlparse(url)
@@ -38,7 +40,7 @@ async def scrape_tv_urls():
         page = await context.new_page()
 
         print(f"🔄 Loading /tv channel list...")
-        await page.goto(CHANNEL_LIST_URL, timeout=60000)  # 60 seconds)
+        await page.goto(CHANNEL_LIST_URL, timeout=60000)
         links = await page.locator("ol.list-group a").all()
         hrefs = [await link.get_attribute("href") for link in links if await link.get_attribute("href")]
         await page.close()
@@ -170,9 +172,9 @@ def append_new_streams(lines, new_urls_with_groups):
                 lines[existing[key]] = url
         else:
             if group == "MLB":
-                lines.append(f'#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="{title}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png" group-title="MLB",{title}')
+                lines.append(f'#EXTINF:-1 tvg-id="MLB.Baseball.{title.replace(" ", ".")}.us" tvg-name="{title}" tvg-logo="{DEFAULT_LOGO}" group-title="MLB",{title}')
             else:
-                lines.append(f'#EXTINF:-1 group-title="{group}",{title}')
+                lines.append(f'#EXTINF:-1 tvg-id="{title.replace(" ", ".")}" tvg-name="{title}" tvg-logo="{DEFAULT_LOGO}" group-title="{group}",{title}')
             lines.append(url)
 
     lines = [line for line in lines if line.strip()]
@@ -203,7 +205,7 @@ async def main():
     with open(M3U8_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(updated_lines))
 
-    print(f"\n✅ {M3U8_FILE} updated: Clean top, no dups, proper logo/ID for MLB.")
+    print(f"\n✅ {M3U8_FILE} updated: All channels have logos and proper IDs.")
 
 if __name__ == "__main__":
     asyncio.run(main())
