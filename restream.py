@@ -2,11 +2,12 @@ import asyncio
 from playwright.async_api import async_playwright
 import re
 
-CHANNEL_ID = "UCehmwSZGPod7JFbHJspmxzQ"
+CHANNEL_ID = "UCehmwSZGPod7JFbHJspmxzQ"  # Canlı yayını çekmek istediğin kanal
 OUTPUT_FILE = "1siriustv.m3u8"
 
 async def get_live_url(channel_id):
     async with async_playwright() as p:
+        # Headless Chromium
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
             user_agent=("Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 "
@@ -14,11 +15,16 @@ async def get_live_url(channel_id):
         )
         page = await context.new_page()
         url = f"https://m.youtube.com/channel/{channel_id}/live"
+
+        # Sayfayı aç ve yüklenmesini bekle
         await page.goto(url, timeout=60000)
+        await page.wait_for_selector("body", timeout=30000)  # Sayfa render bekle
+        await asyncio.sleep(3)  # JS yüklenmesi için ekstra bekleme
 
         content = await page.content()
         await browser.close()
 
+        # hlsManifestUrl arama
         match = re.search(r'"hlsManifestUrl":"(.*?)"', content)
         if match:
             return match.group(1).replace("\\", "")
