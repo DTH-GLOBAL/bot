@@ -1,49 +1,55 @@
-import asyncio
-from playwright.async_api import async_playwright
-import re
+import requests
+import json
 
-CHANNEL_ID = "UCehmwSZGPod7JFbHJspmxzQ"  # Canlı yayını çekmek istediğin kanal
+API_KEY = "YOUR_API_KEY_HERE"
+CHANNEL_ID = "UCehmwSZGPod7JFbHJspmxzQ"
 OUTPUT_FILE = "1siriustv.m3u8"
 
-async def get_live_url(channel_id):
-    async with async_playwright() as p:
-        # Headless Chromium
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent=("Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 "
-                        "(KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.58 Mobile Safari/537.36")
-        )
-        page = await context.new_page()
-        url = f"https://m.youtube.com/channel/{channel_id}/live"
-
-        # Sayfayı aç ve yüklenmesini bekle
-        await page.goto(url, timeout=60000)
-        await page.wait_for_selector("body", timeout=30000)  # Sayfa render bekle
-        await asyncio.sleep(3)  # JS yüklenmesi için ekstra bekleme
-
-        content = await page.content()
-        await browser.close()
-
-        # hlsManifestUrl arama
-        match = re.search(r'"hlsManifestUrl":"(.*?)"', content)
-        if match:
-            return match.group(1).replace("\\", "")
+# Canlı yayın video ID'sini al
+def get_live_video_id(channel_id):
+    url = (
+        f"https://www.googleapis.com/youtube/v3/search"
+        f"?part=snippet&channelId={channel_id}"
+        f"&eventType=live&type=video&key={API_KEY}"
+    )
+    r = requests.get(url).json()
+    items = r.get("items", [])
+    if not items:
         return None
+    return items[0]["id"]["videoId"]
 
-async def main():
-    link = await get_live_url(CHANNEL_ID)
-    if link:
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            f.write("#EXT-X-VERSION:5\n")
-            f.write("#EXT-X-INDEPENDENT-SEGMENTS\n")
-            f.write("#EXT-X-START:TIME-OFFSET=0,PRECISE=YES\n")
-            f.write('#EXT-X-STREAM-INF:BANDWIDTH=7000000,AVERAGE-BANDWIDTH=5000000,'
-                    'RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.640028,mp4a.40.2",AUDIO="audio"\n')
-            f.write(link + "\n")
-        print("M3U8 dosyası oluşturuldu:", link)
-    else:
+# Video ID üzerinden HLS link al
+def get_hls_link(video_id):
+    url = f"https://www.youtube.com/get_video_info?video_id={video_id}&el=detailpage"
+    r = requests.get(url)
+    data = dict(x.split('=') for x in r.text.split('&') if '=' in x)
+    # "player_response" JSON'u al
+    player_response = json.loads(requests.utils.unquote(data["player_response"]))
+    streaming_data = player_response.get("streamingData", {})
+    hls_manifest_url = streaming_data.get("hlsManifestUrl")
+    return hls_manifest_url
+
+def main():
+    video_id = get_live_video_id(CHANNEL_ID)
+    if not video_id:
         print("Canlı yayın bulunamadı.")
+        return
+
+    hls_url = get_hls_link(video_id)
+    if not hls_url:
+        print("HLS manifest linki bulunamadı.")
+        return
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        f.write("#EXT-X-VERSION:5\n")
+        f.write("#EXT-X-INDEPENDENT-SEGMENTS\n")
+        f.write("#EXT-X-START:TIME-OFFSET=0,PRECISE=YES\n")
+        f.write('#EXT-X-STREAM-INF:BANDWIDTH=7000000,AVERAGE-BANDWIDTH=5000000,'
+                'RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.640028,mp4a.40.2",AUDIO="audio"\n')
+        f.write(hls_url + "\n")
+
+    print("M3U8 dosyası oluşturuldu:", hls_url)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
