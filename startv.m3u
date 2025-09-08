@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Çarpıntı 1. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/231arpinti-1-b246l252m.jpg" group-title="STARTV Dizileri",TR: Çarpıntı 1. Bölüm
+https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68ba7a5af938f782d36506c6&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kral Kaybederse 1. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/krala.jpg" group-title="STARTV Dizileri",TR: Kral Kaybederse 1. Bölüm
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_67ab319bbd61ecd520fff6b2&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kral Kaybederse 2. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/1920(19).jpg" group-title="STARTV Dizileri",TR: Kral Kaybederse 2. Bölüm
