@@ -1,11 +1,9 @@
 name: Goals M3U Bot
 
 on:
-  # Manuel tetikleme
-  workflow_dispatch:
-  # Otomatik tetikleme: her 5 dakikada bir
+  workflow_dispatch:  # Manuel tetikleme
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"  # Her 5 dakikada bir
 
 jobs:
   build:
@@ -29,7 +27,7 @@ jobs:
         run: python goals.py
 
       - name: goals.m3u dosyasını kaydet
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: goals-m3u
           path: goals.m3u
