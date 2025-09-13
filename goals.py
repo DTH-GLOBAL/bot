@@ -2,13 +2,13 @@ import requests
 import re
 
 # M3U içeriği
-m3u_content = ""
+m3u_content = "#EXTM3U\n"  # <-- Burası önemli, en üstte olacak
 
 # Trgoals domain kontrol
 base = "https://trgoals"
 domain = ""
 
-for i in range(1393, 2101):
+for i in range(1386, 2101):
     test_domain = f"{base}{i}.xyz"
     try:
         response = requests.head(test_domain, timeout=3)
