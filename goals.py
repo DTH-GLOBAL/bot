@@ -24,7 +24,7 @@ if not domain:
 
 # Kanal ID'leri ve isimleri
 channel_ids = {
-    "yayinzirve":"beIN Sports 1","yayininat":"beIN Sports 1","yayin1":"beIN Sports 1",
+    "yayinzirve":"beIN Sports 1 ☪️","yayininat":"beIN Sports 1 ⭐","yayin1":"beIN Sports 1 ♾️",
     "yayinb2":"beIN Sports 2","yayinb3":"beIN Sports 3","yayinb4":"beIN Sports 4",
     "yayinb5":"beIN Sports 5","yayinbm1":"beIN Sports 1 Max","yayinbm2":"beIN Sports 2 Max",
     "yayinss":"Saran Sports 1","yayinss2":"Saran Sports 2","yayint1":"Tivibu Sports 1",
