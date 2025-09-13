@@ -26,8 +26,12 @@ jobs:
       - name: goals.py çalıştır
         run: python goals.py
 
-      - name: goals.m3u dosyasını kaydet
-        uses: actions/upload-artifact@v4
-        with:
-          name: goals-m3u
-          path: goals.m3u
+      - name: goals.m3u dosyasını repoya push et
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add goals.m3u
+          git commit -m "Update goals.m3u [skip ci]" || echo "No changes to commit"
+          git push origin HEAD:${GITHUB_REF#refs/heads/}
