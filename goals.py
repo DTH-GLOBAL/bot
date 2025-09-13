@@ -44,7 +44,7 @@ for channel_id, channel_name in channel_ids.items():
         match = re.search(r'const baseurl = "(.*?)"', r.text)
         if match:
             baseurl = match.group(1)
-            full_url = f"https://shy-shadow-9c79.titantvapp.workers.dev/?url={baseurl}{channel_id}.m3u8"
+            full_url = f"https://green-snowflake-9c44.aykara463.workers.dev/?url={baseurl}{channel_id}.m3u8"
             m3u_content += f'#EXTINF:-1 tvg-logo="https://i.hizliresim.com/ska5t9e.jpg" group-title="TURKIYE DEATHLESS", {channel_name}\n'
             m3u_content += f'{full_url}\n'
     except:
