@@ -1,7 +1,7 @@
 name: ShowTV Otomatik Güncelleme
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:   # Manuel başlatma
   schedule:
     - cron: '0 3 * * *'  # Her gün 03:00 UTC’de çalışacak
 
@@ -34,11 +34,13 @@ jobs:
         run: |
           git diff --quiet . || echo "changes=true" >> $GITHUB_OUTPUT
 
-      - name: Değişiklikleri Commit Et
+      - name: Değişiklikleri Commit Et ve Gönder
         if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git rebase origin/main
           git add .
-          git commit -m "🔄 ShowTV güncellendi - Otomatik"
-          git push
+          git commit -m "🔄 ShowTV güncellendi - Otomatik" || echo "No changes to commit"
+          git push origin main
