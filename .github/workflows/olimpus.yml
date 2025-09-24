@@ -1,33 +1,25 @@
 name: Pornoanne Scraper
 
 on:
-  workflow_dispatch:  # manuel tetikleme
+  workflow_dispatch:  # Manuel tetikleme
 
 jobs:
-  scrape:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Repo'yu checkout et
+      - name: Repo'yu klonla
         uses: actions/checkout@v3
 
-      - name: Python kur
+      - name: Python kurulumu
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: Gereksinimleri kur
+      - name: Gereksinimleri yükle
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
+          pip install cloudscraper beautifulsoup4
 
-      - name: Scraper çalıştır
-        run: |
-          python olimpus.py
-
-      - name: Commit & push
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add pornoanne.m3u
-          git commit -m "M3U güncellendi [manual run]"
-          git push
+      - name: Scripti çalıştır
+        run: python olimpus.py
