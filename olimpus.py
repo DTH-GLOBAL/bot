@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 
 BASE_URL = "https://pornoanne.com"
-TOTAL_PAGES = 325
+TOTAL_PAGES = 3
 M3U_FILE = "pornoanne.m3u"
 
 scraper = cloudscraper.create_scraper()  # Cloudflare engelini geçer
