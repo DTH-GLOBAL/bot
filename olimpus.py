@@ -2,7 +2,7 @@ import cloudscraper
 from bs4 import BeautifulSoup
 
 # Video sayfası URL'si
-url = "https://pornoanne.com/kizil-sacli-kadin-ask-acisini-unutmak-icin-amini-parcaliyor/"
+url = "https://pornoanne.com/bdsm-seven-hatuna-acimadi/"
 
 # Cloudflare engelini aşmak için cloudscraper kullan
 scraper = cloudscraper.create_scraper()  # requests benzeri API
