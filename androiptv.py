@@ -1,9 +1,6 @@
 import requests
 import re
 
-# Proxy prefix
-PROXY = "https://api.codetabs.com/v1/proxy/?quest="
-
 # Domain aralığı (25–99)
 active_domain = None
 for i in range(25, 100):
@@ -78,9 +75,9 @@ lines = ["#EXTM3U"]
 for name, cid, logo in channels:
     lines.append(f'#EXTINF:-1 tvg-id="sport.tr" tvg-name="TR:{name}" tvg-logo="{logo}" group-title="DeaTHLesS",TR:{name}')
     full_url = f"{base_url}{cid}.m3u8"
-    lines.append(PROXY + full_url)
+    lines.append(full_url)
 
 with open("androiptv.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(lines))
 
-print("✅ androiptv.m3u proxy ile oluşturuldu.")
+print("✅ androiptv.m3u oluşturuldu.")
