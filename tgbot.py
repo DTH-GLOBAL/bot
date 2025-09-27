@@ -1,5 +1,11 @@
 import re
 import requests
+import os
+from telegram import Bot
+
+# --- Telegram ayarları ---
+BOT_TOKEN = "8048628100:AAEO8pbtTBRpmqZdySfyI7kJP0HM4MAaiAA"
+CHAT_ID = -1002081718412  # senin bulduğun grup ID
 
 # Entry site
 entry_url = "https://www.selcuksportshd78.is/"
@@ -57,8 +63,22 @@ for cid in channels:
 # Ekrana yaz
 print("\n".join(output_lines))
 
-# Dosyaya kaydet (repo için)
+# Dosyaya kaydet
 with open("tgbot.txt", "w", encoding="utf-8") as f:
     f.write("\n".join(output_lines))
 
 print("\ntgbot.txt güncellendi ✅")
+
+# --- Telegram gönderimi ---
+bot = Bot(token=BOT_TOKEN)
+content = "\n".join(output_lines)
+
+# Telegram karakter sınırı (4096)
+if len(content) > 4000:
+    content = content[:4000] + "\n... (kesildi)"
+
+try:
+    bot.send_message(chat_id=CHAT_ID, text=content)
+    print("Telegram grubuna gönderildi ✅")
+except Exception as e:
+    print("Telegram gönderim hatası:", e)
