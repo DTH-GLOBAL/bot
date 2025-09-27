@@ -44,14 +44,21 @@ channels = [
     "sssplus1", "sssplus2", "selcukobs1"
 ]
 
-# TXT dosyasına yaz
-with open("links.txt", "w", encoding="utf-8") as f:
-    f.write("Kanal Player Linkleri:\n")
-    f.write("---------------------\n\n")
-    for cid in channels:
-        player_url = base_url + cid
-        channel_name = "TR:" + cid.replace("selcuk", "").upper()
-        line = f"{channel_name} HD: {player_url}\n\n"
-        f.write(line)
+output_lines = []
+output_lines.append("Kanal Player Linkleri:")
+output_lines.append("---------------------\n")
 
-print("links.txt güncellendi.")
+for cid in channels:
+    player_url = base_url + cid
+    channel_name = "TR:" + cid.replace("selcuk", "").upper()
+    line = f"{channel_name} HD: {player_url}\n"
+    output_lines.append(line)
+
+# Ekrana yaz
+print("\n".join(output_lines))
+
+# Dosyaya kaydet (repo için)
+with open("tgbot.txt", "w", encoding="utf-8") as f:
+    f.write("\n".join(output_lines))
+
+print("\ntgbot.txt güncellendi ✅")
