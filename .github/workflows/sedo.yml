@@ -26,7 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
-    # sadom.py script'ini çalıştır
+    # sedo.py script'ini çalıştır
     - name: Run sedo.py
       run: python sedo.py
 
@@ -36,7 +36,7 @@ jobs:
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
         git add sedo.html
-        git commit -m "Update sadom.html with latest streams" || echo "No changes to commit"
+        git commit -m "Update sedo.html with latest streams" || echo "No changes to commit"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
