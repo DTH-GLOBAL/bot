@@ -78,7 +78,7 @@ def fetch_streams(base_url):
             continue
     return result
 
-def generate_html(streams, filename="sadom.html"):
+def generate_html(streams, filename="sedo.html"):
     print(f"\nHTML dosyası yazılıyor: {filename}")
     
     html_template = """<!DOCTYPE html>
