@@ -1,725 +1,725 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed SD" group-title="Live",A&E US Eastern Feed SD
-https://e5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=RK6ZePOOnh-Da2X5_aO1XQ&expires=1759398844&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/AEEast/tracks-v2a1/mono.m3u8?token=cK72RgUfPcFmjaWkQNgYdg&expires=1759399880&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed HD" group-title="Live",A&E US Eastern Feed HD
-https://e5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=RK6ZePOOnh-Da2X5_aO1XQ&expires=1759398844&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/AEEast/tracks-v1a1/mono.m3u8?token=ZPLMVUjTMACz3JS716lueQ&expires=1759399881&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles SD" group-title="Live",ABC (KABC) Los Angeles SD
-https://e5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=kO5g-nDMPPr2wQ_DwuwxkA&expires=1759398845&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v2a1/mono.m3u8?token=SyZYITmYshKj-xwSLJKI5A&expires=1759399881&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles HD" group-title="Live",ABC (KABC) Los Angeles HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=oR6dj9QJs7r9JyiGrTYL0Q&expires=1759398846&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=dtQjP8jgJGKBUiBP7aDrVg&expires=1759399882&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY SD" group-title="Live",ABC (WABC) New York, NY SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=1lSo80Ay7oLdM8SToCryEQ&expires=1759398847&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/WABCDT1/tracks-v2a1/mono.m3u8?token=HL5t5WgoHq6maXC3hBe3Ug&expires=1759399883&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY HD" group-title="Live",ABC (WABC) New York, NY HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_N5-eUTp-1DvPJdEY9_VKA&expires=1759398848&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/WABCDT1/tracks-v1a1/mono.m3u8?token=YU7ibs_loKKIr-qBr8u2_g&expires=1759399884&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="acc-network" tvg-name="ACC Network SD" group-title="Live",ACC Network SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-3sm4FN13CfE1z-8kzR9Mg&expires=1759398849&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/ACCNetwork/tracks-v2a1/mono.m3u8?token=kZeey8IWYUvDi4dMA24I1w&expires=1759399885&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="acc-network" tvg-name="ACC Network HD" group-title="Live",ACC Network HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-wd1RPYdpAmFr6OLF4B4GA&expires=1759398850&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/ACCNetwork/tracks-v1a1/mono.m3u8?token=gUJyDFJ0Wky4BD86_BcP5w&expires=1759399886&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver SD" group-title="Live",Altitude Sports Denver SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-wd1RPYdpAmFr6OLF4B4GA&expires=1759398850&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/altitude-sports-denver/tracks-v2a1/mono.m3u8?token=6mgCj7dUpur7jhI9C2YPZw&expires=1759399886&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver HD" group-title="Live",Altitude Sports Denver HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=dJj_ep-iyiqKMS5LtrteGg&expires=1759398851&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/altitude-sports-denver/tracks-v1a1/mono.m3u8?token=1C1ACAMmBhdvssMiGR03KQ&expires=1759399887&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="amc-eastern-feed" tvg-name="AMC Eastern Feed SD" group-title="Live",AMC Eastern Feed SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2Addt2RyR2XxQP5b6nkOsA&expires=1759398852&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/AMCEast/tracks-v2a1/mono.m3u8?token=3D2RsX4PzqTIYVPyrZboow&expires=1759399888&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="amc-eastern-feed" tvg-name="AMC Eastern Feed HD" group-title="Live",AMC Eastern Feed HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2Addt2RyR2XxQP5b6nkOsA&expires=1759398852&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/AMCEast/tracks-v1a1/mono.m3u8?token=5tkp54ySiydN-Z02G7sEGg&expires=1759399889&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="american-heroes-channel" tvg-name="American Heroes Channel SD" group-title="Live",American Heroes Channel SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=XGAMWvNzV9J2upUDtpp7gg&expires=1759398853&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/AmericanHeroesChannel/tracks-v2a1/mono.m3u8?token=Ma9VzOFMHdJMLeQtoCujFw&expires=1759399890&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="american-heroes-channel" tvg-name="American Heroes Channel HD" group-title="Live",American Heroes Channel HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=XGAMWvNzV9J2upUDtpp7gg&expires=1759398853&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/AmericanHeroesChannel/tracks-v1a1/mono.m3u8?token=vlMnzmhr47kQBH9Wrbxm2w&expires=1759399890&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="animal-planet-us-east" tvg-name="Animal Planet US East SD" group-title="Live",Animal Planet US East SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=IPXy9Fvv90vhOENP5_PsJw&expires=1759398854&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/AnimalPlanetEast/tracks-v2a1/mono.m3u8?token=OsSYXCFE5wkmEOwMf3vRaA&expires=1759399891&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="animal-planet-us-east" tvg-name="Animal Planet US East HD" group-title="Live",Animal Planet US East HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=IPXy9Fvv90vhOENP5_PsJw&expires=1759398854&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/AnimalPlanetEast/tracks-v1a1/mono.m3u8?token=0o_Kosj6mkRIpLLZIMHsZA&expires=1759399892&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bbc-america-east" tvg-name="BBC America East SD" group-title="Live",BBC America East SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=bVRidka1AcQEF38wxTcvSA&expires=1759398855&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/BBCAmericaEast/tracks-v2a1/mono.m3u8?token=BHciItTYFe1aFxFTCVxG8A&expires=1759399893&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bbc-america-east" tvg-name="BBC America East HD" group-title="Live",BBC America East HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=1PnEFOS6bgTbvqk3tGXpRw&expires=1759398856&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/BBCAmericaEast/tracks-v1a1/mono.m3u8?token=PnL4cCG9-MrB3q-D-fjViw&expires=1759399893&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bbc-news-north-america-hd" tvg-name="BBC News North America HD SD" group-title="Live",BBC News North America HD SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=WOyPIXTYNS9C3NCiZkL_sA&expires=1759398857&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/BBCWorldNewsNorthAmerica/tracks-v2a1/mono.m3u8?token=bVK73K_8NEKWMQ9_PZRU9g&expires=1759399894&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bbc-news-north-america-hd" tvg-name="BBC News North America HD HD" group-title="Live",BBC News North America HD HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=WOyPIXTYNS9C3NCiZkL_sA&expires=1759398857&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/BBCWorldNewsNorthAmerica/tracks-v1a1/mono.m3u8?token=V2BrEfclmZNyL05idZX71w&expires=1759399895&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bet-eastern-feed" tvg-name="BET Eastern Feed SD" group-title="Live",BET Eastern Feed SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_BRABdiXA37IYqUcAwo3aA&expires=1759398858&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BETEast/tracks-v2a1/mono.m3u8?token=gasd4C0jmU5vaFrb3Ik1xA&expires=1759399896&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bet-eastern-feed" tvg-name="BET Eastern Feed HD" group-title="Live",BET Eastern Feed HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_BRABdiXA37IYqUcAwo3aA&expires=1759398858&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BETEast/tracks-v1a1/mono.m3u8?token=oXELvSWS4K5kP9SNM4Z80Q&expires=1759399897&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bet-her" tvg-name="BET Her SD" group-title="Live",BET Her SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=XamBhw52aUvsk4PplvBS8w&expires=1759398859&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BETHerEast/tracks-v2a1/mono.m3u8?token=AEPEtJncpxj4O-bEr0iyQg&expires=1759399897&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bet-her" tvg-name="BET Her HD" group-title="Live",BET Her HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=XamBhw52aUvsk4PplvBS8w&expires=1759398859&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BETHerEast/tracks-v1a1/mono.m3u8?token=AQ0DFyWlYi4NheXymVgFrA&expires=1759399898&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="big-ten-network" tvg-name="Big Ten Network SD" group-title="Live",Big Ten Network SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=f6OsNvARaxdhOFj7HicQ6Q&expires=1759398860&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BTN/tracks-v2a1/mono.m3u8?token=T7Yre5Hb2Ugv6Zd2rc2S3A&expires=1759399899&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="big-ten-network" tvg-name="Big Ten Network HD" group-title="Live",Big Ten Network HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=dXj9iJLfc4TOML5GMMa-cA&expires=1759398861&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BTN/tracks-v1a1/mono.m3u8?token=VvboQKGTQ1eeDYwATRlXdg&expires=1759399899&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bloomberg-tv-usa" tvg-name="Bloomberg TV USA SD" group-title="Live",Bloomberg TV USA SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=dXj9iJLfc4TOML5GMMa-cA&expires=1759398861&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BloombergTV/tracks-v2a1/mono.m3u8?token=JLm3qXkUi_yl8EXRxcmIjg&expires=1759399900&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bloomberg-tv-usa" tvg-name="Bloomberg TV USA HD" group-title="Live",Bloomberg TV USA HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=5oPPpz-c6Y0z-I2IjI2B-A&expires=1759398862&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BloombergTV/tracks-v1a1/mono.m3u8?token=G5Ik1VR9GQ35QXJM165ICQ&expires=1759399901&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="boomerang" tvg-name="Boomerang SD" group-title="Live",Boomerang SD
-https://v3.thetvapp.to/hls/Boomerang/tracks-v2a1/mono.m3u8?token=W1pLwj26kKzURwLjFuECDw&expires=1759398867&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/Boomerang/tracks-v2a1/mono.m3u8?token=RUesrP5oPJtahaGdqG4HoA&expires=1759399902&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="boomerang" tvg-name="Boomerang HD" group-title="Live",Boomerang HD
-https://v3.thetvapp.to/hls/Boomerang/tracks-v1a1/mono.m3u8?token=tD41ijB_x1RsGY0BMI5BQg&expires=1759398868&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/Boomerang/tracks-v1a1/mono.m3u8?token=BkVY1i5644HmSrNQozXrOA&expires=1759399902&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bravo-usa-eastern-feed" tvg-name="Bravo USA Eastern Feed SD" group-title="Live",Bravo USA Eastern Feed SD
-https://v3.thetvapp.to/hls/BravoEast/tracks-v2a1/mono.m3u8?token=SJxRbsTDNcg0yENaiFE0dg&expires=1759398868&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BravoEast/tracks-v2a1/mono.m3u8?token=Mo6RUVvovK77dNgK0_XriA&expires=1759399903&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bravo-usa-eastern-feed" tvg-name="Bravo USA Eastern Feed HD" group-title="Live",Bravo USA Eastern Feed HD
-https://v3.thetvapp.to/hls/BravoEast/tracks-v1a1/mono.m3u8?token=Fh-ofA_lsqRTlxTvHXTo0A&expires=1759398869&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/BravoEast/tracks-v1a1/mono.m3u8?token=VIrDrEeY1LmDvBQqhg376Q&expires=1759399904&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cspan" tvg-name="C-SPAN SD" group-title="Live",C-SPAN SD
-https://v3.thetvapp.to/hls/CSPAN/tracks-v2a1/mono.m3u8?token=EC8m_cjtjJAoDyLQ-8XjtQ&expires=1759398869&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/CSPAN/tracks-v2a1/mono.m3u8?token=PzpCnnQgokgZIEyAbW-hSg&expires=1759399905&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cspan" tvg-name="C-SPAN HD" group-title="Live",C-SPAN HD
-https://v3.thetvapp.to/hls/CSPAN/tracks-v1a1/mono.m3u8?token=KI7Ez-5yAqUJxs9I5ZveoQ&expires=1759398870&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/CSPAN/tracks-v1a1/mono.m3u8?token=OwvWAbehKeTnvBqhZmIHww&expires=1759399905&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cspan-2" tvg-name="C-SPAN 2 SD" group-title="Live",C-SPAN 2 SD
-https://v3.thetvapp.to/hls/CSPAN2/tracks-v2a1/mono.m3u8?token=QVKYlC2SvHucbOnmjHlbvw&expires=1759398871&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/CSPAN2/tracks-v2a1/mono.m3u8?token=8AQfmUw2zz58zZMmZfdZUA&expires=1759399906&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cspan-2" tvg-name="C-SPAN 2 HD" group-title="Live",C-SPAN 2 HD
-https://v3.thetvapp.to/hls/CSPAN2/tracks-v1a1/mono.m3u8?token=awRvZNIous__DapfXc9D5Q&expires=1759398871&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/CSPAN2/tracks-v1a1/mono.m3u8?token=L8Wf0_VKiBWjl7Rush8s0Q&expires=1759399907&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cartoon-network-usa-eastern-feed" tvg-name="Cartoon Network USA Eastern Feed SD" group-title="Live",Cartoon Network USA Eastern Feed SD
-https://v3.thetvapp.to/hls/CartoonNetworkEast/tracks-v2a1/mono.m3u8?token=feRjUpAfOlKaDMgYi4Idbw&expires=1759398872&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/CartoonNetworkEast/tracks-v2a1/mono.m3u8?token=OhQ50_OvAztrx0KPibUGBQ&expires=1759399908&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cartoon-network-usa-eastern-feed" tvg-name="Cartoon Network USA Eastern Feed HD" group-title="Live",Cartoon Network USA Eastern Feed HD
-https://v3.thetvapp.to/hls/CartoonNetworkEast/tracks-v1a1/mono.m3u8?token=bHlt3alwn2_BqFP9LnvFqw&expires=1759398873&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/CartoonNetworkEast/tracks-v1a1/mono.m3u8?token=JgHofnPelNHIxwKYOCsD1g&expires=1759399908&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cbs-kcbs-los-angeles-ca" tvg-name="CBS (KCBS) Los Angeles SD" group-title="Live",CBS (KCBS) Los Angeles SD
-https://v3.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v2a1/mono.m3u8?token=cAly2WVrYiW_HAbxKT6rug&expires=1759398873&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v2a1/mono.m3u8?token=g10o2xQBDPfZm94a3YqIog&expires=1759399909&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cbs-kcbs-los-angeles-ca" tvg-name="CBS (KCBS) Los Angeles HD" group-title="Live",CBS (KCBS) Los Angeles HD
-https://v3.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v1a1/mono.m3u8?token=b5yyvtWy1T_Br5298ZvYHg&expires=1759398874&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v1a1/mono.m3u8?token=QMhULbfHhqjo722Jm9uZYQ&expires=1759399910&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cbs-wcbs-new-york-ny" tvg-name="CBS (WCBS) New York, NY SD" group-title="Live",CBS (WCBS) New York, NY SD
-https://v3.thetvapp.to/hls/WCBSDT1/tracks-v2a1/mono.m3u8?token=sFJ2NliV7fYd1NjWPJrX9Q&expires=1759398875&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/WCBSDT1/tracks-v2a1/mono.m3u8?token=ya7qCeTEUEoamj-ulN9E5g&expires=1759399911&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cbs-wcbs-new-york-ny" tvg-name="CBS (WCBS) New York, NY HD" group-title="Live",CBS (WCBS) New York, NY HD
-https://v3.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=RgyRy8HIZt6b0fJ7LQz3uw&expires=1759398875&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=M945geJ6NEYrKzr30shsvw&expires=1759399911&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA SD" group-title="Live",CBS Sports Network USA SD
-https://v3.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v2a1/mono.m3u8?token=kjuejOQGMGPx5O_yRsdASw&expires=1759398876&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v2a1/mono.m3u8?token=mRvks6OMT1s2sn-zTIEN8w&expires=1759399912&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA HD" group-title="Live",CBS Sports Network USA HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=qVxzHyKM_McOadB_p7AEZw&expires=1759398876&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=es2VwwxLsoont9pxOroDHQ&expires=1759399913&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="chicago-sports-network" tvg-name="Chicago Sports Network SD" group-title="Live",Chicago Sports Network SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=kmkcyo7bQ2F8qKUoenIpdQ&expires=1759398877&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/chicago-sports-network/tracks-v2a1/mono.m3u8?token=MpTGSM9mO_3SS2qS_dEnzg&expires=1759399913&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="chicago-sports-network" tvg-name="Chicago Sports Network HD" group-title="Live",Chicago Sports Network HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=kmkcyo7bQ2F8qKUoenIpdQ&expires=1759398877&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/chicago-sports-network/tracks-v1a1/mono.m3u8?token=VN6Q-Wu6dzQpxRg5KNv76w&expires=1759399914&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cinemax-eastern-feed" tvg-name="Cinemax Eastern Feed SD" group-title="Live",Cinemax Eastern Feed SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7KmnxSjUZDICDXh_IiQ_PA&expires=1759398878&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/CinemaxEast/tracks-v2a1/mono.m3u8?token=SPvUSfUuAySD55-KjmhlDQ&expires=1759399915&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cinemax-eastern-feed" tvg-name="Cinemax Eastern Feed HD" group-title="Live",Cinemax Eastern Feed HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EAQiEp8AVUemMjmw7ow62Q&expires=1759398879&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CinemaxEast/tracks-v1a1/mono.m3u8?token=H_fP6V6BzoVLOgw-EJnXhw&expires=1759399916&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cmt-us-eastern-feed" tvg-name="CMT US Eastern Feed SD" group-title="Live",CMT US Eastern Feed SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EAQiEp8AVUemMjmw7ow62Q&expires=1759398879&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CMTEast/tracks-v2a1/mono.m3u8?token=z4k5--BPrAXq0k6kQaVp0A&expires=1759399916&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cmt-us-eastern-feed" tvg-name="CMT US Eastern Feed HD" group-title="Live",CMT US Eastern Feed HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Q_umqBw2qPukLw5d_q0big&expires=1759398880&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CMTEast/tracks-v1a1/mono.m3u8?token=G3Ao-ytpHHKKoClwwbDW1w&expires=1759399917&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cnbc-usa" tvg-name="CNBC USA SD" group-title="Live",CNBC USA SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Q_umqBw2qPukLw5d_q0big&expires=1759398880&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CNBC/tracks-v2a1/mono.m3u8?token=04lG5lNks8ZIHgIxxDifEQ&expires=1759399918&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cnbc-usa" tvg-name="CNBC USA HD" group-title="Live",CNBC USA HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=TYnHItbLTmJIX2mNCmIKCQ&expires=1759398881&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CNBC/tracks-v1a1/mono.m3u8?token=_cVctpI70scjd-LlYuiR7Q&expires=1759399919&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cnn" tvg-name="CNN US SD" group-title="Live",CNN US SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_KyhRJHi8M8oyxT8PVlsYw&expires=1759398882&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CNN/tracks-v2a1/mono.m3u8?token=BKDdvJoCcFixj59fkH_HYg&expires=1759399919&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cnn" tvg-name="CNN US HD" group-title="Live",CNN US HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_KyhRJHi8M8oyxT8PVlsYw&expires=1759398882&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CNN/tracks-v1a1/mono.m3u8?token=PULDLMixpA2JcEbNgFqLuw&expires=1759399920&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="comedy-central-us-eastern-feed" tvg-name="Comedy Central (US) Eastern Feed SD" group-title="Live",Comedy Central (US) Eastern Feed SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=WKNtyQ9UINqBganETwitDA&expires=1759398883&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/ComedyCentralEast/tracks-v2a1/mono.m3u8?token=Xve7rah7uVdrIuoOlDKpQg&expires=1759399921&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="comedy-central-us-eastern-feed" tvg-name="Comedy Central (US) Eastern Feed HD" group-title="Live",Comedy Central (US) Eastern Feed HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=WKNtyQ9UINqBganETwitDA&expires=1759398883&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/ComedyCentralEast/tracks-v1a1/mono.m3u8?token=90F-ELN01XFcdMBhTOQhPw&expires=1759399922&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="crime-investigation-network-usa-hd" tvg-name="Crime & Investigation Network USA HD SD" group-title="Live",Crime & Investigation Network USA HD SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=C6uKqn4hxjgkk5CkO0NTog&expires=1759398884&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CrimePlusInvestigation/tracks-v2a1/mono.m3u8?token=jc_Me0nZgq1fgmpVfQWD6A&expires=1759399922&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="crime-investigation-network-usa-hd" tvg-name="Crime & Investigation Network USA HD HD" group-title="Live",Crime & Investigation Network USA HD HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=hQ2Xo3xFos-AH043IUUvTA&expires=1759398885&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/CrimePlusInvestigation/tracks-v1a1/mono.m3u8?token=IITXsZKH5zEMD86pNWK62g&expires=1759399923&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cw-kfmbtv2-san-diego-ca" tvg-name="CW (KFMB-TV2) San Diego SD" group-title="Live",CW (KFMB-TV2) San Diego SD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=hQ2Xo3xFos-AH043IUUvTA&expires=1759398885&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/cw-kfmbtv2-san-diego-ca/tracks-v2a1/mono.m3u8?token=bHht83QC8zazGSaDjLVdSA&expires=1759399924&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cw-kfmbtv2-san-diego-ca" tvg-name="CW (KFMB-TV2) San Diego HD" group-title="Live",CW (KFMB-TV2) San Diego HD
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Ook4QlY-NE_rBP9COvQO8A&expires=1759398886&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/cw-kfmbtv2-san-diego-ca/tracks-v1a1/mono.m3u8?token=-1TF7oVGFRcRUoq1n76S8A&expires=1759399924&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cw-wdcw-district-of-columbia" tvg-name="CW (WDCW) District of Columbia SD" group-title="Live",CW (WDCW) District of Columbia SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Ook4QlY-NE_rBP9COvQO8A&expires=1759398886&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/cw-wdcw-district-of-columbia/tracks-v2a1/mono.m3u8?token=mvJs5cuEIuXwoXcQblYZUw&expires=1759399925&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="cw-wdcw-district-of-columbia" tvg-name="CW (WDCW) District of Columbia HD" group-title="Live",CW (WDCW) District of Columbia HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=csDUCzpoWhcENma5uVKecQ&expires=1759398887&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/cw-wdcw-district-of-columbia/tracks-v1a1/mono.m3u8?token=p4dmleFZb5u3cqbotzD-Vw&expires=1759399926&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="destination-america" tvg-name="Destination America SD" group-title="Live",Destination America SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=csDUCzpoWhcENma5uVKecQ&expires=1759398887&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/DestinationAmerica/tracks-v2a1/mono.m3u8?token=wK9-zYg4SbeA4oXU6mTUew&expires=1759399927&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="destination-america" tvg-name="Destination America HD" group-title="Live",Destination America HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=uUwnLwbL5Ek4I-Ml00sMbw&expires=1759398888&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/DestinationAmerica/tracks-v1a1/mono.m3u8?token=05kN2MW4Bb54tdyYmu_50A&expires=1759399927&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="discovery-channel-us-eastern-feed" tvg-name="Discovery Channel (US) Eastern Feed SD" group-title="Live",Discovery Channel (US) Eastern Feed SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=uUwnLwbL5Ek4I-Ml00sMbw&expires=1759398888&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/DiscoveryChannelEast/tracks-v2a1/mono.m3u8?token=tsqGqN3Vyt27UEIawBr1Cg&expires=1759399928&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="discovery-channel-us-eastern-feed" tvg-name="Discovery Channel (US) Eastern Feed HD" group-title="Live",Discovery Channel (US) Eastern Feed HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=0tjln_iBREZeFzxr7SoAsg&expires=1759398889&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/DiscoveryChannelEast/tracks-v1a1/mono.m3u8?token=puc4ZE_RzYv5rLIXyfFrbw&expires=1759399929&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="discovery-family-channel" tvg-name="Discovery Family Channel SD" group-title="Live",Discovery Family Channel SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=pH2RcUrg5T4dEzbJWiE7vA&expires=1759398890&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/DiscoveryFamily/tracks-v2a1/mono.m3u8?token=bzDNpETikbaaZTfAxpe66A&expires=1759399929&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="discovery-family-channel" tvg-name="Discovery Family Channel HD" group-title="Live",Discovery Family Channel HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=pH2RcUrg5T4dEzbJWiE7vA&expires=1759398890&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/DiscoveryFamily/tracks-v1a1/mono.m3u8?token=DTjGzCBrjWXgHC0F3RH1yw&expires=1759399930&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="discovery-life-channel" tvg-name="Discovery Life Channel SD" group-title="Live",Discovery Life Channel SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=TyuOtG4HIVZ0Sd3iC9F8ew&expires=1759398891&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DiscoveryLife/tracks-v2a1/mono.m3u8?token=aEZwlzWtiIwKx9skX2wpLw&expires=1759399931&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="discovery-life-channel" tvg-name="Discovery Life Channel HD" group-title="Live",Discovery Life Channel HD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=TyuOtG4HIVZ0Sd3iC9F8ew&expires=1759398891&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DiscoveryLife/tracks-v1a1/mono.m3u8?token=SSjXWbK3QE-DePe1Ts-BVQ&expires=1759399932&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="disney-eastern-feed" tvg-name="Disney Eastern Feed SD" group-title="Live",Disney Eastern Feed SD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=nDIyu8c5eKUdL1PMPYwntg&expires=1759398892&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DisneyChannelEast/tracks-v2a1/mono.m3u8?token=TGri4yRKilfD27CMk_tKdA&expires=1759399932&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="disney-eastern-feed" tvg-name="Disney Eastern Feed HD" group-title="Live",Disney Eastern Feed HD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=QWrceuinfJm79Sh11Y505Q&expires=1759398893&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DisneyChannelEast/tracks-v1a1/mono.m3u8?token=IXy7aMvvTiXBrmSgABOTfg&expires=1759399933&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="disney-junior-usa-east" tvg-name="Disney Junior USA East SD" group-title="Live",Disney Junior USA East SD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=QWrceuinfJm79Sh11Y505Q&expires=1759398893&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DisneyJuniorEast/tracks-v2a1/mono.m3u8?token=qr4Wv4CtX-ZkTQu1kzCw-A&expires=1759399934&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="disney-junior-usa-east" tvg-name="Disney Junior USA East HD" group-title="Live",Disney Junior USA East HD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=omgCH0CTCG9k_q8DduPPcw&expires=1759398894&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DisneyJuniorEast/tracks-v1a1/mono.m3u8?token=M2L5EHMAWve-K41wQEinfg&expires=1759399934&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="disney-xd-usa-eastern-feed" tvg-name="Disney XD USA Eastern Feed SD" group-title="Live",Disney XD USA Eastern Feed SD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=omgCH0CTCG9k_q8DduPPcw&expires=1759398894&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DisneyXDEast/tracks-v2a1/mono.m3u8?token=ZBot5xAYiWebT4C6BbggAw&expires=1759399935&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="disney-xd-usa-eastern-feed" tvg-name="Disney XD USA Eastern Feed HD" group-title="Live",Disney XD USA Eastern Feed HD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-eSV2afdHhOOFMkC6Y8egg&expires=1759398895&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/DisneyXDEast/tracks-v1a1/mono.m3u8?token=I9GJDJc0gtYMDfpsCbJZ2w&expires=1759399936&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="e-entertainment-usa-eastern-feed" tvg-name="E! Entertainment USA Eastern Feed SD" group-title="Live",E! Entertainment USA Eastern Feed SD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-eSV2afdHhOOFMkC6Y8egg&expires=1759398895&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/EEast/tracks-v2a1/mono.m3u8?token=-LgO0d8O8F1AIKytKVd6Fg&expires=1759399936&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="e-entertainment-usa-eastern-feed" tvg-name="E! Entertainment USA Eastern Feed HD" group-title="Live",E! Entertainment USA Eastern Feed HD
-https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=X_Ojo6Hrnccsg8wmmF2_DA&expires=1759398896&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/EEast/tracks-v1a1/mono.m3u8?token=lM7s1iOd7da2yD7AHRmOYQ&expires=1759399937&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn" tvg-name="ESPN SD" group-title="Live",ESPN SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=lsWZKIOjQqt2rUOeGZaOsQ&expires=1759398897&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v2a1/mono.m3u8?token=HQJgvEbfbNd4YV5dAGNsNg&expires=1759399938&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn" tvg-name="ESPN HD" group-title="Live",ESPN HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=lsWZKIOjQqt2rUOeGZaOsQ&expires=1759398897&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=pM1WFsMl1Vq7Db5aYah1xA&expires=1759399939&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn-deportes" tvg-name="ESPN Deportes SD" group-title="Live",ESPN Deportes SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iHSE493378k2ChIuZ4Jzfg&expires=1759398898&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/espn-deportes/tracks-v2a1/mono.m3u8?token=sAp_WfiG7fM0lCO1bYtO2A&expires=1759399939&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn-deportes" tvg-name="ESPN Deportes HD" group-title="Live",ESPN Deportes HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iHSE493378k2ChIuZ4Jzfg&expires=1759398898&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/espn-deportes/tracks-v1a1/mono.m3u8?token=LB-M7OvWqWZ-3eSIepOh9g&expires=1759399940&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn-news" tvg-name="ESPN News SD" group-title="Live",ESPN News SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=HiJcP7QsDV4RdhHT_jqKtA&expires=1759398899&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPNews/tracks-v2a1/mono.m3u8?token=Qk-E1QBPiAhDBchtnNHrIQ&expires=1759399941&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn-news" tvg-name="ESPN News HD" group-title="Live",ESPN News HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=HiJcP7QsDV4RdhHT_jqKtA&expires=1759398899&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/ESPNews/tracks-v1a1/mono.m3u8?token=O-oem5AdLb3TDcq384wAhQ&expires=1759399941&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn-u" tvg-name="ESPN U SD" group-title="Live",ESPN U SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=xPIiX29Gsh8_DryRSjgyNw&expires=1759398900&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/ESPNU/tracks-v2a1/mono.m3u8?token=NSk0StHMnsjxtmZqfPjJVA&expires=1759399942&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn-u" tvg-name="ESPN U HD" group-title="Live",ESPN U HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iWCQ0cl5DlpDOVaI-0g40A&expires=1759398901&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/ESPNU/tracks-v1a1/mono.m3u8?token=CQHZlo1eeJzutIafyLt-Dg&expires=1759399943&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn2" tvg-name="ESPN2 SD" group-title="Live",ESPN2 SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iWCQ0cl5DlpDOVaI-0g40A&expires=1759398901&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/ESPN2/tracks-v2a1/mono.m3u8?token=wPSt04qCcIgEol6e8z55Qw&expires=1759399944&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="espn2" tvg-name="ESPN2 HD" group-title="Live",ESPN2 HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=0zaqeRImIU6-EKSG1Ha2iA&expires=1759398902&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=hf_avRu1DwxQJWOCipuiNg&expires=1759399944&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-indiana" tvg-name="Fanduel Sports Indiana SD" group-title="Live",Fanduel Sports Indiana SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ZfTRbYJMYXv1oDr39JaCDg&expires=1759398903&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-indiana/tracks-v2a1/mono.m3u8?token=RM3U1wzItjXzqC8Kg9oCkQ&expires=1759399945&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-indiana" tvg-name="Fanduel Sports Indiana HD" group-title="Live",Fanduel Sports Indiana HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ZfTRbYJMYXv1oDr39JaCDg&expires=1759398903&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-indiana/tracks-v1a1/mono.m3u8?token=OjNZtUKK-me1lZGJcG_x1w&expires=1759399946&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-detroit-hd" tvg-name="Fanduel Sports Network Detroit SD" group-title="Live",Fanduel Sports Network Detroit SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Ybf7erV0e6Je-UPwKgqyUA&expires=1759398904&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-network-detroit-hd/tracks-v2a1/mono.m3u8?token=-5jB5g1Yjn58r9V-rX_WxQ&expires=1759399946&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-detroit-hd" tvg-name="Fanduel Sports Network Detroit HD" group-title="Live",Fanduel Sports Network Detroit HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Ybf7erV0e6Je-UPwKgqyUA&expires=1759398904&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-network-detroit-hd/tracks-v1a1/mono.m3u8?token=0LgiPbIadDn-91YZ_53EDA&expires=1759399947&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-florida" tvg-name="Fanduel Sports Network Florida SD" group-title="Live",Fanduel Sports Network Florida SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ABsJ_vXhhIDWc8eFGirZug&expires=1759398905&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-network-florida/tracks-v2a1/mono.m3u8?token=QDYRUZJj6XxvO3FOeLrEHQ&expires=1759399948&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-florida" tvg-name="Fanduel Sports Network Florida HD" group-title="Live",Fanduel Sports Network Florida HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=SF-1NCXIWxTT4aN8lvXj1Q&expires=1759398906&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-network-florida/tracks-v1a1/mono.m3u8?token=IBl2Fn37oYnx1-DaHK4A2g&expires=1759399949&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-great-lakes" tvg-name="Fanduel Sports Network Great Lakes SD" group-title="Live",Fanduel Sports Network Great Lakes SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=SF-1NCXIWxTT4aN8lvXj1Q&expires=1759398906&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-network-great-lakes/tracks-v2a1/mono.m3u8?token=Lqjh9naxtqCbWEZ9TnLkqQ&expires=1759399949&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-great-lakes" tvg-name="Fanduel Sports Network Great Lakes HD" group-title="Live",Fanduel Sports Network Great Lakes HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=bSs-UJ7aaZt6sicVUZ5TVg&expires=1759398907&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-network-great-lakes/tracks-v1a1/mono.m3u8?token=n9-OUO32NQ0fL86qp-9APA&expires=1759399950&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-north" tvg-name="Fanduel Sports Network North SD" group-title="Live",Fanduel Sports Network North SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=bSs-UJ7aaZt6sicVUZ5TVg&expires=1759398907&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fanduel-sports-network-north/tracks-v2a1/mono.m3u8?token=93ICjeJDb4nrOW-gOrRPfA&expires=1759399951&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-north" tvg-name="Fanduel Sports Network North HD" group-title="Live",Fanduel Sports Network North HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=1aIRYZWe9dZ2cof-18xTng&expires=1759398908&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/fanduel-sports-network-north/tracks-v1a1/mono.m3u8?token=ALalbf33YORcFlLcF4raCw&expires=1759399961&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-ohio-cleveland" tvg-name="Fanduel Sports Network Ohio Cleveland SD" group-title="Live",Fanduel Sports Network Ohio Cleveland SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=1aIRYZWe9dZ2cof-18xTng&expires=1759398908&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/fanduel-sports-network-ohio-cleveland/tracks-v2a1/mono.m3u8?token=m5-i5CA5QSw4DRLkccjxKQ&expires=1759399972&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-ohio-cleveland" tvg-name="Fanduel Sports Network Ohio Cleveland HD" group-title="Live",Fanduel Sports Network Ohio Cleveland HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=79QDZFPAWAihmzOklcTPrw&expires=1759398909&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/fanduel-sports-network-ohio-cleveland/tracks-v1a1/mono.m3u8?token=FidgEKQAYFanuXlU1eR-2A&expires=1759399973&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-oklahoma" tvg-name="Fanduel Sports Network Oklahoma SD" group-title="Live",Fanduel Sports Network Oklahoma SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=4Fdo0eQLImaQ_CrxLw-UtA&expires=1759398910&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/fanduel-sports-network-oklahoma/tracks-v2a1/mono.m3u8?token=4zxzbZP_YSSHf4NBEm0T8g&expires=1759399974&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-oklahoma" tvg-name="Fanduel Sports Network Oklahoma HD" group-title="Live",Fanduel Sports Network Oklahoma HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=4Fdo0eQLImaQ_CrxLw-UtA&expires=1759398910&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/fanduel-sports-network-oklahoma/tracks-v1a1/mono.m3u8?token=RQ444HldvMUa54waAR-vOQ&expires=1759399986&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-san-diego" tvg-name="Fanduel Sports Network San Diego SD" group-title="Live",Fanduel Sports Network San Diego SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=E8BXZbv8SFk_HbxiPVF70Q&expires=1759398911&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/fanduel-sports-network-san-diego/tracks-v2a1/mono.m3u8?token=tVNVDYJZsUBtHo01Y34MSg&expires=1759399987&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-san-diego" tvg-name="Fanduel Sports Network San Diego HD" group-title="Live",Fanduel Sports Network San Diego HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=E8BXZbv8SFk_HbxiPVF70Q&expires=1759398911&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/fanduel-sports-network-san-diego/tracks-v1a1/mono.m3u8?token=kF3iB5d94yCkxxvU3CwEig&expires=1759399998&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-socal" tvg-name="Fanduel Sports Network Socal SD" group-title="Live",Fanduel Sports Network Socal SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2tYftwnf5IIEdWGUXZH6pw&expires=1759398912&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-socal/tracks-v2a1/mono.m3u8?token=56FeRmNqmHSIv7u808mddg&expires=1759400009&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-socal" tvg-name="Fanduel Sports Network Socal HD" group-title="Live",Fanduel Sports Network Socal HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2tYftwnf5IIEdWGUXZH6pw&expires=1759398912&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-socal/tracks-v1a1/mono.m3u8?token=HVj0ccuOvFVv7o3635lrbA&expires=1759400009&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-south-carolinas" tvg-name="Fanduel Sports Network South Carolinas SD" group-title="Live",Fanduel Sports Network South Carolinas SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=9LfZhON0qpQefk8wK80Pxw&expires=1759398913&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-south-carolinas/tracks-v2a1/mono.m3u8?token=U5-frx-NSVX0LsRzsvlX3Q&expires=1759400010&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-south-carolinas" tvg-name="Fanduel Sports Network South Carolinas HD" group-title="Live",Fanduel Sports Network South Carolinas HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=H0SD-jsk8F1CyM4Z6iF7aw&expires=1759398914&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/fanduel-sports-network-south-carolinas/tracks-v1a1/mono.m3u8?token=FKD5c-1OiBmOMgxnYUOqUw&expires=1759400021&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-south-tennessee-usa" tvg-name="Fanduel Sports Network South Tennessee SD" group-title="Live",Fanduel Sports Network South Tennessee SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=H0SD-jsk8F1CyM4Z6iF7aw&expires=1759398914&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-south-tennessee-usa/tracks-v2a1/mono.m3u8?token=cdYTVfASbU7wmzG3LqGyfQ&expires=1759400031&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-south-tennessee-usa" tvg-name="Fanduel Sports Network South Tennessee HD" group-title="Live",Fanduel Sports Network South Tennessee HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=NuzVoJfEWq3YDMlwqQGpgQ&expires=1759398915&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-south-tennessee-usa/tracks-v1a1/mono.m3u8?token=gx9DNPCkmb6-aXjbz9J8DA&expires=1759400032&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-west" tvg-name="Fanduel Sports Network West SD" group-title="Live",Fanduel Sports Network West SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=NuzVoJfEWq3YDMlwqQGpgQ&expires=1759398915&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-west/tracks-v2a1/mono.m3u8?token=HcgniW1-DaV7pmrAlcNUeA&expires=1759400033&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-west" tvg-name="Fanduel Sports Network West HD" group-title="Live",Fanduel Sports Network West HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=oJIL5ILXgDVXE-H4Hp2uyA&expires=1759398916&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-west/tracks-v1a1/mono.m3u8?token=TRRlvSEbuH0kkNxgqO2NLQ&expires=1759400034&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-wisconsin" tvg-name="Fanduel Sports Network Wisconsin SD" group-title="Live",Fanduel Sports Network Wisconsin SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=0DUYAVO-91i95J8En9xj_w&expires=1759398917&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-wisconsin/tracks-v2a1/mono.m3u8?token=Eds5xqomEEAYkG0px_i9IQ&expires=1759400034&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-network-wisconsin" tvg-name="Fanduel Sports Network Wisconsin HD" group-title="Live",Fanduel Sports Network Wisconsin HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=0DUYAVO-91i95J8En9xj_w&expires=1759398917&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-network-wisconsin/tracks-v1a1/mono.m3u8?token=7aQ_lV2ygmbDzhqhstF-jA&expires=1759400035&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-georgia" tvg-name="Fanduel Sports Southeast Georgia SD" group-title="Live",Fanduel Sports Southeast Georgia SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Dt3Ya4YejfyWz-Al5pHOkQ&expires=1759398918&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-southeast-georgia/tracks-v2a1/mono.m3u8?token=dU_Ei5s4O56n0Bgg7t176Q&expires=1759400036&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-georgia" tvg-name="Fanduel Sports Southeast Georgia HD" group-title="Live",Fanduel Sports Southeast Georgia HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Dt3Ya4YejfyWz-Al5pHOkQ&expires=1759398918&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-southeast-georgia/tracks-v1a1/mono.m3u8?token=qEN549dUMgVenzc96ESFAA&expires=1759400036&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-north-carolina" tvg-name="Fanduel Sports Southeast North Carolina SD" group-title="Live",Fanduel Sports Southeast North Carolina SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=lxCsSyBMHkz_taQL0buH3A&expires=1759398919&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-southeast-north-carolina/tracks-v2a1/mono.m3u8?token=bLGoNM0y4RGiFaU6m374aQ&expires=1759400037&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-north-carolina" tvg-name="Fanduel Sports Southeast North Carolina HD" group-title="Live",Fanduel Sports Southeast North Carolina HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=lxCsSyBMHkz_taQL0buH3A&expires=1759398919&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/fanduel-sports-southeast-north-carolina/tracks-v1a1/mono.m3u8?token=fqiF0MMbl3B68Kt2fuIjKg&expires=1759400048&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-south-carolina" tvg-name="Fanduel Sports Southeast South Carolina SD" group-title="Live",Fanduel Sports Southeast South Carolina SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EfrjVFppIqq2f8Q7-BPSHw&expires=1759398920&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/fanduel-sports-southeast-south-carolina/tracks-v2a1/mono.m3u8?token=rwEgEB3PFXekty9No4kcUQ&expires=1759400059&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-south-carolina" tvg-name="Fanduel Sports Southeast South Carolina HD" group-title="Live",Fanduel Sports Southeast South Carolina HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=gyQb7EG4smZT8aaUjstOVA&expires=1759398921&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/fanduel-sports-southeast-south-carolina/tracks-v1a1/mono.m3u8?token=ESB3cTsZN8oqvYwUlAJY0A&expires=1759400069&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-tennessee-nashville" tvg-name="Fanduel Sports Southeast Tennessee Nashville SD" group-title="Live",Fanduel Sports Southeast Tennessee Nashville SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=gyQb7EG4smZT8aaUjstOVA&expires=1759398921&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-southeast-tennessee-nashville/tracks-v2a1/mono.m3u8?token=UiZXXf-u_BTb9dEHjFO-pg&expires=1759400080&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-tennessee-nashville" tvg-name="Fanduel Sports Southeast Tennessee Nashville HD" group-title="Live",Fanduel Sports Southeast Tennessee Nashville HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=1f5WJZhRalQGhAgO5ZdanA&expires=1759398922&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-southeast-tennessee-nashville/tracks-v1a1/mono.m3u8?token=49zy9VcYwnhwJAa7IUZsXw&expires=1759400081&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bally-sports-sun" tvg-name="Fanduel Sports Sun SD" group-title="Live",Fanduel Sports Sun SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=1f5WJZhRalQGhAgO5ZdanA&expires=1759398922&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-sun/tracks-v2a1/mono.m3u8?token=hw2cfqI4bLmaOVIXryhUHA&expires=1759400082&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="bally-sports-sun" tvg-name="Fanduel Sports Sun HD" group-title="Live",Fanduel Sports Sun HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2acRpaN9xHQ1neo4mUB8iQ&expires=1759398923&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-sun/tracks-v1a1/mono.m3u8?token=c_3i2OR1Mc8S8VtRfv5-MQ&expires=1759400082&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-tennessee-east" tvg-name="Fanduel Sports Tennessee East SD" group-title="Live",Fanduel Sports Tennessee East SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2acRpaN9xHQ1neo4mUB8iQ&expires=1759398923&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-tennessee-east/tracks-v2a1/mono.m3u8?token=6SPq8yStg2K8_jEuhUGbqw&expires=1759400083&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fanduel-sports-tennessee-east" tvg-name="Fanduel Sports Tennessee East HD" group-title="Live",Fanduel Sports Tennessee East HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=QAGk0bkq71op2hysTgWDnw&expires=1759398924&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/fanduel-sports-tennessee-east/tracks-v1a1/mono.m3u8?token=qMLa6RA7M55VIBlxoA6G3g&expires=1759400084&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="food-network-usa-eastern-feed" tvg-name="Food Network USA Eastern Feed SD" group-title="Live",Food Network USA Eastern Feed SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=QAGk0bkq71op2hysTgWDnw&expires=1759398924&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/FoodNetworkEast/tracks-v2a1/mono.m3u8?token=MS1VTTM7jIKxNJEsrMbXIw&expires=1759400084&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="food-network-usa-eastern-feed" tvg-name="Food Network USA Eastern Feed HD" group-title="Live",Food Network USA Eastern Feed HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iuE3D8xVcSbo6BoAJSzY1g&expires=1759398925&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/FoodNetworkEast/tracks-v1a1/mono.m3u8?token=2s3r8jfWH7Iv1WVvAyMPqg&expires=1759400085&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-kttv-los-angeles-ca" tvg-name="FOX (KTTV) Los Angeles SD" group-title="Live",FOX (KTTV) Los Angeles SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Mz14tTA8Ek_-p-qChOydvw&expires=1759398926&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fox-kttv-los-angeles-ca/tracks-v2a1/mono.m3u8?token=Ihcla0rlFwdVQqvIUY-6-A&expires=1759400086&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-kttv-los-angeles-ca" tvg-name="FOX (KTTV) Los Angeles HD" group-title="Live",FOX (KTTV) Los Angeles HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Mz14tTA8Ek_-p-qChOydvw&expires=1759398926&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/fox-kttv-los-angeles-ca/tracks-v1a1/mono.m3u8?token=xvFLR5yhmmkYgVNM0EA3oA&expires=1759400087&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-wnyw-new-york-ny" tvg-name="FOX (WNYW) New York, NY SD" group-title="Live",FOX (WNYW) New York, NY SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Zd39Zxw1G93M2bMVwB8u6Q&expires=1759398927&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/WNYWDT1/tracks-v2a1/mono.m3u8?token=okutZ2Sz-YTt9FEA-PEWYw&expires=1759400087&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-wnyw-new-york-ny" tvg-name="FOX (WNYW) New York, NY HD" group-title="Live",FOX (WNYW) New York, NY HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Zd39Zxw1G93M2bMVwB8u6Q&expires=1759398927&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/WNYWDT1/tracks-v1a1/mono.m3u8?token=dNfw6uNqq_MZCakSzpCRWA&expires=1759400088&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-business" tvg-name="Fox Business SD" group-title="Live",Fox Business SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=yDz3rEhl94cM_OboGinNBA&expires=1759398928&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxBusiness/tracks-v2a1/mono.m3u8?token=JENlX46XSj1pcHpOlMQkyA&expires=1759400089&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-business" tvg-name="Fox Business HD" group-title="Live",Fox Business HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=KH_MTbHcy7CXttlqMtI0-w&expires=1759398929&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxBusiness/tracks-v1a1/mono.m3u8?token=wD97uKKR12IKTVs8mVQJiA&expires=1759400090&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-news" tvg-name="Fox News SD" group-title="Live",Fox News SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=KH_MTbHcy7CXttlqMtI0-w&expires=1759398929&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxNewsChannel/tracks-v2a1/mono.m3u8?token=yVaM2XCYpmlKbWUcVmm_4Q&expires=1759400090&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-news" tvg-name="Fox News HD" group-title="Live",Fox News HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EHyGR9pXQx5O61v0Ib7XQg&expires=1759398930&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxNewsChannel/tracks-v1a1/mono.m3u8?token=_4d03eZxHWkuiDJKthpZPA&expires=1759400091&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-sports-1" tvg-name="Fox Sports 1 SD" group-title="Live",Fox Sports 1 SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EHyGR9pXQx5O61v0Ib7XQg&expires=1759398930&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxSports1/tracks-v2a1/mono.m3u8?token=uJSHUT9dw1Bdydljj3zCcw&expires=1759400092&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-sports-1" tvg-name="Fox Sports 1 HD" group-title="Live",Fox Sports 1 HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=0vgOE9a8dUzmviwHSO_H0w&expires=1759398931&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxSports1/tracks-v1a1/mono.m3u8?token=YDC3gvpOoP2KAbYQ0W1pnQ&expires=1759400092&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-sports-2" tvg-name="Fox Sports 2 SD" group-title="Live",Fox Sports 2 SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=0vgOE9a8dUzmviwHSO_H0w&expires=1759398931&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxSports2/tracks-v2a1/mono.m3u8?token=8uaa26aWMx-t85I46X4yaQ&expires=1759400093&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fox-sports-2" tvg-name="Fox Sports 2 HD" group-title="Live",Fox Sports 2 HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=j06TNP7lKygSHcreNixYjw&expires=1759398932&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FoxSports2/tracks-v1a1/mono.m3u8?token=LmQprX3SULWgRWfQvACmzA&expires=1759400094&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="freeform-east-feed" tvg-name="Freeform East Feed SD" group-title="Live",Freeform East Feed SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7qbt2xYhYgqOkUkSN-uqdA&expires=1759398933&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v13.thetvapp.to/hls/FreeformEast/tracks-v2a1/mono.m3u8?token=Do_s2Pf9a9t1t-OwwS0hRg&expires=1759400095&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="freeform-east-feed" tvg-name="Freeform East Feed HD" group-title="Live",Freeform East Feed HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7qbt2xYhYgqOkUkSN-uqdA&expires=1759398933&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FreeformEast/tracks-v1a1/mono.m3u8?token=Mpamuw5yRKgMjEfozSWYCg&expires=1759400095&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fuse-tv-eastern-feed" tvg-name="FUSE TV Eastern feed SD" group-title="Live",FUSE TV Eastern feed SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=yC9AXpCaamsf-rlVngsztQ&expires=1759398934&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FuseEast/tracks-v2a1/mono.m3u8?token=IQlcqcedJ42CMxnNqh9Aiw&expires=1759400096&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fuse-tv-eastern-feed" tvg-name="FUSE TV Eastern feed HD" group-title="Live",FUSE TV Eastern feed HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=yC9AXpCaamsf-rlVngsztQ&expires=1759398934&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FuseEast/tracks-v1a1/mono.m3u8?token=QAVa1Hz2B_k9xqU0JkM0PQ&expires=1759400097&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fx-movie-channel" tvg-name="FX Movie Channel SD" group-title="Live",FX Movie Channel SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=arCpLcEI67S5Ws4dYUNuTQ&expires=1759398935&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FXMovieChannel/tracks-v2a1/mono.m3u8?token=RpR0u8r0a7501Q5pjX5C7Q&expires=1759400097&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fx-movie-channel" tvg-name="FX Movie Channel HD" group-title="Live",FX Movie Channel HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=arCpLcEI67S5Ws4dYUNuTQ&expires=1759398935&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FXMovieChannel/tracks-v1a1/mono.m3u8?token=hJyCd13-ng6nxVo2OktAdA&expires=1759400098&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fx-networks-east-coast" tvg-name="FX Networks East Coast SD" group-title="Live",FX Networks East Coast SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=CM08JQHMw29ajUEL_Mdfyw&expires=1759398936&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FXEast/tracks-v2a1/mono.m3u8?token=wQ_IJ3qhlsROAUL1_mbSFA&expires=1759400099&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fx-networks-east-coast" tvg-name="FX Networks East Coast HD" group-title="Live",FX Networks East Coast HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_crsZA77xnWyOAxItX2rFQ&expires=1759398937&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FXEast/tracks-v1a1/mono.m3u8?token=jqQ4rRU3a31tp3jsBn507Q&expires=1759400100&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fxx-usa-eastern" tvg-name="FXX USA Eastern SD" group-title="Live",FXX USA Eastern SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_crsZA77xnWyOAxItX2rFQ&expires=1759398937&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FXXEast/tracks-v2a1/mono.m3u8?token=1oHI1qQ8Ikcz_HDnywexsA&expires=1759400100&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fxx-usa-eastern" tvg-name="FXX USA Eastern HD" group-title="Live",FXX USA Eastern HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=lV_abA5wb_qxR9V69l9rng&expires=1759398938&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FXXEast/tracks-v1a1/mono.m3u8?token=MyH6pFltGXUY3YlfC8IpWg&expires=1759400101&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fyi-usa-eastern" tvg-name="FYI USA Eastern SD" group-title="Live",FYI USA Eastern SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=lV_abA5wb_qxR9V69l9rng&expires=1759398938&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FYIEast/tracks-v2a1/mono.m3u8?token=1HWSly9nYbywEePq0_IG8A&expires=1759400102&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="fyi-usa-eastern" tvg-name="FYI USA Eastern HD" group-title="Live",FYI USA Eastern HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=CGOhoD7pbJrBTlCw_VPgnw&expires=1759398939&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/FYIEast/tracks-v1a1/mono.m3u8?token=WjPTylOHJOVbPWtF67AmyA&expires=1759400102&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="game-show-network-east" tvg-name="Game Show Network East SD" group-title="Live",Game Show Network East SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=CGOhoD7pbJrBTlCw_VPgnw&expires=1759398939&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/game-show-network-east/tracks-v2a1/mono.m3u8?token=-9z-Sr8cz9TFPCoRnwWxXg&expires=1759400103&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="game-show-network-east" tvg-name="Game Show Network East HD" group-title="Live",Game Show Network East HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=zM-ECXP9j7lfo8LhAsAO3w&expires=1759398940&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/game-show-network-east/tracks-v1a1/mono.m3u8?token=nhaHPA2BWj7vSDzvGMjiCA&expires=1759400104&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="golf-channel-usa" tvg-name="Golf Channel USA SD" group-title="Live",Golf Channel USA SD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=sjTAL5WxzUkz3Q6yi1_AMw&expires=1759398941&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/GolfChannel/tracks-v2a1/mono.m3u8?token=CPbGC9dC6HrtBXvRNS36NQ&expires=1759400104&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="golf-channel-usa" tvg-name="Golf Channel USA HD" group-title="Live",Golf Channel USA HD
-https://e4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=sjTAL5WxzUkz3Q6yi1_AMw&expires=1759398941&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/GolfChannel/tracks-v1a1/mono.m3u8?token=RAD-e_7e3SpUlMfECYkDTw&expires=1759400105&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hallmark-eastern-feed" tvg-name="Hallmark Eastern Feed SD" group-title="Live",Hallmark Eastern Feed SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=YM7M3qpo_OzzLU4QvRFTqA&expires=1759398942&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HallmarkChannelEast/tracks-v2a1/mono.m3u8?token=kepgBl3b7tQf8qG32Ncvvw&expires=1759400106&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hallmark-eastern-feed" tvg-name="Hallmark Eastern Feed HD" group-title="Live",Hallmark Eastern Feed HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=YM7M3qpo_OzzLU4QvRFTqA&expires=1759398942&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HallmarkChannelEast/tracks-v1a1/mono.m3u8?token=jOXFuJf1I80jHEB9QDmhTA&expires=1759400107&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hallmark-family-hd" tvg-name="Hallmark Family HD SD" group-title="Live",Hallmark Family HD SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=8WR4kccCNhj_ST--AQvUUQ&expires=1759398943&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HallmarkDrama/tracks-v2a1/mono.m3u8?token=Rc8Gx5Jn_KRGZBSnyfxncw&expires=1759400107&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hallmark-family-hd" tvg-name="Hallmark Family HD HD" group-title="Live",Hallmark Family HD HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=8WR4kccCNhj_ST--AQvUUQ&expires=1759398943&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HallmarkDrama/tracks-v1a1/mono.m3u8?token=10wI-Do5hT1UejmCbpL_oA&expires=1759400108&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hallmark-mystery-eastern-hd" tvg-name="Hallmark Mystery Eastern HD SD" group-title="Live",Hallmark Mystery Eastern HD SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=mQvwblzNVKb4jFtOpYF5kw&expires=1759398944&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HallmarkMoviesMysteriesEast/tracks-v2a1/mono.m3u8?token=noBCR7hzBJwNJxwP441uKQ&expires=1759400109&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hallmark-mystery-eastern-hd" tvg-name="Hallmark Mystery Eastern HD HD" group-title="Live",Hallmark Mystery Eastern HD HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=TtA_t2TQ-0VybnKVJ1TFJg&expires=1759398945&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HallmarkMoviesMysteriesEast/tracks-v1a1/mono.m3u8?token=g3zlSDw8jzzDrVAlsDJ6gw&expires=1759400109&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-eastern-feed" tvg-name="HBO Eastern Feed SD" group-title="Live",HBO Eastern Feed SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=TtA_t2TQ-0VybnKVJ1TFJg&expires=1759398945&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HBOEast/tracks-v2a1/mono.m3u8?token=F70wvHQPtzFAbbk51-Jvig&expires=1759400110&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-eastern-feed" tvg-name="HBO Eastern Feed HD" group-title="Live",HBO Eastern Feed HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=61Dj2F7H0_JCEoLIAu_EZg&expires=1759398946&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HBOEast/tracks-v1a1/mono.m3u8?token=cPbrPWvU7XAHqZX0SXtGvQ&expires=1759400111&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-2-eastern-feed" tvg-name="HBO 2 Eastern Feed SD" group-title="Live",HBO 2 Eastern Feed SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=61Dj2F7H0_JCEoLIAu_EZg&expires=1759398946&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HBO2East/tracks-v2a1/mono.m3u8?token=0-s8T58uSvTrRS-R7RXQNA&expires=1759400112&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-2-eastern-feed" tvg-name="HBO 2 Eastern Feed HD" group-title="Live",HBO 2 Eastern Feed HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=rAiqrQPs006Rn_ocY-2qGA&expires=1759398947&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HBO2East/tracks-v1a1/mono.m3u8?token=9dEmRmw7sHJcYfvBija36A&expires=1759400112&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-comedy-hd-east" tvg-name="HBO Comedy HD East SD" group-title="Live",HBO Comedy HD East SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=rAiqrQPs006Rn_ocY-2qGA&expires=1759398947&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HBOComedyEast/tracks-v2a1/mono.m3u8?token=yN4kaFkdyuNOVi6tgLEt0Q&expires=1759400113&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-comedy-hd-east" tvg-name="HBO Comedy HD East HD" group-title="Live",HBO Comedy HD East HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=xAyncjI-cu5DppgdycXj9A&expires=1759398948&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HBOComedyEast/tracks-v1a1/mono.m3u8?token=MzZyWuhJ5cuuRV_tTTmNtQ&expires=1759400114&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-family-eastern-feed" tvg-name="HBO Family Eastern Feed SD" group-title="Live",HBO Family Eastern Feed SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=tnFw33Hxj5ZrhSJlwUNNEg&expires=1759398949&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/HBOFamilyEast/tracks-v2a1/mono.m3u8?token=fup1s8rC5sEyGRra9zGjJw&expires=1759400115&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-family-eastern-feed" tvg-name="HBO Family Eastern Feed HD" group-title="Live",HBO Family Eastern Feed HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=tnFw33Hxj5ZrhSJlwUNNEg&expires=1759398949&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/HBOFamilyEast/tracks-v1a1/mono.m3u8?token=YU63IDFGspxZUPNRXZT9ZQ&expires=1759400125&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-signature-hbo-3-eastern" tvg-name="HBO Signature (HBO 3) Eastern SD" group-title="Live",HBO Signature (HBO 3) Eastern SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=80iOBg3SOojwpdNoDmBDuQ&expires=1759398950&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HBOSignatureEast/tracks-v2a1/mono.m3u8?token=ble3eq-poiEmY2UpzQ6wPw&expires=1759400137&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-signature-hbo-3-eastern" tvg-name="HBO Signature (HBO 3) Eastern HD" group-title="Live",HBO Signature (HBO 3) Eastern HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=80iOBg3SOojwpdNoDmBDuQ&expires=1759398950&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HBOSignatureEast/tracks-v1a1/mono.m3u8?token=Qk7bps8V-16wp7FrfY5mrg&expires=1759400138&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-zone-hd-east" tvg-name="HBO Zone HD East SD" group-title="Live",HBO Zone HD East SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=h063aTNL_qPzV8HC9JtjHA&expires=1759398951&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HBOZoneEast/tracks-v2a1/mono.m3u8?token=Ju4jc332oSlTfir6o3wx-Q&expires=1759400139&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hbo-zone-hd-east" tvg-name="HBO Zone HD East HD" group-title="Live",HBO Zone HD East HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=h063aTNL_qPzV8HC9JtjHA&expires=1759398951&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HBOZoneEast/tracks-v1a1/mono.m3u8?token=IPrzaK9N2Yry_DLTSUl1cA&expires=1759400139&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hgtv-usa-eastern-feed" tvg-name="HGTV USA Eastern Feed SD" group-title="Live",HGTV USA Eastern Feed SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=lYiFG9gqk_rIfKKp3PORmg&expires=1759398952&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HGTVEast/tracks-v2a1/mono.m3u8?token=CDh6ZUct8MB0kV3OJG-6dA&expires=1759400140&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hgtv-usa-eastern-feed" tvg-name="HGTV USA Eastern Feed HD" group-title="Live",HGTV USA Eastern Feed HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=B4KgCKWHJLL8Kzu73Pca4g&expires=1759398953&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HGTVEast/tracks-v1a1/mono.m3u8?token=1xPRssa3P5aJkckBX9TTow&expires=1759400141&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="history-channel-us-eastern-feed" tvg-name="History Channel US Eastern Feed SD" group-title="Live",History Channel US Eastern Feed SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=B4KgCKWHJLL8Kzu73Pca4g&expires=1759398953&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HistoryEast/tracks-v2a1/mono.m3u8?token=WW6KRX51mpXC_yDgmSPuhw&expires=1759400141&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="history-channel-us-eastern-feed" tvg-name="History Channel US Eastern Feed HD" group-title="Live",History Channel US Eastern Feed HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=LwbpixeBjzlY6dSzlnWmPQ&expires=1759398954&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HistoryEast/tracks-v1a1/mono.m3u8?token=sDQzcuHss8ov4Y8Vz69raw&expires=1759400142&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hln" tvg-name="HLN SD" group-title="Live",HLN SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=LwbpixeBjzlY6dSzlnWmPQ&expires=1759398954&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HLN/tracks-v2a1/mono.m3u8?token=6ove8y_DIu47hwdxSZVi-Q&expires=1759400143&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="hln" tvg-name="HLN HD" group-title="Live",HLN HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-F_M-_NunLBCp9U15aWQAg&expires=1759398955&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/HLN/tracks-v1a1/mono.m3u8?token=0dAMHbujyCWpBN7U7ta7Pw&expires=1759400143&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="independent-film-channel-us" tvg-name="Independent Film Channel US SD" group-title="Live",Independent Film Channel US SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-F_M-_NunLBCp9U15aWQAg&expires=1759398955&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/IFCEast/tracks-v2a1/mono.m3u8?token=pMNahU2zOLsaMI1pXBzVUw&expires=1759400144&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="independent-film-channel-us" tvg-name="Independent Film Channel US HD" group-title="Live",Independent Film Channel US HD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=DRzeG-47dJlMBQlqtEXxZQ&expires=1759398956&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/IFCEast/tracks-v1a1/mono.m3u8?token=d-Hpf_LhE_ky4RyC-YAE8A&expires=1759400145&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="investigation-discovery-usa-eastern" tvg-name="Investigation Discovery USA Eastern SD" group-title="Live",Investigation Discovery USA Eastern SD
-https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=U9ABFRBWzHAbbSwLtVh2Dg&expires=1759398957&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v4.thetvapp.to/hls/InvestigationDiscoveryEast/tracks-v2a1/mono.m3u8?token=_5CDkEHkthSLBcpopAXvQg&expires=1759400146&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="investigation-discovery-usa-eastern" tvg-name="Investigation Discovery USA Eastern HD" group-title="Live",Investigation Discovery USA Eastern HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=U9ABFRBWzHAbbSwLtVh2Dg&expires=1759398957&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/InvestigationDiscoveryEast/tracks-v1a1/mono.m3u8?token=m_F7LCrOooLVBxl_2gEDAg&expires=1759400146&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="ion-eastern-feed" tvg-name="ION Eastern Feed SD" group-title="Live",ION Eastern Feed SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=6URCV_3KovJHBYN3NGb3ng&expires=1759398958&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/IONTVEast/tracks-v2a1/mono.m3u8?token=YmKMm_8Oec7baDbpIynIUg&expires=1759400147&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="ion-eastern-feed" tvg-name="ION Eastern Feed HD" group-title="Live",ION Eastern Feed HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=6URCV_3KovJHBYN3NGb3ng&expires=1759398958&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/IONTVEast/tracks-v1a1/mono.m3u8?token=md1NklUoK_ZSarr5hCbRYQ&expires=1759400148&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="lifetime-movies-east" tvg-name="Lifetime Movies East SD" group-title="Live",Lifetime Movies East SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=H3_P7COkx-UZUJDqexd0Gw&expires=1759398959&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/LifetimeMoviesEast/tracks-v2a1/mono.m3u8?token=cpwyS46bDWMJusrIU-I0ww&expires=1759400148&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="lifetime-movies-east" tvg-name="Lifetime Movies East HD" group-title="Live",Lifetime Movies East HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=H3_P7COkx-UZUJDqexd0Gw&expires=1759398959&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/LifetimeMoviesEast/tracks-v1a1/mono.m3u8?token=VByiOtEOaoNyaQWRAnk5pA&expires=1759400149&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="lifetime-network-us-eastern-feed" tvg-name="Lifetime Network US Eastern Feed SD" group-title="Live",Lifetime Network US Eastern Feed SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ssugY30Bs9sgDTjGmWMyXw&expires=1759398960&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/LifetimeEast/tracks-v2a1/mono.m3u8?token=D2yc2d3PGBtcyGNNiOMBTg&expires=1759400150&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="lifetime-network-us-eastern-feed" tvg-name="Lifetime Network US Eastern Feed HD" group-title="Live",Lifetime Network US Eastern Feed HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Z6eHxHj-lldTU3MzAtjIGQ&expires=1759398961&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/LifetimeEast/tracks-v1a1/mono.m3u8?token=Z7V5rKZgAdQelvyDrzXK8A&expires=1759400151&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="logo-east" tvg-name="LOGO East SD" group-title="Live",LOGO East SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Z6eHxHj-lldTU3MzAtjIGQ&expires=1759398961&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/LogoEast/tracks-v2a1/mono.m3u8?token=y_X38oPqihjz3QPg9NGKIQ&expires=1759400152&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="logo-east" tvg-name="LOGO East HD" group-title="Live",LOGO East HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=semSNJi-VZfdQQfR5vSJ7g&expires=1759398962&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/LogoEast/tracks-v1a1/mono.m3u8?token=GR8DIw4uueYsn7FNgELM2Q&expires=1759400152&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="marquee-sports-network" tvg-name="Marquee Sports Network SD" group-title="Live",Marquee Sports Network SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=semSNJi-VZfdQQfR5vSJ7g&expires=1759398962&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/marquee-sports-network/tracks-v2a1/mono.m3u8?token=BBOnNAqL1Yh01mdH-ENGyQ&expires=1759400153&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="marquee-sports-network" tvg-name="Marquee Sports Network HD" group-title="Live",Marquee Sports Network HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EwCk4SsvliPGxUNqkFFRBA&expires=1759398963&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/marquee-sports-network/tracks-v1a1/mono.m3u8?token=PvjRfu7lbKhKabD-F1m9zw&expires=1759400154&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="metv-toons-wjlp2-new-jersey" tvg-name="MeTV Toons (WJLP2) New Jersey SD" group-title="Live",MeTV Toons (WJLP2) New Jersey SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EwCk4SsvliPGxUNqkFFRBA&expires=1759398963&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/metv-toons/tracks-v2a1/mono.m3u8?token=7AySUUmWZGPX-s2bSAAjmg&expires=1759400155&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="metv-toons-wjlp2-new-jersey" tvg-name="MeTV Toons (WJLP2) New Jersey HD" group-title="Live",MeTV Toons (WJLP2) New Jersey HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aDhlmH-coGUrAJxxIxQ6dQ&expires=1759398964&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/metv-toons/tracks-v1a1/mono.m3u8?token=FrvZJ5sUmh8RIvzoHu1e2w&expires=1759400155&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="metv-wjlp-new-jerseynew-york" tvg-name="MeTV Wjlp New Jerseynew York SD" group-title="Live",MeTV Wjlp New Jerseynew York SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Y6AUP0AYIFfI2LLxo8q_WA&expires=1759398965&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/metv-wjlp-new-jerseynew-york/tracks-v2a1/mono.m3u8?token=UyV8z-Cc3kDkzmLX-SImHQ&expires=1759400156&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="metv-wjlp-new-jerseynew-york" tvg-name="MeTV Wjlp New Jerseynew York HD" group-title="Live",MeTV Wjlp New Jerseynew York HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Y6AUP0AYIFfI2LLxo8q_WA&expires=1759398965&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/metv-wjlp-new-jerseynew-york/tracks-v1a1/mono.m3u8?token=OXzc85GjvBDe4kcPxfXjbg&expires=1759400157&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="midatlantic-sports-network" tvg-name="Midatlantic Sports Network SD" group-title="Live",Midatlantic Sports Network SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=M4sb4IEl38wtcWQK9XZjoQ&expires=1759398966&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/midatlantic-sports-network/tracks-v2a1/mono.m3u8?token=ugP2IYWCd7nVtyK_x1FLpA&expires=1759400157&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="midatlantic-sports-network" tvg-name="Midatlantic Sports Network HD" group-title="Live",Midatlantic Sports Network HD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=M4sb4IEl38wtcWQK9XZjoQ&expires=1759398966&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/midatlantic-sports-network/tracks-v1a1/mono.m3u8?token=oSEuDcXMbFlIkZfAOlwEng&expires=1759400158&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="mlb-network" tvg-name="MLB Network SD" group-title="Live",MLB Network SD
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aQ-mxXFiBdaSSItAR2Jx0g&expires=1759398967&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/MLBNetwork/tracks-v2a1/mono.m3u8?token=eWdmlPj6d84d8hZWA48ApA&expires=1759400159&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="mlb-network" tvg-name="MLB Network HD" group-title="Live",MLB Network HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aQ-mxXFiBdaSSItAR2Jx0g&expires=1759398967&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/MLBNetwork/tracks-v1a1/mono.m3u8?token=fb9J00DGyG_0z-KeizeilA&expires=1759400160&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="monumental-sports-network" tvg-name="Monumental Sports Network SD" group-title="Live",Monumental Sports Network SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=L3ZRop6PzIcpFc5OyCCZQQ&expires=1759398968&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/monumental-sports-network/tracks-v2a1/mono.m3u8?token=97dJsNIb89sLoHGSGDJzVw&expires=1759400160&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="monumental-sports-network" tvg-name="Monumental Sports Network HD" group-title="Live",Monumental Sports Network HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FhjzHH2e3Jb5Kcb5RvKDjg&expires=1759398969&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e3.thetvapp.to/hls/monumental-sports-network/tracks-v1a1/mono.m3u8?token=9SsRyM_rxHqMmrEUREHAKw&expires=1759400161&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="moremax-eastern" tvg-name="MoreMax Eastern SD" group-title="Live",MoreMax Eastern SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FhjzHH2e3Jb5Kcb5RvKDjg&expires=1759398969&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/MoreMaxEast/tracks-v2a1/mono.m3u8?token=tAKSAcuJCeeZLMzQ5K2kzQ&expires=1759400162&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="moremax-eastern" tvg-name="MoreMax Eastern HD" group-title="Live",MoreMax Eastern HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7E18d8-dP2RS-Z_UvvI7Ag&expires=1759398970&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/MoreMaxEast/tracks-v1a1/mono.m3u8?token=zYTl6xwWhZHnIF7uvvDq0A&expires=1759400163&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="motor-trend-hd" tvg-name="Motor Trend HD SD" group-title="Live",Motor Trend HD SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7E18d8-dP2RS-Z_UvvI7Ag&expires=1759398970&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/Motortrend/tracks-v2a1/mono.m3u8?token=7BQr7iPgGOeICycsAfKi7w&expires=1759400163&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="motor-trend-hd" tvg-name="Motor Trend HD HD" group-title="Live",Motor Trend HD HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=cOtInKUtKviKTagkzuA9Og&expires=1759398971&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/Motortrend/tracks-v1a1/mono.m3u8?token=hSx-MCkOwoGRcaL8WFzhiw&expires=1759400164&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="moviemax-max-6-east" tvg-name="MovieMax (Max 6) East SD" group-title="Live",MovieMax (Max 6) East SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=cOtInKUtKviKTagkzuA9Og&expires=1759398971&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/MovieMaxEast/tracks-v2a1/mono.m3u8?token=KNAkPVruloamLWchW0SSLQ&expires=1759400165&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="moviemax-max-6-east" tvg-name="MovieMax (Max 6) East HD" group-title="Live",MovieMax (Max 6) East HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=SNtjZDgcX9rOYikP4v8pgw&expires=1759398972&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/MovieMaxEast/tracks-v1a1/mono.m3u8?token=9qAgsaLJ4tIHGEyW_UqMdg&expires=1759400165&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="msg-madison-square-gardens" tvg-name="MSG Madison Square Gardens SD" group-title="Live",MSG Madison Square Gardens SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=uKLIifBUaqy2ExnTa2IfWg&expires=1759398973&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/msg-madison-square-gardens/tracks-v2a1/mono.m3u8?token=5fBtbAJtCVhNU2XhIiXLZg&expires=1759400176&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="msg-madison-square-gardens" tvg-name="MSG Madison Square Gardens HD" group-title="Live",MSG Madison Square Gardens HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=uKLIifBUaqy2ExnTa2IfWg&expires=1759398973&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/msg-madison-square-gardens/tracks-v1a1/mono.m3u8?token=yZGwqL2Gx3YBxjE-Hhn4Hw&expires=1759400177&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="msg-plus" tvg-name="MSG Plus SD" group-title="Live",MSG Plus SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=cZujlRzDurZLcZPIQzwMWg&expires=1759398974&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v5.thetvapp.to/hls/msg-plus/tracks-v2a1/mono.m3u8?token=CUoYuJEPdjH3dAd_D4HHSA&expires=1759400178&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="msg-plus" tvg-name="MSG Plus HD" group-title="Live",MSG Plus HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=cZujlRzDurZLcZPIQzwMWg&expires=1759398974&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/msg-plus/tracks-v1a1/mono.m3u8?token=-qKUF055XvOnITwr3KMZwA&expires=1759400188&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="msnbc-usa" tvg-name="MSNBC USA SD" group-title="Live",MSNBC USA SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aNR0VuRDD9ssZw3e3oUqUA&expires=1759398975&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/MSNBC/tracks-v2a1/mono.m3u8?token=Jud5KAEEJmMbUITfYJ2jzQ&expires=1759400199&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="msnbc-usa" tvg-name="MSNBC USA HD" group-title="Live",MSNBC USA HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aNR0VuRDD9ssZw3e3oUqUA&expires=1759398975&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/MSNBC/tracks-v1a1/mono.m3u8?token=jjtnOSdAzQ-c9UWDbZUzXQ&expires=1759400200&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="mtv-2-east" tvg-name="MTV 2 East SD" group-title="Live",MTV 2 East SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=l3d0Wh4_MIuRg1FR7X1L_A&expires=1759398976&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/mtv-2-east/tracks-v2a1/mono.m3u8?token=zWyBqooC0-_kZVZHGWz2nA&expires=1759400201&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="mtv-2-east" tvg-name="MTV 2 East HD" group-title="Live",MTV 2 East HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=dYAbcXJjihz4EKONdWI83A&expires=1759398977&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/mtv-2-east/tracks-v1a1/mono.m3u8?token=fW_D2-6Jey8lYbp0X1DDjg&expires=1759400201&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="mtv-usa-eastern-feed" tvg-name="MTV USA Eastern Feed SD" group-title="Live",MTV USA Eastern Feed SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=dYAbcXJjihz4EKONdWI83A&expires=1759398977&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/MTVEast/tracks-v2a1/mono.m3u8?token=5Dn3HkHMZm2t8UH5OTzOGw&expires=1759400202&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="mtv-usa-eastern-feed" tvg-name="MTV USA Eastern Feed HD" group-title="Live",MTV USA Eastern Feed HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=31N4GLwmUVdT_Clb3MJNSA&expires=1759398978&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/MTVEast/tracks-v1a1/mono.m3u8?token=zrW6PRKtG6Oh1AYVFN2dsQ&expires=1759400203&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="national-geographic-us-eastern" tvg-name="National Geographic US Eastern SD" group-title="Live",National Geographic US Eastern SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=31N4GLwmUVdT_Clb3MJNSA&expires=1759398978&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/NationalGeographicEast/tracks-v2a1/mono.m3u8?token=DJ-sTRjEhgpCiDWPNp48mQ&expires=1759400203&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="national-geographic-us-eastern" tvg-name="National Geographic US Eastern HD" group-title="Live",National Geographic US Eastern HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FGTY12-VNo9N7PqzCgpwhw&expires=1759398979&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/NationalGeographicEast/tracks-v1a1/mono.m3u8?token=qqIwJqW2mUZFl_lT_FY95Q&expires=1759400204&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="national-geographic-wild" tvg-name="National Geographic Wild SD" group-title="Live",National Geographic Wild SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ZBK-aDsPasLzGeG9bMjBRw&expires=1759398980&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/NationalGeographicWildEast/tracks-v2a1/mono.m3u8?token=NNoSqgZNOFK0ukjQdQWfHw&expires=1759400205&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="national-geographic-wild" tvg-name="National Geographic Wild HD" group-title="Live",National Geographic Wild HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ZBK-aDsPasLzGeG9bMjBRw&expires=1759398980&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/NationalGeographicWildEast/tracks-v1a1/mono.m3u8?token=oUnaRft2Fh7qFlw9Mc4hQA&expires=1759400206&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nba-tv-usa" tvg-name="NBA TV USA SD" group-title="Live",NBA TV USA SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=szzGbWYUVhRnJ15rjXz_Fw&expires=1759398981&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e4.thetvapp.to/hls/NBATV/tracks-v2a1/mono.m3u8?token=K-AIHh2TRIfjVk7HJKh3Zg&expires=1759400206&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nba-tv-usa" tvg-name="NBA TV USA HD" group-title="Live",NBA TV USA HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=szzGbWYUVhRnJ15rjXz_Fw&expires=1759398981&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8?token=wx1GDV6vh_lHsNH3FaQjcg&expires=1759400207&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-knbc-los-angeles-ca" tvg-name="NBC (KNBC) Los Angeles SD" group-title="Live",NBC (KNBC) Los Angeles SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=B5dShpWK0ECkRzApc7IN5g&expires=1759398982&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/nbc-knbc-los-angeles-ca/tracks-v2a1/mono.m3u8?token=YtV-GxZvhTjU8Dj4ALZA9w&expires=1759400208&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-knbc-los-angeles-ca" tvg-name="NBC (KNBC) Los Angeles HD" group-title="Live",NBC (KNBC) Los Angeles HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=B5dShpWK0ECkRzApc7IN5g&expires=1759398982&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/nbc-knbc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=GQF4Qgx-Y-61WR7zoEIeUw&expires=1759400209&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-wnbc-new-york-ny" tvg-name="NBC (WNBC) New York, NY SD" group-title="Live",NBC (WNBC) New York, NY SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=yMgpiyUUWNQtPew5OHlO3Q&expires=1759398983&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/WNBCDT1/tracks-v2a1/mono.m3u8?token=njf7ToUgPXY1KtOYitLt5A&expires=1759400209&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-wnbc-new-york-ny" tvg-name="NBC (WNBC) New York, NY HD" group-title="Live",NBC (WNBC) New York, NY HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=yMgpiyUUWNQtPew5OHlO3Q&expires=1759398983&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/WNBCDT1/tracks-v1a1/mono.m3u8?token=wheDWMpYPe1EZkX6mbzAHw&expires=1759400210&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-bay-area" tvg-name="NBC Sports Bay Area SD" group-title="Live",NBC Sports Bay Area SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aBu1m5RYFqJomCPzaGSWjQ&expires=1759398984&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/nbc-sports-bay-area/tracks-v2a1/mono.m3u8?token=bDSfLyUHiysZ7I4UY7Ba3w&expires=1759400211&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-bay-area" tvg-name="NBC Sports Bay Area HD" group-title="Live",NBC Sports Bay Area HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=yaoFvrm0w5vtYMuQuIzzJA&expires=1759398985&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/nbc-sports-bay-area/tracks-v1a1/mono.m3u8?token=qhUFDsGwAkjOTqX_OEEeMg&expires=1759400211&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-boston" tvg-name="NBC Sports Boston SD" group-title="Live",NBC Sports Boston SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=yaoFvrm0w5vtYMuQuIzzJA&expires=1759398985&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/nbc-sports-boston/tracks-v2a1/mono.m3u8?token=dtugqbmHZVS4wvLPahV2Fg&expires=1759400212&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-boston" tvg-name="NBC Sports Boston HD" group-title="Live",NBC Sports Boston HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=tQscvlT2Kgr68zLsRasbgg&expires=1759398986&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8?token=_6LB_KkOtd0HIwFot6s8WA&expires=1759400213&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-california" tvg-name="NBC Sports California SD" group-title="Live",NBC Sports California SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=tQscvlT2Kgr68zLsRasbgg&expires=1759398986&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/nbc-sports-california/tracks-v2a1/mono.m3u8?token=qufLSw57e03Z6WkTphNaWA&expires=1759400214&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-california" tvg-name="NBC Sports California HD" group-title="Live",NBC Sports California HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7QaARyhjVTj_VF0zGttf4g&expires=1759398987&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/nbc-sports-california/tracks-v1a1/mono.m3u8?token=I1V4bgYCoLmNCgSxsRN1wg&expires=1759400215&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-philadelphia" tvg-name="NBC Sports Philadelphia SD" group-title="Live",NBC Sports Philadelphia SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7QaARyhjVTj_VF0zGttf4g&expires=1759398987&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/nbc-sports-philadelphia/tracks-v2a1/mono.m3u8?token=nFTXaEUkyhvIfWI-O45T7Q&expires=1759400215&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nbc-sports-philadelphia" tvg-name="NBC Sports Philadelphia HD" group-title="Live",NBC Sports Philadelphia HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=0NU0gYW1usfuWaS73q8xvA&expires=1759398988&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/nbc-sports-philadelphia/tracks-v1a1/mono.m3u8?token=DMuM7QCbKWpwl2bMwGgYNA&expires=1759400216&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="new-england-sports-network" tvg-name="New England Sports Network SD" group-title="Live",New England Sports Network SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=zXVlzqhqsnT82UiFPGvRuw&expires=1759398989&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/new-england-sports-network/tracks-v2a1/mono.m3u8?token=ux9a9DYR8RIxOSgyRVbqHA&expires=1759400217&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="new-england-sports-network" tvg-name="New England Sports Network HD" group-title="Live",New England Sports Network HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=zXVlzqhqsnT82UiFPGvRuw&expires=1759398989&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/new-england-sports-network/tracks-v1a1/mono.m3u8?token=JQg4qvbSrnPIo2L9a3qOkw&expires=1759400217&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="newsmax-tv" tvg-name="NewsMax TV SD" group-title="Live",NewsMax TV SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_pP-X4yhwe5Wg7rUwNUhrA&expires=1759398990&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/NewsmaxTV/tracks-v2a1/mono.m3u8?token=8TMlArvl1eQcXPsuw-2g6g&expires=1759400218&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="newsmax-tv" tvg-name="NewsMax TV HD" group-title="Live",NewsMax TV HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_pP-X4yhwe5Wg7rUwNUhrA&expires=1759398990&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/NewsmaxTV/tracks-v1a1/mono.m3u8?token=EN0QE05hAmDqjgcvpEu2Ag&expires=1759400219&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nfl-network" tvg-name="NFL Network SD" group-title="Live",NFL Network SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=j1krzfW_H93sl7CgDgJuHQ&expires=1759398991&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/NFLNetwork/tracks-v2a1/mono.m3u8?token=bmY2wWuZ7WUbb5gLooWAIA&expires=1759400219&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nfl-network" tvg-name="NFL Network HD" group-title="Live",NFL Network HD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=j1krzfW_H93sl7CgDgJuHQ&expires=1759398991&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/NFLNetwork/tracks-v1a1/mono.m3u8?token=JkZ1svJO60SX9CYNuLOVRg&expires=1759400220&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nfl-redzone" tvg-name="NFL RedZone SD" group-title="Live",NFL RedZone SD
-https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iZ4OdPXpk68hamdSKbS2pg&expires=1759398992&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/NFLRedZone/tracks-v2a1/mono.m3u8?token=yEDNvMNTwGJTb88DO5hF-Q&expires=1759400221&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nfl-redzone" tvg-name="NFL RedZone HD" group-title="Live",NFL RedZone HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iZ4OdPXpk68hamdSKbS2pg&expires=1759398992&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v12.thetvapp.to/hls/NFLRedZone/tracks-v1a1/mono.m3u8?token=ERLVo37xOMF0AnpGQlmUtQ&expires=1759400222&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nhl-network-usa" tvg-name="NHL Network USA SD" group-title="Live",NHL Network USA SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ogoC0JMnewfugu9sxK9g7A&expires=1759398993&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NHLNetwork/tracks-v2a1/mono.m3u8?token=XcbeSPrdeVV7CZwt_FCerg&expires=1759400223&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nhl-network-usa" tvg-name="NHL Network USA HD" group-title="Live",NHL Network USA HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=YsuhUMVrpV5aU_iUOLSsZg&expires=1759398994&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NHLNetwork/tracks-v1a1/mono.m3u8?token=5vaKNLX2A99jxkc2AN-gmQ&expires=1759400223&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nick-jr-east" tvg-name="Nick Jr. East SD" group-title="Live",Nick Jr. East SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=YsuhUMVrpV5aU_iUOLSsZg&expires=1759398994&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NickJrEast/tracks-v2a1/mono.m3u8?token=-r_f1srEyAlgslJv11NzZQ&expires=1759400224&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nick-jr-east" tvg-name="Nick Jr. East HD" group-title="Live",Nick Jr. East HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aEJADSjuWzfBJaUa5LMqBg&expires=1759398995&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NickJrEast/tracks-v1a1/mono.m3u8?token=IgjDE-lFrupTdBc_sA6UFA&expires=1759400225&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nickelodeon-usa-east-feed" tvg-name="Nickelodeon USA East Feed SD" group-title="Live",Nickelodeon USA East Feed SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aEJADSjuWzfBJaUa5LMqBg&expires=1759398995&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NickelodeonEast/tracks-v2a1/mono.m3u8?token=SmyXh0JpyGOc8vwsMsDUJw&expires=1759400225&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nickelodeon-usa-east-feed" tvg-name="Nickelodeon USA East Feed HD" group-title="Live",Nickelodeon USA East Feed HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ONALQiOOfESWukBJPaNrQg&expires=1759398996&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NickelodeonEast/tracks-v1a1/mono.m3u8?token=68HFICiVwY3W0MGog_UfJw&expires=1759400226&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nicktoons-east" tvg-name="Nicktoons East SD" group-title="Live",Nicktoons East SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ONALQiOOfESWukBJPaNrQg&expires=1759398996&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NicktoonsEast/tracks-v2a1/mono.m3u8?token=L52Ay7jhCc0A7azhvPCNXA&expires=1759400227&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="nicktoons-east" tvg-name="Nicktoons East HD" group-title="Live",Nicktoons East HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=NdJ8e1jAp_zgx5W7iTq7iw&expires=1759398997&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/NicktoonsEast/tracks-v1a1/mono.m3u8?token=ApAo4IiBTiNH2CWJelEHmA&expires=1759400228&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="oprah-winfrey-network-usa-eastern" tvg-name="Oprah Winfrey Network USA Eastern SD" group-title="Live",Oprah Winfrey Network USA Eastern SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=NdJ8e1jAp_zgx5W7iTq7iw&expires=1759398997&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/OWNEast/tracks-v2a1/mono.m3u8?token=xwWmc4TMtUjisBgWUW3Iag&expires=1759400228&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="oprah-winfrey-network-usa-eastern" tvg-name="Oprah Winfrey Network USA Eastern HD" group-title="Live",Oprah Winfrey Network USA Eastern HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=8zAvJG-xpMikL9E85bDBog&expires=1759398998&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/OWNEast/tracks-v1a1/mono.m3u8?token=SPEYQOJet7Wd95AerWsFhQ&expires=1759400229&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="outdoor-channel-us" tvg-name="Outdoor Channel US SD" group-title="Live",Outdoor Channel US SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=kY8lbPOZibNku23PzYsz9g&expires=1759398999&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/OutdoorChannel/tracks-v2a1/mono.m3u8?token=bfW-_JP9L_OJNs98YHEqYA&expires=1759400230&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="outdoor-channel-us" tvg-name="Outdoor Channel US HD" group-title="Live",Outdoor Channel US HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=kY8lbPOZibNku23PzYsz9g&expires=1759398999&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/OutdoorChannel/tracks-v1a1/mono.m3u8?token=XgpfLF0SuILO6t_3P2wDQg&expires=1759400230&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="oxygen-eastern-feed" tvg-name="Oxygen Eastern Feed SD" group-title="Live",Oxygen Eastern Feed SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=k971h4Btqzf678QJ1T0cbA&expires=1759399000&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/OxygenEast/tracks-v2a1/mono.m3u8?token=3G8MQWNLZIgOXETIwcwfoA&expires=1759400231&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="oxygen-eastern-feed" tvg-name="Oxygen Eastern Feed HD" group-title="Live",Oxygen Eastern Feed HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=k971h4Btqzf678QJ1T0cbA&expires=1759399000&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v18.thetvapp.to/hls/OxygenEast/tracks-v1a1/mono.m3u8?token=IblhmBXVYqCXaWTUCY0rjg&expires=1759400232&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="pbs-wnet-new-york-ny" tvg-name="PBS (WNET) New York, NY SD" group-title="Live",PBS (WNET) New York, NY SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=DdAR2LcE2YJaul6_H41LcA&expires=1759399001&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/WNET/tracks-v2a1/mono.m3u8?token=Xx-U6287-W5q1NGjravv9A&expires=1759400232&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="pbs-wnet-new-york-ny" tvg-name="PBS (WNET) New York, NY HD" group-title="Live",PBS (WNET) New York, NY HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=DdAR2LcE2YJaul6_H41LcA&expires=1759399001&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/WNET/tracks-v1a1/mono.m3u8?token=ryWHtiVCsvglTFmtVQQIDg&expires=1759400233&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="reelzchannel" tvg-name="ReelzChannel SD" group-title="Live",ReelzChannel SD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=L17zCl_emf5Mkix1LYqMnQ&expires=1759399002&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/Reelz/tracks-v2a1/mono.m3u8?token=IVwkBZiHTVVhzBQL9sQ5dg&expires=1759400234&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="reelzchannel" tvg-name="ReelzChannel HD" group-title="Live",ReelzChannel HD
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=L17zCl_emf5Mkix1LYqMnQ&expires=1759399002&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/Reelz/tracks-v1a1/mono.m3u8?token=cSzEv9CL3iISkyuzgKJC2A&expires=1759400235&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="science" tvg-name="Science SD" group-title="Live",Science SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_fJcX-j7mH7DWRiqtbBFrw&expires=1759399003&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/Science/tracks-v2a1/mono.m3u8?token=C0h7YuMu6PG93cz_Wx1l5Q&expires=1759400236&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="science" tvg-name="Science HD" group-title="Live",Science HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=azW0ctzpFesd21JbXC5m5A&expires=1759399004&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/Science/tracks-v1a1/mono.m3u8?token=rMmJUM0SgT1fCGHIaQCepw&expires=1759400236&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sec-network" tvg-name="SEC Network SD" group-title="Live",SEC Network SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=azW0ctzpFesd21JbXC5m5A&expires=1759399004&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/SECN/tracks-v2a1/mono.m3u8?token=CXPuVK_KsthJX9G3r7uSxg&expires=1759400237&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sec-network" tvg-name="SEC Network HD" group-title="Live",SEC Network HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=NHSNMaWU4oHfzyeHvGmKKQ&expires=1759399005&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/SECN/tracks-v1a1/mono.m3u8?token=M-rayDNUvWGmFxWtN9SRCA&expires=1759400238&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="paramount-with-showtime-eastern-feed" tvg-name="Showtime Eastern Feed SD" group-title="Live",Showtime Eastern Feed SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=NHSNMaWU4oHfzyeHvGmKKQ&expires=1759399005&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/ShowtimeEast/tracks-v2a1/mono.m3u8?token=3oh3x5VtCC-bysA0jUhOSw&expires=1759400238&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="paramount-with-showtime-eastern-feed" tvg-name="Showtime Eastern Feed HD" group-title="Live",Showtime Eastern Feed HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=oDQDQJ3uNv1RZj689WaDuw&expires=1759399006&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/ShowtimeEast/tracks-v1a1/mono.m3u8?token=pjJ8BjAT5rSnzrtE3LnmNg&expires=1759400239&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="showtime-2-eastern" tvg-name="Showtime 2 Eastern SD" group-title="Live",Showtime 2 Eastern SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=oDQDQJ3uNv1RZj689WaDuw&expires=1759399006&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/Showtime2East/tracks-v2a1/mono.m3u8?token=4TBXvpGNweRHQSabaodgwg&expires=1759400240&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="showtime-2-eastern" tvg-name="Showtime 2 Eastern HD" group-title="Live",Showtime 2 Eastern HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=8dosPumEP5g6Yyf-POkXDg&expires=1759399007&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/Showtime2East/tracks-v1a1/mono.m3u8?token=rzcOnZeWs5s2I6jhftbW9A&expires=1759400241&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sny-sportsnet-new-york-comcast" tvg-name="SNY Sportsnet New York Comcast SD" group-title="Live",SNY Sportsnet New York Comcast SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Vysxm3WixVZpH5cVd2Jtig&expires=1759399008&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/sny-sportsnet-new-york-comcast/tracks-v2a1/mono.m3u8?token=W7aL_YNgmcOLZF3XrrevXg&expires=1759400241&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sny-sportsnet-new-york-comcast" tvg-name="SNY Sportsnet New York Comcast HD" group-title="Live",SNY Sportsnet New York Comcast HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Vysxm3WixVZpH5cVd2Jtig&expires=1759399008&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/sny-sportsnet-new-york-comcast/tracks-v1a1/mono.m3u8?token=rWik2vovudk7Xox1kjpHEQ&expires=1759400242&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="space-city-home-network" tvg-name="Space City Home Network SD" group-title="Live",Space City Home Network SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Pb-XxPorBFzrXMNhmt6W3g&expires=1759399009&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/space-city-home-network/tracks-v2a1/mono.m3u8?token=fJUL20slM1k9AhIyM5NaMw&expires=1759400243&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="space-city-home-network" tvg-name="Space City Home Network HD" group-title="Live",Space City Home Network HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Pb-XxPorBFzrXMNhmt6W3g&expires=1759399009&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/space-city-home-network/tracks-v1a1/mono.m3u8?token=9RzWjAAzQ_fRLDYHZIdzpQ&expires=1759400243&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="spectrum-sportsnet-la" tvg-name="Spectrum SportsNet LA SD" group-title="Live",Spectrum SportsNet LA SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=9n76vc1FQtsj1g5btgKiwQ&expires=1759399010&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/spectrum-sportsnet-la/tracks-v2a1/mono.m3u8?token=hhdF9c0f9nHZUMMf6ncIGQ&expires=1759400244&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="spectrum-sportsnet-la" tvg-name="Spectrum SportsNet LA HD" group-title="Live",Spectrum SportsNet LA HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=9n76vc1FQtsj1g5btgKiwQ&expires=1759399010&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/spectrum-sportsnet-la/tracks-v1a1/mono.m3u8?token=krOgXqb9kjzMc8YSw6agdg&expires=1759400245&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="spectrum-sportsnet" tvg-name="Spectrum Sportsnet Lakers SD" group-title="Live",Spectrum Sportsnet Lakers SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=eFV039qcx9ziSMT0M79w3w&expires=1759399011&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/spectrum-sportsnet/tracks-v2a1/mono.m3u8?token=67oDtiE4xYnpRy7VwlAsZQ&expires=1759400246&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="spectrum-sportsnet" tvg-name="Spectrum Sportsnet Lakers HD" group-title="Live",Spectrum Sportsnet Lakers HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=eFV039qcx9ziSMT0M79w3w&expires=1759399011&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/spectrum-sportsnet/tracks-v1a1/mono.m3u8?token=8TJtkCIRZJih-pOBVo1QmQ&expires=1759400246&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-east" tvg-name="Sportsnet (East) SD" group-title="Live",Sportsnet (East) SD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=RcYDd88NReC2xHW60A0mAQ&expires=1759399012&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v3.thetvapp.to/hls/sportsnet-east/tracks-v2a1/mono.m3u8?token=gnrSNcsMbf2GZFnVuH-PXw&expires=1759400247&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-east" tvg-name="Sportsnet (East) HD" group-title="Live",Sportsnet (East) HD
-https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=RcYDd88NReC2xHW60A0mAQ&expires=1759399012&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/sportsnet-east/tracks-v1a1/mono.m3u8?token=QImCEK2RaSHLjNw5-oO38Q&expires=1759400248&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-360" tvg-name="Sportsnet 360 SD" group-title="Live",Sportsnet 360 SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ggFQtdf2wkT7m_DaDlyehA&expires=1759399013&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/sportsnet-360/tracks-v2a1/mono.m3u8?token=2Y9g8t3stuME1F5P8dbFpw&expires=1759400249&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-360" tvg-name="Sportsnet 360 HD" group-title="Live",Sportsnet 360 HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=PhkvNpEs84vz5-tvPKYuog&expires=1759399014&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/sportsnet-360/tracks-v1a1/mono.m3u8?token=1v8nYAFVCopYHSyXxoXG5w&expires=1759400249&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-one" tvg-name="Sportsnet One SD" group-title="Live",Sportsnet One SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=PhkvNpEs84vz5-tvPKYuog&expires=1759399014&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/sportsnet-one/tracks-v2a1/mono.m3u8?token=KTa7q518PiEsUeB_4RUTIw&expires=1759400250&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-one" tvg-name="Sportsnet One HD" group-title="Live",Sportsnet One HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FMRNDLCCG4_163Bmte6FPA&expires=1759399015&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/sportsnet-one/tracks-v1a1/mono.m3u8?token=mpbtUK2EdWsZVgn8mT9jAw&expires=1759400251&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-ontario" tvg-name="Sportsnet Ontario SD" group-title="Live",Sportsnet Ontario SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FMRNDLCCG4_163Bmte6FPA&expires=1759399015&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/sportsnet-ontario/tracks-v2a1/mono.m3u8?token=aLegFwQCZzS0tTOemk1D-Q&expires=1759400251&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-ontario" tvg-name="Sportsnet Ontario HD" group-title="Live",Sportsnet Ontario HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=vFHMogs-1q-PB0Dj9tBUZw&expires=1759399016&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v8.thetvapp.to/hls/sportsnet-ontario/tracks-v1a1/mono.m3u8?token=proYExKwYtmkNH248IQfDw&expires=1759400252&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-pacific" tvg-name="Sportsnet Pacific SD" group-title="Live",Sportsnet Pacific SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=vFHMogs-1q-PB0Dj9tBUZw&expires=1759399016&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/sportsnet-pacific/tracks-v2a1/mono.m3u8?token=W7RSjXnY0LnlxmcJ_vZT7A&expires=1759400253&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-pacific" tvg-name="Sportsnet Pacific HD" group-title="Live",Sportsnet Pacific HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=swsnXLtZquihusbYWF0MTA&expires=1759399017&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/sportsnet-pacific/tracks-v1a1/mono.m3u8?token=EqK1856RFlw1lw8MtxHT3w&expires=1759400254&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-pittsburgh" tvg-name="Sportsnet Pittsburgh SD" group-title="Live",Sportsnet Pittsburgh SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=KaYDQBlLIaavqAbLyxo4wg&expires=1759399018&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/sportsnet-pittsburgh/tracks-v2a1/mono.m3u8?token=Ucxol-IAjkCVBacXWRpQMw&expires=1759400254&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-pittsburgh" tvg-name="Sportsnet Pittsburgh HD" group-title="Live",Sportsnet Pittsburgh HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=KaYDQBlLIaavqAbLyxo4wg&expires=1759399018&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/sportsnet-pittsburgh/tracks-v1a1/mono.m3u8?token=re-_7WaS8m8bZczbcuTQhw&expires=1759400255&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-west" tvg-name="Sportsnet West SD" group-title="Live",Sportsnet West SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Kr4rSUZP8lJ6bvnxIuPtvw&expires=1759399019&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/sportsnet-west/tracks-v2a1/mono.m3u8?token=ULBsadkeAeax7q7rzwvA-Q&expires=1759400256&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sportsnet-west" tvg-name="Sportsnet West HD" group-title="Live",Sportsnet West HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Kr4rSUZP8lJ6bvnxIuPtvw&expires=1759399019&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/sportsnet-west/tracks-v1a1/mono.m3u8?token=-Ie4deqqlbBbqgzOJ3_N3g&expires=1759400256&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="starz-eastern" tvg-name="Starz Eastern SD" group-title="Live",Starz Eastern SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=xCSByvkmQOnJmF5k9WtrAA&expires=1759399020&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/StarzEast/tracks-v2a1/mono.m3u8?token=cBv6VNmbpUUsvY4KCb4WSg&expires=1759400257&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="starz-eastern" tvg-name="Starz Eastern HD" group-title="Live",Starz Eastern HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=xCSByvkmQOnJmF5k9WtrAA&expires=1759399020&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/StarzEast/tracks-v1a1/mono.m3u8?token=jWw5X0fWujFNq7XTZR5FYg&expires=1759400258&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sundancetv-usa-east" tvg-name="SundanceTV USA East SD" group-title="Live",SundanceTV USA East SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=awxEL4FhU1FtfU_AvEbtDA&expires=1759399021&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/SundanceTVEast/tracks-v2a1/mono.m3u8?token=CfyGW3tfZ_E93jw2dSxR3A&expires=1759400259&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="sundancetv-usa-east" tvg-name="SundanceTV USA East HD" group-title="Live",SundanceTV USA East HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=awxEL4FhU1FtfU_AvEbtDA&expires=1759399021&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/SundanceTVEast/tracks-v1a1/mono.m3u8?token=bgqiptC2zKSx2MB29JgXAA&expires=1759400259&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="syfy-eastern-feed" tvg-name="Syfy Eastern Feed SD" group-title="Live",Syfy Eastern Feed SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=D-I-l0xNaITDz1ePpWJn3Q&expires=1759399022&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/SyfyEast/tracks-v2a1/mono.m3u8?token=QE9O3kKsCKTtxqy9FFt2wg&expires=1759400260&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="syfy-eastern-feed" tvg-name="Syfy Eastern Feed HD" group-title="Live",Syfy Eastern Feed HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=BQUnWZM4mps2mWthB8e-9Q&expires=1759399023&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/SyfyEast/tracks-v1a1/mono.m3u8?token=cs1JsUpqtB2gB50db5-UCg&expires=1759400261&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tbs-east" tvg-name="TBS East SD" group-title="Live",TBS East SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=BQUnWZM4mps2mWthB8e-9Q&expires=1759399023&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/TBSEast/tracks-v2a1/mono.m3u8?token=c0kvPmDF3fsNnd0tUb-qhA&expires=1759400261&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tbs-east" tvg-name="TBS East HD" group-title="Live",TBS East HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Uz78gwQ2nPCdT0xgRvPh7A&expires=1759399024&user_id=MTcyLjIwOC4xMjUuMTk3
+https://e5.thetvapp.to/hls/TBSEast/tracks-v1a1/mono.m3u8?token=yY36yGxRFlicQ44agnHSjw&expires=1759400262&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="teennick-eastern" tvg-name="TeenNick Eastern SD" group-title="Live",TeenNick Eastern SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Uz78gwQ2nPCdT0xgRvPh7A&expires=1759399024&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/TeenNickEast/tracks-v2a1/mono.m3u8?token=qt6PgjOYPCDEogMOce0EHg&expires=1759400263&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="teennick-eastern" tvg-name="TeenNick Eastern HD" group-title="Live",TeenNick Eastern HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=u70So-blVbw3pQcPoOGoKA&expires=1759399025&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/TeenNickEast/tracks-v1a1/mono.m3u8?token=IOEirvfwXM_60vCM-fyndw&expires=1759400263&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="telemundo-eastern-feed" tvg-name="Telemundo Eastern Feed SD" group-title="Live",Telemundo Eastern Feed SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=u70So-blVbw3pQcPoOGoKA&expires=1759399025&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/TelemundoEast/tracks-v2a1/mono.m3u8?token=8ejILRcrB4DGI9FIWIFvlg&expires=1759400264&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="telemundo-eastern-feed" tvg-name="Telemundo Eastern Feed HD" group-title="Live",Telemundo Eastern Feed HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EgPEXkJzeBFgIjINvqyFjw&expires=1759399026&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/TelemundoEast/tracks-v1a1/mono.m3u8?token=-4yWd8SGq2l5ibT_7wvWtg&expires=1759400265&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="the-cooking-channel" tvg-name="The Cooking Channel SD" group-title="Live",The Cooking Channel SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=EgPEXkJzeBFgIjINvqyFjw&expires=1759399026&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/CookingChannel/tracks-v2a1/mono.m3u8?token=WNPl2kohqoGoqNokInvLnA&expires=1759400265&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="the-cooking-channel" tvg-name="The Cooking Channel HD" group-title="Live",The Cooking Channel HD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=e4CFD1a1SWEzk6j_mZnQmg&expires=1759399027&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/CookingChannel/tracks-v1a1/mono.m3u8?token=AJecT8R_0nV2l83KrF6DQA&expires=1759400266&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="the-tennis-channel" tvg-name="The Tennis Channel SD" group-title="Live",The Tennis Channel SD
-https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=GWPd-O-LKuHp-eRzxcNYGg&expires=1759399028&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/TennisChannel/tracks-v2a1/mono.m3u8?token=GoSvJeARWlRuWWRQ1pQgmg&expires=1759400267&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="the-tennis-channel" tvg-name="The Tennis Channel HD" group-title="Live",The Tennis Channel HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=GWPd-O-LKuHp-eRzxcNYGg&expires=1759399028&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v1.thetvapp.to/hls/TennisChannel/tracks-v1a1/mono.m3u8?token=onvZ1EEJF21UCvxEwaRoew&expires=1759400267&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="the-weather-channel" tvg-name="The Weather Channel SD" group-title="Live",The Weather Channel SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=bs47OLWniXjvhTwhmw1L5g&expires=1759399029&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TheWeatherChannel/tracks-v2a1/mono.m3u8?token=ManGV-78G267dJcRIyaj4w&expires=1759400268&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="the-weather-channel" tvg-name="The Weather Channel HD" group-title="Live",The Weather Channel HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=bs47OLWniXjvhTwhmw1L5g&expires=1759399029&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TheWeatherChannel/tracks-v1a1/mono.m3u8?token=o21TYFZbAlF5C2wY7gpHaQ&expires=1759400269&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tlc-usa-eastern" tvg-name="TLC USA Eastern SD" group-title="Live",TLC USA Eastern SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2TVpp36TTXvPNcoCzFlqsA&expires=1759399030&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TLCEast/tracks-v2a1/mono.m3u8?token=OlJto03jgBCdtNKVHyiIFw&expires=1759400270&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tlc-usa-eastern" tvg-name="TLC USA Eastern HD" group-title="Live",TLC USA Eastern HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=2TVpp36TTXvPNcoCzFlqsA&expires=1759399030&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TLCEast/tracks-v1a1/mono.m3u8?token=31Vlp8coRM3LOXwEQZD48w&expires=1759400270&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tmc-us-eastern-feed" tvg-name="TMC (US) Eastern Feed SD" group-title="Live",TMC (US) Eastern Feed SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=fOPlk_OFG6mpyU3X-GBUkQ&expires=1759399031&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TheMovieChannelEast/tracks-v2a1/mono.m3u8?token=cBSSlhDyO-cxwSGcwEsO_A&expires=1759400271&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tmc-us-eastern-feed" tvg-name="TMC (US) Eastern Feed HD" group-title="Live",TMC (US) Eastern Feed HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=fOPlk_OFG6mpyU3X-GBUkQ&expires=1759399031&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TheMovieChannelEast/tracks-v1a1/mono.m3u8?token=WdSHEPxFZhA3hTBmTqmVFw&expires=1759400272&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tnt-eastern-feed" tvg-name="TNT Eastern Feed SD" group-title="Live",TNT Eastern Feed SD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=TdC_RhZzwS92e41qMwvc4w&expires=1759399032&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TNTEast/tracks-v2a1/mono.m3u8?token=8d7aexOqQRpPrIxo-TzVWQ&expires=1759400272&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tnt-eastern-feed" tvg-name="TNT Eastern Feed HD" group-title="Live",TNT Eastern Feed HD
-https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=tsfXjhTJ3F2tk1X1pG5CFw&expires=1759399033&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TNTEast/tracks-v1a1/mono.m3u8?token=yg-BJLoNvULmJtjIcUGNNw&expires=1759400273&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="travel-us-east" tvg-name="Travel US East SD" group-title="Live",Travel US East SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=tsfXjhTJ3F2tk1X1pG5CFw&expires=1759399033&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TravelChannelEast/tracks-v2a1/mono.m3u8?token=s77Ej5O7NbxhDKcZTP_CjA&expires=1759400274&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="travel-us-east" tvg-name="Travel US East HD" group-title="Live",Travel US East HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=OKPpUhBaJVLDouyVnvkbsw&expires=1759399034&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/TravelChannelEast/tracks-v1a1/mono.m3u8?token=Q-LlsrJZItT279IKK968Kg&expires=1759400275&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="trutv-usa-eastern" tvg-name="truTV USA Eastern SD" group-title="Live",truTV USA Eastern SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=OKPpUhBaJVLDouyVnvkbsw&expires=1759399034&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/truTVEast/tracks-v2a1/mono.m3u8?token=q0udldcP4PQUBXxtCJU20Q&expires=1759400275&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="trutv-usa-eastern" tvg-name="truTV USA Eastern HD" group-title="Live",truTV USA Eastern HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=oGoKeB4BZjl3Z2dTeF1kXw&expires=1759399035&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/truTVEast/tracks-v1a1/mono.m3u8?token=l7HOuzweERMVO93RWVraOw&expires=1759400276&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn1" tvg-name="TSN1 SD" group-title="Live",TSN1 SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=oGoKeB4BZjl3Z2dTeF1kXw&expires=1759399035&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/tsn1/tracks-v2a1/mono.m3u8?token=0feZV-M9ixPQ9bgPdFUBRQ&expires=1759400277&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn1" tvg-name="TSN1 HD" group-title="Live",TSN1 HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=up8zorZypDl5djnOtbFeog&expires=1759399036&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v2.thetvapp.to/hls/tsn1/tracks-v1a1/mono.m3u8?token=hHpMok0K2qee48wyQGHc_g&expires=1759400278&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn2" tvg-name="TSN2 SD" group-title="Live",TSN2 SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FfVEzE5-ojM8TKfHrhCzOg&expires=1759399037&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn2/tracks-v2a1/mono.m3u8?token=jfJ_wMvDAbi-u8fVScs84w&expires=1759400278&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn2" tvg-name="TSN2 HD" group-title="Live",TSN2 HD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FfVEzE5-ojM8TKfHrhCzOg&expires=1759399037&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn2/tracks-v1a1/mono.m3u8?token=5Pt_s6MxzV6F-wAWWVyyaA&expires=1759400279&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn3" tvg-name="TSN3 SD" group-title="Live",TSN3 SD
-https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=jM_evzmzHpm0ZHMBa7rsgQ&expires=1759399038&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn3/tracks-v2a1/mono.m3u8?token=P0UMBTIOh6FrS958RlTxOw&expires=1759400280&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn3" tvg-name="TSN3 HD" group-title="Live",TSN3 HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=jM_evzmzHpm0ZHMBa7rsgQ&expires=1759399038&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn3/tracks-v1a1/mono.m3u8?token=UHrY2UB4UAzYWeH-p74waw&expires=1759400280&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn4" tvg-name="TSN4 SD" group-title="Live",TSN4 SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=QkTPYZK55klJaP8zEjSHsQ&expires=1759399039&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn4/tracks-v2a1/mono.m3u8?token=t6dcL_OuzO1YNzsfajSYDQ&expires=1759400281&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn4" tvg-name="TSN4 HD" group-title="Live",TSN4 HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=QkTPYZK55klJaP8zEjSHsQ&expires=1759399039&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn4/tracks-v1a1/mono.m3u8?token=xF0wyppoJAShSk7GscagIw&expires=1759400282&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn5" tvg-name="TSN5 SD" group-title="Live",TSN5 SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=S0rixWcBho50V8PwhhRfFQ&expires=1759399040&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn5/tracks-v2a1/mono.m3u8?token=KpB0sR-1axsGCGWETi1rKg&expires=1759400283&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tsn5" tvg-name="TSN5 HD" group-title="Live",TSN5 HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=S0rixWcBho50V8PwhhRfFQ&expires=1759399040&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tsn5/tracks-v1a1/mono.m3u8?token=cKXF6OBcS955OFUwGX6n9A&expires=1759400283&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="turner-classic-movies-usa" tvg-name="Turner Classic Movies USA SD" group-title="Live",Turner Classic Movies USA SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=m3ThxV7r9RqmPgCeoMUIKA&expires=1759399041&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/TCMEast/tracks-v2a1/mono.m3u8?token=wpGdDwi1TgzSLnzuC4NVUg&expires=1759400284&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="turner-classic-movies-usa" tvg-name="Turner Classic Movies USA HD" group-title="Live",Turner Classic Movies USA HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aUD1LwvVReyWsvZ66AFCYQ&expires=1759399042&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/TCMEast/tracks-v1a1/mono.m3u8?token=XxZ6hr9Ej5sNEVUIJzY5Ag&expires=1759400285&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tv-land-eastern" tvg-name="TV Land Eastern SD" group-title="Live",TV Land Eastern SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=aUD1LwvVReyWsvZ66AFCYQ&expires=1759399042&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tv-land-eastern/tracks-v2a1/mono.m3u8?token=uQ_glV-4rOnsudXDGloD7A&expires=1759400285&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tv-land-eastern" tvg-name="TV Land Eastern HD" group-title="Live",TV Land Eastern HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=RNEaC7-1ACGvqBdo7ctdkg&expires=1759399043&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/tv-land-eastern/tracks-v1a1/mono.m3u8?token=zu2QdNO65LEZV0TlMQPooQ&expires=1759400286&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tv-one" tvg-name="TV One SD" group-title="Live",TV One SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=RNEaC7-1ACGvqBdo7ctdkg&expires=1759399043&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/TVOne/tracks-v2a1/mono.m3u8?token=z2i9GvzkbkEm4qcCPZJdwg&expires=1759400287&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="tv-one" tvg-name="TV One HD" group-title="Live",TV One HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=m7rm-5RzKoMsK2YlJKChxg&expires=1759399044&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v17.thetvapp.to/hls/TVOne/tracks-v1a1/mono.m3u8?token=L0HrNruQMiYHFLJ3KIr83A&expires=1759400287&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="universal-kids" tvg-name="Universal Kids SD" group-title="Live",Universal Kids SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=m7rm-5RzKoMsK2YlJKChxg&expires=1759399044&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/UniversalKidsEast/tracks-v2a1/mono.m3u8?token=xhAkwNhhvbWGx97W9xN7Mw&expires=1759400288&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="universal-kids" tvg-name="Universal Kids HD" group-title="Live",Universal Kids HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=pLgGoCzFBeQotQeY1mNLrg&expires=1759399045&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/UniversalKidsEast/tracks-v1a1/mono.m3u8?token=iQpQG376w_SbbCqUKJ1lPQ&expires=1759400289&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="univision-eastern-feed" tvg-name="Univision Eastern Feed SD" group-title="Live",Univision Eastern Feed SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FTSupidR4rvnJIh5EOjOwg&expires=1759399046&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/UnivisionEast/tracks-v2a1/mono.m3u8?token=1xbIAPkYZH4ywzKT3XPtyg&expires=1759400290&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="univision-eastern-feed" tvg-name="Univision Eastern Feed HD" group-title="Live",Univision Eastern Feed HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=FTSupidR4rvnJIh5EOjOwg&expires=1759399046&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/UnivisionEast/tracks-v1a1/mono.m3u8?token=OEVyLds1ixSXCaD12QhlSw&expires=1759400290&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="usa-network-east-feed" tvg-name="USA Network East Feed SD" group-title="Live",USA Network East Feed SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=qUx1iXqqRwpyHDaIQpBpDQ&expires=1759399047&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/USANetworkEast/tracks-v2a1/mono.m3u8?token=crFz2eRNVdPzfLBN_c3qzA&expires=1759400291&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="usa-network-east-feed" tvg-name="USA Network East Feed HD" group-title="Live",USA Network East Feed HD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=qUx1iXqqRwpyHDaIQpBpDQ&expires=1759399047&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/USANetworkEast/tracks-v1a1/mono.m3u8?token=3gcqKuDQGLGj92Oh3ef7sg&expires=1759400292&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="vh1-eastern-feed" tvg-name="VH1 Eastern Feed SD" group-title="Live",VH1 Eastern Feed SD
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=wRIsmKg1lGJn_O4BIADSfQ&expires=1759399048&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v15.thetvapp.to/hls/VH1East/tracks-v2a1/mono.m3u8?token=jwFyTShfMp8M_qcluolIeg&expires=1759400293&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="vh1-eastern-feed" tvg-name="VH1 Eastern Feed HD" group-title="Live",VH1 Eastern Feed HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=wRIsmKg1lGJn_O4BIADSfQ&expires=1759399048&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/VH1East/tracks-v1a1/mono.m3u8?token=GC-i_r4jSeoJqjQaC8ANkg&expires=1759400293&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="vice" tvg-name="VICE SD" group-title="Live",VICE SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=vr3DTAHiJ8FF7RQ54NZzgg&expires=1759399049&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/VICETV/tracks-v2a1/mono.m3u8?token=3o2tK7bYniOvdyi_gducZg&expires=1759400294&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="vice" tvg-name="VICE HD" group-title="Live",VICE HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=vr3DTAHiJ8FF7RQ54NZzgg&expires=1759399049&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/VICETV/tracks-v1a1/mono.m3u8?token=mSEvrKpDUvSRlsTzD2hTig&expires=1759400295&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="we-womens-entertainment-eastern" tvg-name="WE (Women's Entertainment) Eastern SD" group-title="Live",WE (Women's Entertainment) Eastern SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=rIbpI0Aj_UOdJtHlQvYaYA&expires=1759399050&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/WeTVEast/tracks-v2a1/mono.m3u8?token=Jx8X7kcqcAxa7ggSxlPCDA&expires=1759400295&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="we-womens-entertainment-eastern" tvg-name="WE (Women's Entertainment) Eastern HD" group-title="Live",WE (Women's Entertainment) Eastern HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=af0EroqU4-ybWJ9x4h0Yrg&expires=1759399051&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/WeTVEast/tracks-v1a1/mono.m3u8?token=K91C2t7EdRjtAM1dH6-mPw&expires=1759400296&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="wpix-new-york-superstation" tvg-name="WPIX New York (SUPERSTATION) SD" group-title="Live",WPIX New York (SUPERSTATION) SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=af0EroqU4-ybWJ9x4h0Yrg&expires=1759399051&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/WPIX/tracks-v2a1/mono.m3u8?token=1WqvjI0gqlui_6D1OLwiNQ&expires=1759400297&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="wpix-new-york-superstation" tvg-name="WPIX New York (SUPERSTATION) HD" group-title="Live",WPIX New York (SUPERSTATION) HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=AX0FLlIS_9sa3-cbkvzKvQ&expires=1759399052&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/WPIX/tracks-v1a1/mono.m3u8?token=qN3A_5djGIBkOMkDWXKT1A&expires=1759400297&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="yes-network" tvg-name="Yes Network SD" group-title="Live",Yes Network SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=AX0FLlIS_9sa3-cbkvzKvQ&expires=1759399052&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/yes-network/tracks-v2a1/mono.m3u8?token=kdV2PGASEugA4CabuBzyAA&expires=1759400298&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="yes-network" tvg-name="Yes Network HD" group-title="Live",Yes Network HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=22ZPRYT3BH-TmoxfdHzexg&expires=1759399053&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/yes-network/tracks-v1a1/mono.m3u8?token=5khkh8bBDv5rQEJ-jqR_aQ&expires=1759400299&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="Detroit Tigers @ Cleveland Guardians (10/01 1:08 PM ET) SD" group-title="MLB",Detroit Tigers @ Cleveland Guardians (10/01 1:08 PM ET) SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=22ZPRYT3BH-TmoxfdHzexg&expires=1759399053&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v2a1/mono.m3u8?token=hq_qOkuX4G16ZBcKNNQjbw&expires=1759400300&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="Detroit Tigers @ Cleveland Guardians (10/01 1:08 PM ET) HD" group-title="MLB",Detroit Tigers @ Cleveland Guardians (10/01 1:08 PM ET) HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=GwuGMbcFPvZw8wmH-fzWCA&expires=1759399054&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=Qks05FQYYof4f8ATXw-Kvw&expires=1759400300&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="San Diego Padres @ Chicago Cubs (10/01 3:08 PM ET) SD" group-title="MLB",San Diego Padres @ Chicago Cubs (10/01 3:08 PM ET) SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=OT07VDTjNpls60VoSB37Fg&expires=1759399055&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v2a1/mono.m3u8?token=-mws6awv6f8nMSGG6mqoJA&expires=1759400301&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="San Diego Padres @ Chicago Cubs (10/01 3:08 PM ET) HD" group-title="MLB",San Diego Padres @ Chicago Cubs (10/01 3:08 PM ET) HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=OT07VDTjNpls60VoSB37Fg&expires=1759399055&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=L7g4HQGNyjOD7VcIxTzKHg&expires=1759400302&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="Boston Red Sox @ New York Yankees (10/01 6:08 PM ET) SD" group-title="MLB",Boston Red Sox @ New York Yankees (10/01 6:08 PM ET) SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=3zGTuLnTzCx3kNgdGskKOQ&expires=1759399056&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v2a1/mono.m3u8?token=SbqvXts42zvgQBrLgbnAgA&expires=1759400302&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="Boston Red Sox @ New York Yankees (10/01 6:08 PM ET) HD" group-title="MLB",Boston Red Sox @ New York Yankees (10/01 6:08 PM ET) HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=3zGTuLnTzCx3kNgdGskKOQ&expires=1759399056&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v14.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=PE443qupW-cC5V6itxj2nw&expires=1759400303&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="Cincinnati Reds @ Los Angeles Dodgers (10/01 9:08 PM ET) SD" group-title="MLB",Cincinnati Reds @ Los Angeles Dodgers (10/01 9:08 PM ET) SD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=8laSUqQTtPTiVb-2qjVjrw&expires=1759399057&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v16.thetvapp.to/hls/ESPN/tracks-v2a1/mono.m3u8?token=J8GFfhtdw4kz7534TzM1Bg&expires=1759400304&user_id=NTIuMTY1LjI1MS4yNDQ=
 #EXTINF:-1 tvg-id="" tvg-name="Cincinnati Reds @ Los Angeles Dodgers (10/01 9:08 PM ET) HD" group-title="MLB",Cincinnati Reds @ Los Angeles Dodgers (10/01 9:08 PM ET) HD
-https://e2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=WVdDoXUJDotyMCPHHssrdQ&expires=1759399058&user_id=MTcyLjIwOC4xMjUuMTk3
+https://v16.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=xqP5Sq2YCF94g2eldlHhsQ&expires=1759400304&user_id=NTIuMTY1LjI1MS4yNDQ=
