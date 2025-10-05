@@ -295,7 +295,7 @@ def main():
     
     # Tüm sayfaları tara
     start_page = 1
-    end_page = 108  # Tüm sayfalar
+    end_page = 10  # Tüm sayfalar
     
     extractor.scan_all_pages(start_page, end_page)
     
