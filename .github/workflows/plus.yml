@@ -27,7 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
         
-    - name: 🚀 Playlist oluştur
+    - name: 🚀 Playlist oluştur (108 SAYFA)
       run: |
         python plus.py
         
@@ -36,6 +36,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add plus-diziler.m3u
+        git add dizipal_progress.json
         git commit -m "🤖 Günlük Dizipal Playlist Güncellemesi - $(date +'%Y-%m-%d %H:%M')" || echo "Değişiklik yok"
         
     - name: 🚀 Değişiklikleri push et
