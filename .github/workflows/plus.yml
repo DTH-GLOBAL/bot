@@ -27,7 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
         
-    - name: 🚀 Playlist oluştur (108 SAYFA)
+    - name: 🚀 ULTRA HIZLI Playlist oluştur (108 SAYFA)
       run: |
         python plus.py
         
