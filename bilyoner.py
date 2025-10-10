@@ -1,64 +1,80 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import requests
-from bs4 import BeautifulSoup
-import sys
+import re
+import os
 
-def find_active_domain():
-    """1'den 199'a kadar domain'leri test et, aktif olanı bul."""
+def aktif_domain_bul():
+    """
+    1️⃣ 1..199 arası aktif domaini bulur.
+    """
     for i in range(1, 200):
-        domain = f"bilyonersport{i}.com"
-        url = f"https://{domain}/"
+        domain = f"https://bilyonersport{i}.com/"
         try:
-            response = requests.get(url, timeout=5)
-            if response.status_code == 200:
-                print(f"Aktif domain bulundu: {domain}")
-                return domain, url
-        except Exception as e:
-            print(f"{domain} hatası: {e}", file=sys.stderr)
-            continue
-    return None, None
+            r = requests.get(domain, timeout=3)
+            if r.status_code == 200 and "channel-list" in r.text:
+                print(f"✅ Aktif domain bulundu: {domain}")
+                return domain
+        except:
+            pass
+    print("❌ Aktif domain bulunamadı.")
+    return None
 
-def extract_channels(base_url):
-    """Sayfa kaynağından kanalları çıkar."""
+def kanallari_cek(domain):
+    """
+    2️⃣ Kanal isimleri ve M3U8 linklerini çeker.
+    """
+    print("🔍 Kanal listesi çekiliyor...")
     try:
-        response = requests.get(base_url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        channel_div = soup.find('div', id='channelList')
-        if not channel_div:
-            print("Kanal listesi bulunamadı!", file=sys.stderr)
-            return []
-
-        channels = []
-        for a_tag in channel_div.find_all('a', class_='channel-item'):
-            name_div = a_tag.find('div', class_='channel-name')
-            if name_div:
-                name = name_div.get_text(strip=True)
-                href = a_tag.get('href')
-                if name and href:
-                    channels.append((name, href))
-        print(f"{len(channels)} kanal çıkarıldı.")
-        return channels
+        r = requests.get(domain, timeout=5)
+        html = r.text
     except Exception as e:
-        print(f"Çıkarma hatası: {e}", file=sys.stderr)
+        print("⚠️ Sayfa çekilemedi:", e)
         return []
 
-def generate_m3u(channels, output_file='bilyoner.m3u'):
-    """M3U dosyasını üret."""
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write('#EXTM3U\n')
-        for name, url in channels:
-            f.write(f'#EXTINF:-1 tvg-name="{name}",{name}\n')
-            f.write(f'{url}\n')
-    print(f"M3U dosyası kaydedildi: {output_file}")
+    # Esnek regex - domain sabit değil
+    hrefs = re.findall(r'href="([^"]+index\.m3u8[^"]*)"', html)
+    names = re.findall(r'<div class="channel-name">(.*?)</div>', html)
+
+    if not hrefs or not names:
+        print("⚠️ Kanal listesi bulunamadı.")
+        return []
+
+    kanallar = []
+    for name, link in zip(names, hrefs):
+        kanallar.append((name.strip(), link.strip()))
+    return kanallar
+
+def m3u_olustur(kanallar, referer):
+    """
+    3️⃣ M3U dosyasını oluşturur ve /sdcard/ içine kaydeder.
+    """
+    path = os.path.join("/sdcard", "bilyoner_kanallar.m3u")
+    print(f"💾 M3U dosyası oluşturuluyor: {path}")
+
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for name, url in kanallar:
+                f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="BilyonerSport",{name}\n')
+                f.write(f'#EXTVLCOPT:http-referrer={referer}\n')
+                f.write(f"{url}\n\n")
+        print(f"✅ {len(kanallar)} kanal eklendi!")
+        print(f"📁 Dosya kaydedildi: {path}")
+    except Exception as e:
+        print("❌ M3U dosyası oluşturulamadı:", e)
+
+def main():
+    aktif = aktif_domain_bul()
+    if aktif:
+        kanallar = kanallari_cek(aktif)
+        if kanallar:
+            m3u_olustur(kanallar, aktif)
+        else:
+            print("⚠️ Kanal bulunamadı.")
+    else:
+        print("⚠️ Aktif domain bulunamadı.")
 
 if __name__ == "__main__":
-    active_domain, base_url = find_active_domain()
-    if not active_domain:
-        print("Aktif domain bulunamadı! Çıkılıyor.", file=sys.stderr)
-        sys.exit(1)
-    
-    channels = extract_channels(base_url)
-    if channels:
-        generate_m3u(channels)
-    else:
-        print("Kanal bulunamadı!", file=sys.stderr)
-        sys.exit(1)
+    main()
