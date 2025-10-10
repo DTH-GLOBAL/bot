@@ -1,123 +1,64 @@
 import requests
-import re
-import os
+from bs4 import BeautifulSoup
 import sys
-from datetime import datetime
 
-def aktif_domain_bul():
-    print("🔄 Aktif domain aranıyor...")
-    for i in range(1, 50):
-        domain = f"https://bilyonersport{i}.com/"
+def find_active_domain():
+    """1'den 199'a kadar domain'leri test et, aktif olanı bul."""
+    for i in range(1, 200):
+        domain = f"bilyonersport{i}.com"
+        url = f"https://{domain}/"
         try:
-            print(f"🔍 Denenen domain: {domain}")
-            r = requests.get(domain, timeout=5, headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            })
-            print(f"📡 HTTP Status: {r.status_code}")
-            
-            if r.status_code == 200:
-                if "channel-list" in r.text or "index.m3u8" in r.text:
-                    print(f"✅ Aktif domain bulundu: {domain}")
-                    return domain
-                else:
-                    print("❌ channel-list veya m3u8 bulunamadı")
-            else:
-                print(f"❌ HTTP {r.status_code}")
-                
+            response = requests.get(url, timeout=5)
+            if response.status_code == 200:
+                print(f"Aktif domain bulundu: {domain}")
+                return domain, url
         except Exception as e:
-            print(f"❌ Hata: {e}")
+            print(f"{domain} hatası: {e}", file=sys.stderr)
             continue
-            
-    print("❌ Hiçbir domain çalışmıyor")
-    return None
+    return None, None
 
-def kanallari_cek(domain):
-    print(f"🔍 Kanallar çekiliyor: {domain}")
+def extract_channels(base_url):
+    """Sayfa kaynağından kanalları çıkar."""
     try:
-        r = requests.get(domain, timeout=10, headers={
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        })
-        html = r.text
-        print(f"📄 HTML uzunluğu: {len(html)} karakter")
+        response = requests.get(base_url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        channel_div = soup.find('div', id='channelList')
+        if not channel_div:
+            print("Kanal listesi bulunamadı!", file=sys.stderr)
+            return []
 
-        # Debug için HTML'nin bir kısmını göster
-        if len(html) < 1000:
-            print(f"📝 HTML Önizleme: {html[:500]}")
-        else:
-            print("📝 HTML çok uzun, kanallar aranıyor...")
-
-        # Kanal isimlerini ve linklerini çek
-        pattern = r'<div class="channel-name">(.*?)</div>.*?href="(.*?index\.m3u8.*?)"'
-        matches = re.findall(pattern, html, re.DOTALL)
-        
-        print(f"🔍 Regex eşleşme sayısı: {len(matches)}")
-        
-        if matches:
-            kanallar = []
-            for name, url in matches:
-                kanallar.append((name.strip(), url.strip()))
-                print(f"📺 Kanal bulundu: {name.strip()}")
-            return kanallar
-        else:
-            print("❌ Regex ile kanal bulunamadı, alternatif pattern deneniyor...")
-            
-            # Alternatif pattern
-            names = re.findall(r'<div class="channel-name">(.*?)</div>', html)
-            urls = re.findall(r'href="(.*?index\.m3u8.*?)"', html)
-            
-            print(f"📊 Alternatif - İsimler: {len(names)}, URL'ler: {len(urls)}")
-            
-            if names and urls and len(names) == len(urls):
-                kanallar = []
-                for name, url in zip(names, urls):
-                    kanallar.append((name.strip(), url.strip()))
-                    print(f"📺 Kanal bulundu: {name.strip()}")
-                return kanallar
-            else:
-                print("❌ Alternatif pattern de çalışmadı")
-                return []
-                
+        channels = []
+        for a_tag in channel_div.find_all('a', class_='channel-item'):
+            name_div = a_tag.find('div', class_='channel-name')
+            if name_div:
+                name = name_div.get_text(strip=True)
+                href = a_tag.get('href')
+                if name and href:
+                    channels.append((name, href))
+        print(f"{len(channels)} kanal çıkarıldı.")
+        return channels
     except Exception as e:
-        print(f"❌ Kanal çekme hatası: {e}")
+        print(f"Çıkarma hatası: {e}", file=sys.stderr)
         return []
 
-def m3u_olustur(kanallar, referer):
-    filename = "bilyoner_kanallar.m3u"
-    print(f"💾 M3U dosyası oluşturuluyor: {filename}")
-    print(f"📊 Toplam kanal sayısı: {len(kanallar)}")
+def generate_m3u(channels, output_file='bilyoner.m3u'):
+    """M3U dosyasını üret."""
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write('#EXTM3U\n')
+        for name, url in channels:
+            f.write(f'#EXTINF:-1 tvg-name="{name}",{name}\n')
+            f.write(f'{url}\n')
+    print(f"M3U dosyası kaydedildi: {output_file}")
 
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        f.write("#PLAYLIST:Bilyoner Sport Channels\n")
-        f.write(f"#UPDATED:{datetime.now().strftime('%Y%m%d%H%M%S')}\n")
-        f.write("#GITHUB:https://github.com/kullaniciadi/bilyoner-sport\n\n")
-        
-        for name, url in kanallar:
-            f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="BilyonerSport", {name}\n')
-            f.write(f'{url}|Referer={referer}\n\n')
-
-    print(f"✅ M3U dosyası oluşturuldu: {filename}")
-    return filename
-
-def readme_guncelle(kanal_sayisi, domain):
-    print("📄 README.md güncelleniyor...")
-    repo_name = "kullaniciadi/bilyoner-sport"  # Kendi reponla değiştir
-    raw_url = f"https://raw.githubusercontent.com/{repo_name}/main/bilyoner_kanallar.m3u"
+if __name__ == "__main__":
+    active_domain, base_url = find_active_domain()
+    if not active_domain:
+        print("Aktif domain bulunamadı! Çıkılıyor.", file=sys.stderr)
+        sys.exit(1)
     
-    readme_content = f"""# 📺 Bilyoner Sport IPTV Playlist
-
-![GitHub last commit](https://img.shields.io/github/last-commit/{repo_name})
-![Kanallar](https://img.shields.io/badge/Kanallar-{kanal_sayisi}-blue)
-![Otomatik Güncelleme](https://img.shields.io/badge/Güncelleme-5_Dakika-green)
-
-## 🚀 Otomatik Bilyoner Sport Playlist
-
-Bu repository, Bilyoner Sport kanallarını otomatik olarak çekerek M3U playlist oluşturur.
-
-### 📊 Bilgiler
-- **Son Güncelleme:** {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}
-- **Aktif Domain:** `{domain}`
-- **Kanal Sayısı:** {kanal_sayisi}
-- **Güncelleme Sıklığı:** 5 Dakika
-
-### 📥 Playlist Linki
+    channels = extract_channels(base_url)
+    if channels:
+        generate_m3u(channels)
+    else:
+        print("Kanal bulunamadı!", file=sys.stderr)
+        sys.exit(1)
