@@ -1,35 +1,28 @@
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 
 # 1️⃣ Aktif domaini bul
 def aktif_domain_bul():
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                      "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
-    }
+    scraper = cloudscraper.create_scraper()  # Cloudflare JS challenge'ı otomatik geçer
+
     for i in range(1, 200):
         domain = f"https://bilyonersport{i}.com/"
         try:
-            r = requests.get(domain, headers=headers, timeout=5)
+            r = scraper.get(domain, timeout=5)
             if r.status_code == 200:
                 print(f"[+] Aktif domain bulundu: {domain}")
                 return domain
-        except requests.RequestException:
+        except Exception:
             continue
     return None
 
 # 2️⃣ Kanalları çek ve M3U dosyası oluştur
 def kanal_listesi_cek(domain):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                      "(KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-        "Referer": domain
-    }
-
+    scraper = cloudscraper.create_scraper()
     try:
-        r = requests.get(domain, headers=headers, timeout=5)
+        r = scraper.get(domain, timeout=5)
         r.raise_for_status()
-    except requests.RequestException as e:
+    except Exception as e:
         print(f"[-] Siteye erişilemedi: {e}")
         return
 
