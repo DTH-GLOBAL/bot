@@ -1,39 +1,27 @@
-name: Bilyoner IPTV Güncelle
+name: Bilyoner M3U Update
 
 on:
-  workflow_dispatch:  # Manuel tetikleme için (GitHub UI'den)
   schedule:
-    - cron: '*/5 * * * *'  # Her 5 dakikada bir otomatik
+    - cron: '*/5 * * * *'  # Her 5 dakikada bir
+  workflow_dispatch:       # Elle de çalıştırılabilir
 
 jobs:
-  generate-m3u:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Commit için token
+      - uses: actions/checkout@v3
 
-      - name: Python setup
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+      - name: Python paketlerini yükle
+        run: pip install cloudscraper beautifulsoup4
 
-      - name: Bağımlılıkları yükle
-        run: |
-          pip install requests beautifulsoup4
-
-      - name: Script'i çalıştır
+      - name: M3U dosyasını oluştur
         run: python bilyoner.py
 
-      - name: M3U'yu commit et
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add bilyoner.m3u
-          if git diff --staged --quiet; then
-            echo "Değişiklik yok, commit atlanıyor."
-          else
-            git commit -m "Güncel bilyoner.m3u eklendi ($(date))"
-            git push
-          fi
+      - name: Değişiklikleri commit et
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: "M3U dosyası güncellendi"
+          add: bilyoner.m3u
