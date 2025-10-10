@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '*/5 * * * *'  # 5 dakikada bir
-  workflow_dispatch:  # Manuel çalıştırma
+    - cron: '*/5 * * * *'  # 5 dakikada bir otomatik
+  workflow_dispatch:  # Manuel çalıştırma - BUTON İLE
 
 jobs:
   update-playlist:
@@ -33,14 +33,23 @@ jobs:
     - name: 📊 Değişiklikleri kontrol et
       id: git-check
       run: |
-        git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+        echo "Değişiklikler kontrol ediliyor..."
+        git status
+        git diff --exit-code && echo "changes=false" >> $GITHUB_OUTPUT || echo "changes=true" >> $GITHUB_OUTPUT
         
     - name: 💾 Değişiklikleri commit et
       if: steps.git-check.outputs.changes == 'true'
       run: |
+        echo "Değişiklikler commit ediliyor..."
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add bilyoner_kanallar.m3u
         git add README.md
         git commit -m "🤖 Auto-update: $(date +'%d.%m.%Y %H:%M')"
         git push
+        echo "✅ Değişiklikler commit edildi!"
+        
+    - name: ℹ️ Bilgi mesajı
+      if: steps.git-check.outputs.changes == 'false'
+      run: |
+        echo "ℹ️ Yeni değişiklik yok, commit atlanıyor."
