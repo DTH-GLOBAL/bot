@@ -1,4 +1,6 @@
-import requests, re, os
+import requests
+from bs4 import BeautifulSoup
+import time
 
 # 1️⃣ Aktif domaini bul
 def aktif_domain_bul():
@@ -6,57 +8,36 @@ def aktif_domain_bul():
         domain = f"https://bilyonersport{i}.com/"
         try:
             r = requests.get(domain, timeout=3)
-            if r.status_code == 200 and "channel-list" in r.text:
-                print(f"✅ Aktif domain bulundu: {domain}")
+            if r.status_code == 200:
+                print(f"[+] Aktif domain bulundu: {domain}")
                 return domain
-        except:
-            pass
-    print("❌ Aktif domain bulunamadı.")
+        except requests.RequestException:
+            continue
     return None
 
-# 2️⃣ Kanal listesi çek
-def kanallari_cek(domain):
-    print("🔍 Kanal listesi çekiliyor...")
-    r = requests.get(domain, timeout=5)
-    html = r.text
+# 2️⃣ Kanalları çek ve M3U dosyası oluştur
+def kanal_listesi_cek(domain):
+    r = requests.get(domain)
+    soup = BeautifulSoup(r.text, "html.parser")
+    kanal_divs = soup.select(".channel-list .channel-item")
+    m3u_lines = ["#EXTM3U"]
+    
+    for kanal in kanal_divs:
+        isim_tag = kanal.select_one(".channel-name")
+        kanal_ad = isim_tag.text.strip() if isim_tag else "Bilinmeyen Kanal"
+        url = kanal.get("href")
+        if url:
+            # Referrer header için ekleme
+            m3u_lines.append(f'#EXTINF:-1,{kanal_ad}')
+            m3u_lines.append(f'{url} | referer={domain}')
+    
+    with open("bilyoner.m3u", "w", encoding="utf-8") as f:
+        f.write("\n".join(m3u_lines))
+    print("[+] M3U dosyası oluşturuldu: bilyoner.m3u")
 
-    # Esnek regex - domain sabit değil!
-    hrefs = re.findall(r'href="([^"]+index\.m3u8[^"]*)"', html)
-    names = re.findall(r'<div class="channel-name">(.*?)</div>', html)
-
-    if not hrefs or not names:
-        print("⚠️ Kanal listesi bulunamadı.")
-        return []
-
-    kanallar = []
-    for name, link in zip(names, hrefs):
-        name = name.strip()
-        link = link.strip()
-        kanallar.append((name, link))
-    return kanallar
-
-# 3️⃣ M3U dosyasını oluştur
-def m3u_olustur(kanallar, referer):
-    path = os.path.join("/sdcard", "bilyoner_kanallar.m3u")
-    print(f"💾 M3U dosyası oluşturuluyor: {path}")
-
-    with open(path, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        for name, url in kanallar:
-            f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="BilyonerSport", {name}\n')
-            f.write(f'#EXTVLCOPT:http-referrer={referer}\n')
-            f.write(f"{url}\n\n")
-
-    print(f"✅ {len(kanallar)} kanal eklendi!")
-    print(f"📁 Dosya kaydedildi: {path}")
-
-# 🔄 Ana işlem
-aktif = aktif_domain_bul()
-if aktif:
-    kanallar = kanallari_cek(aktif)
-    if kanallar:
-        m3u_olustur(kanallar, aktif)
+if __name__ == "__main__":
+    domain = aktif_domain_bul()
+    if domain:
+        kanal_listesi_cek(domain)
     else:
-        print("Kanal bulunamadı.")
-else:
-    print("Domain bulunamadı.")
+        print("[-] Aktif domain bulunamadı!")
