@@ -11,8 +11,6 @@ https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68e8e9684a7aa2b49124bbac&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Çarpıntı 6. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/carpinti6.jpg" group-title="STARTV Dizileri",TR: Çarpıntı 6. Bölüm
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68f230654a7aa2b49124c038&SecretKey=NtvApiSecret2014*&.m3u8
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Çarpıntı 7. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/1920x1080.webp" group-title="STARTV Dizileri",TR: Çarpıntı 7. Bölüm
-https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68fe92c5456164e7e25bad61&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kral Kaybederse 1. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/krala.jpg" group-title="STARTV Dizileri",TR: Kral Kaybederse 1. Bölüm
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_67ab319bbd61ecd520fff6b2&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kral Kaybederse 2. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/1920(19).jpg" group-title="STARTV Dizileri",TR: Kral Kaybederse 2. Bölüm
@@ -59,6 +57,8 @@ https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68edf65c4a7aa2b49124bdce&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kral Kaybederse 23. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/ral-b214l220m214.jpg" group-title="STARTV Dizileri",TR: Kral Kaybederse 23. Bölüm
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68f712a5456164e7e25baae2&SecretKey=NtvApiSecret2014*&.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kral Kaybederse 24. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/kkhd.jpg" group-title="STARTV Dizileri",TR: Kral Kaybederse 24. Bölüm
+https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68ff5bf7456164e7e25badbf&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Sahipsizler 1. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/sahipsiz-1920.jpg" group-title="STARTV Dizileri",TR: Sahipsizler 1. Bölüm
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_673443a5357b91cd1c42ee12&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Sahipsizler 2. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/sahipsilzer-1920.jpg" group-title="STARTV Dizileri",TR: Sahipsizler 2. Bölüm
@@ -129,6 +129,8 @@ https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68ef68844a7aa2b49124bf3c&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Sahipsizler 35. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/sahipsizler-35.jpg" group-title="STARTV Dizileri",TR: Sahipsizler 35. Bölüm
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_68f876be456164e7e25bab30&SecretKey=NtvApiSecret2014*&.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Sahipsizler 36. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/shd.jpg" group-title="STARTV Dizileri",TR: Sahipsizler 36. Bölüm
+https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_6900743f456164e7e25bae64&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Yalı Çapkını 1. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/4fb234c44b268f17bfca8ff8.jpg" group-title="STARTV Dizileri",TR: Yalı Çapkını 1. Bölüm
 https://dygvideo.dygdigital.com/api/redirect?PublisherId=1&ReferenceId=StarTV_90511&SecretKey=NtvApiSecret2014*&.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Yalı Çapkını 2. Bölüm" tvg-logo="https://media.startv.com.tr/star-tv/images/948d2ad64870ab68ae7fc750.jpg" group-title="STARTV Dizileri",TR: Yalı Çapkını 2. Bölüm
