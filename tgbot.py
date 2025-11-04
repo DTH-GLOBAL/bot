@@ -45,7 +45,7 @@ channels = [
     "selcukbeinsportsmax2", "selcukssport", "selcukssport2",
     "selcuksmartspor", "selcuksmartspor2", "selcuktivibuspor1",
     "selcuktivibuspor2", "selcuktivibuspor3", "selcuktivibuspor4",
-    "sssplus1", "sssplus2", "selcukobs1"
+    "sssplus1", "sssplus2", "selcukobs1", "selcuktabiispor1", "selcuktabiispor2", "selcuktabiispor3", "selcuktabiispor4", "selcuktabiispor5"
 ]
 
 output_lines = []
