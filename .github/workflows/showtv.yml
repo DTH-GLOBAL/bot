@@ -12,6 +12,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
+
     steps:
       - name: Depoyu Klonla
         uses: actions/checkout@v4.2.2
@@ -26,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -U requests tqdm beautifulsoup4 PyYAML
 
-      - name: showtv.py Çalıştır
+      - name: showtv.py Çalıştır (M3U oluşturacak)
         run: python showtv.py
 
       - name: Değişiklik Kontrolü
@@ -39,8 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
+          git pull --no-rebase
           git add .
           git commit -m "🔄 ShowTV güncellendi - Otomatik" || echo "No changes to commit"
           git push origin main
