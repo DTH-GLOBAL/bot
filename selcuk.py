@@ -40,7 +40,7 @@ channels = [
     "selcuktivibuspor2", "selcuktivibuspor3", "selcuktivibuspor4"
 ]
 
-proxy_prefix = "https://plain-night-3215.aykara463.workers.dev/?url="
+proxy_prefix = ""
 
 for id in channels:
     try:
