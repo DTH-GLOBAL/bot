@@ -14,7 +14,7 @@ HEADERS = {
 TIMEOUT_VAL = 15
 # Selçuk Sports'un ilk erişimini proxy ile sağlamak için (Gerekli olabileceği varsayılmıştır)
 PROXY_URL = "https://seep.eu.org/" 
-OUTPUT_FILENAME = "selcuk-sports-iptv.m3u"
+OUTPUT_FILENAME = "selcuk.m3u"
 
 # --- SABİT LOGO TANIMI ---
 # İstenen sabit logo URL'si
