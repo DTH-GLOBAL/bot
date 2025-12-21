@@ -1,4 +1,3 @@
-
 import requests
 import re
 import urllib3
@@ -13,11 +12,11 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
 }
 TIMEOUT_VAL = 15
-PROXY_URL = "https://seep.eu.org/" 
+PROXY_URL = "https://seep.eu.org/"
 OUTPUT_FILENAME = "selcuk.m3u"
 STATIC_LOGO_URL = "https://i.hizliresim.com/8xzjgqv.jpg"
 
-# Channel ID to Name Mapping
+# Channel Map (ID -> Display Name)
 SELCUK_NAMES = {
     "selcukbeinsports1": "beIN Sports 1",
     "selcukbeinsports2": "beIN Sports 2",
@@ -34,8 +33,8 @@ SELCUK_NAMES = {
     "selcuktivibuspor2": "Tivibu Spor 2",
     "selcuktivibuspor3": "Tivibu Spor 3",
     "selcuktivibuspor4": "Tivibu Spor 4",
-    "sssplus1": "S Sport 1",
-    "sssplus2": "S Sport 2",
+    "sssplus1": "S Sport Plus 1",
+    "sssplus2": "S Sport Plus 2",
     "selcuktabiispor1": "Tabii Spor 1",
     "selcuktabiispor2": "Tabii Spor 2",
     "selcuktabiispor3": "Tabii Spor 3",
@@ -43,29 +42,38 @@ SELCUK_NAMES = {
     "selcuktabiispor5": "Tabii Spor 5"
 }
 
-def get_html_proxy(url, use_proxy=True):
-    target_url = url
-    if use_proxy and not url.startswith(PROXY_URL):
-        target_url = PROXY_URL + url
-    
+def get_html_proxy(url):
+    """Fetches HTML via Proxy (for blocked main pages)"""
+    target_url = PROXY_URL + url
     try:
         r = requests.get(target_url, headers=HEADERS, timeout=TIMEOUT_VAL, verify=False)
         r.raise_for_status()
         return r.text
     except Exception as e:
-        print(f"❌ Error fetching {url}: {e}")
+        print(f"Proxy Error: {e}")
         return None
 
-def fetch_selcuk():
+def get_html_direct(url):
+    """Fetches HTML directly (for player pages usually accessible)"""
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT_VAL, verify=False)
+        r.raise_for_status()
+        return r.text
+    except Exception as e:
+        print(f"Direct Error: {e}")
+        return None
+
+def find_base_url():
+    """Locates the dynamic base stream URL using robust regex patterns."""
     print("--- 📡 Scanning Selcuk Sports ---")
     
-    # 1. Get Main Page
+    # 1. Main Page (via Proxy)
     start_url = "https://www.selcuksportshd.is/"
-    html = get_html_proxy(start_url, use_proxy=True)
+    html = get_html_proxy(start_url)
 
     if not html:
         print("❌ Failed to reach main page.")
-        return []
+        return None
 
     # 2. Find Active Domain
     active_domain = ""
@@ -78,74 +86,101 @@ def fetch_selcuk():
     
     if not active_domain:
         print("❌ Active domain not found.")
-        return []
+        return None
     
     print(f"✅ Active Domain: {active_domain}")
 
-    # 3. Go to Active Domain
-    domain_html = get_html_proxy(active_domain, use_proxy=True)
+    # 3. Visit Domain (Direct)
+    domain_html = get_html_direct(active_domain)
     if not domain_html:
-        print("❌ Failed to reach active domain.")
-        return []
+        return None
 
     # 4. Find Player Links
-    player_links = re.findall(r'data-url=["\'](https?://[^"\']+id=[^"\']+)["\']', domain_html)
+    player_links = re.findall(r'data-url=["\'](https?://[^"\']+?id=[^"\']+?)["\']', domain_html)
+    if not player_links:
+        # Fallback regex
+        player_links = re.findall(r'href=["\'](https?://[^"\']+?index\.php\?id=[^"\']+?)["\']', domain_html)
+    
     if not player_links:
         print("❌ No player links found.")
-        return []
+        return None
 
-    results = []
     base_stream_url = ""
 
-    # 5. Extract Base Stream URL
+    # 5. Extract Base URL from Players
+    # Patterns to look for in JS
+    patterns = [
+        r'this\.baseStreamUrl\s*=\s*[\'"](https://[^\'"]+)[\'"]',
+        r'const baseStreamUrl\s*=\s*[\'"](https://[^\'"]+)[\'"]',
+        r'baseStreamUrl\s*:\s*[\'"](https://[^\'"]+)[\'"]',
+        r'streamUrl\s*=\s*[\'"](https://[^\'"]+)[\'"]'
+    ]
+
     for player_url in player_links:
-        html_player = get_html_proxy(player_url, use_proxy=True)
+        # print(f"🔍 Checking player: {player_url}") # Optional verbose log
+        html_player = get_html_direct(player_url)
         if html_player:
-            stream_match = re.search(r'this\.baseStreamUrl\s*=\s*[\'"](https://[^\'"]+)[\'"]', html_player)
-            if stream_match:
-                base_stream_url = stream_match.group(1)
-                if not base_stream_url.endswith('/'): base_stream_url += '/'
-                print(f"🎯 Base Stream URL: {base_stream_url}")
+            for pattern in patterns:
+                stream_match = re.search(pattern, html_player)
+                if stream_match:
+                    base_stream_url = stream_match.group(1)
+                    # Normalize URL to end with 'live/'
+                    if 'live/' in base_stream_url:
+                        base_stream_url = base_stream_url.split('live/')[0] + 'live/'
+                    print(f"🎯 Base Stream URL Found: {base_stream_url}")
+                    break
+            if base_stream_url:
                 break
     
     if not base_stream_url:
-        print("❌ Base stream URL not found.")
-        return []
+        print("❌ Base stream URL not found in any player.")
+        return None
 
-    # 6. Build M3U List
-    for cid, proper_name in SELCUK_NAMES.items():
-        stream_url = base_stream_url + cid + "/playlist.m3u8"
-        channel_name = "TR: " + proper_name
-        
-        m3u_entry = f'#EXTINF:-1 tvg-logo="{STATIC_LOGO_URL}" group-title="TURKIYE DEATHLESS", {channel_name}\n{stream_url}'
-        results.append(m3u_entry)
+    # Ensure URL formatting
+    if not base_stream_url.endswith('/'):
+        base_stream_url += '/'
+    if 'live/' not in base_stream_url:
+        base_stream_url = base_stream_url.rstrip('/') + '/live/'
 
-    print(f"✅ Prepared {len(results)} channels.")
-    return results
+    return base_stream_url
 
 def main():
     print("Starting process...")
     
-    list_selcuk = fetch_selcuk() 
-
-    if not list_selcuk:
-        print("❌ No channels found. Exiting.")
+    # Find the dynamic base URL
+    base_url = find_base_url()
+    
+    if not base_url:
+        print("⚠️ Process aborted due to missing URL.")
         return
 
-    dynamic_m3u_content = "#EXTM3U\n" + "\n".join(list_selcuk)
+    # Prepare M3U content
+    m3u_lines = ["#EXTM3U"]
     
+    print(f"⚡ Generating playlist...")
+
+    for selcuk_id, display_name in SELCUK_NAMES.items():
+        # Standard link generation
+        stream_url = f"{base_url}{selcuk_id}/playlist.m3u8"
+        
+        # M3U Entry format
+        # group-title ensures they are grouped nicely in players
+        entry = f'#EXTINF:-1 tvg-logo="{STATIC_LOGO_URL}" group-title="TURKIYE DEATHLESS", {display_name}\n{stream_url}'
+        m3u_lines.append(entry)
+
+    # Write to single file
     try:
         with open(OUTPUT_FILENAME, "w", encoding="utf-8") as f:
-            f.write(dynamic_m3u_content)
+            f.write("\n".join(m3u_lines))
         
         full_path = os.path.abspath(OUTPUT_FILENAME)
-        print(f"\n🎉 SUCCESS: Playlist created!")
+        print(f"\n✅ SUCCESS: Playlist created successfully!")
         print(f"💾 File: {OUTPUT_FILENAME}")
-        print(f"📝 Total Channels: {len(list_selcuk)}")
+        print(f"📝 Total Channels: {len(SELCUK_NAMES)}")
         print(f"📍 Path: {full_path}")
-        
+
     except IOError as e:
-        print(f"\n❌ File save error: {e}")
+        print(f"\n❌ File write error: {e}")
 
 if __name__ == "__main__":
     main()
