@@ -45,7 +45,7 @@ for channel_id, channel_name in channel_ids.items():
         if match:
             baseurl = match.group(1)
             full_url = f"https://dawn-salad-c3ef.aykara463.workers.dev/?url={baseurl}{channel_id}.m3u8"
-            m3u_content += f'#EXTINF:-1 tvg-logo="https://i.hizliresim.com/ska5t9e.jpg" group-title="TURKIYE DEATHLESS", {channel_name}\n'
+            m3u_content += f'#EXTINF:-1 tvg-logo="https://i.hizliresim.com/ska5t9e.jpg" group-title="GOALS IPTV", {channel_name}\n'
             m3u_content += f'{full_url}\n'
     except:
         continue
