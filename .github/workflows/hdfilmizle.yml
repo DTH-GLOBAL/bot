@@ -4,10 +4,10 @@ on:
   schedule:
     # Her gün Türkiye saatiyle sabah 06:00'da çalışır (UTC 03:00)
     - cron: '0 3 * * *'
-  workflow_dispatch: # Elle tetiklemek için buton ekler
+  workflow_dispatch:
 
 permissions:
-  contents: write # Repoya dosya yükleyebilmesi için yazma izni şart
+  contents: write
 
 jobs:
   build:
@@ -32,14 +32,15 @@ jobs:
 
       - name: M3U Dosyasını Repoya Gönder (Commit & Push)
         run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          
-          # Dosya var mı diye kontrol et ve ekle
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
           git add hdfilmizle.m3u
-          
-          # Değişiklik varsa commit at, yoksa hata verme devam et
+
           git commit -m "Otomatik M3U güncellemesi: $(date +'%Y-%m-%d')" || echo "Değişiklik yok"
-          
-          # Değişiklikleri repoya it
-          git push
+
+          # 🔽 Önce remote'daki değişiklikleri al
+          git pull --rebase origin main || true
+
+          # 🔼 Sonra push et
+          git push origin main
