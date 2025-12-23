@@ -1,18 +1,32 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="TR:Trt 1 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/80196fc2-f4f6-4e35-ae29-7925a5885a20.png" group-title="TURKIYE DEATHLESS",TR:Trt 1 HD
-http://89.187.191.41/TRT-1-HD-TR/video.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="TR:Trt 1 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/80196fc2-f4f6-4e35-ae29-7925a5885a20.png" group-title="TURKIYE DEATHLESS",TR:Trt 1 HD
 https://tv-trt1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TR:Trt 1 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/80196fc2-f4f6-4e35-ae29-7925a5885a20.png" group-title="TURKIYE DEATHLESS",TR:Trt 1 HD
+http://89.187.191.41/TRT-1-HD-TR/video.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TR:Trt 2  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/14a65b49-958f-497f-be22-52d958ef8498.png" group-title="TURKIYE DEATHLESS",TR:Trt 2  HD
+https://tv-trt2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TR:Trt 2  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/14a65b49-958f-497f-be22-52d958ef8498.png" group-title="TURKIYE DEATHLESS",TR:Trt 2  HD
+https://trn03.tulix.tv/gt-trt2/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Atv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/33b10329-faa9-4247-aa46-92a305ed5a92.png" group-title="TURKIYE DEATHLESS",TR:Atv HD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TR:Atv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/33b10329-faa9-4247-aa46-92a305ed5a92.png" group-title="TURKIYE DEATHLESS",TR:Atv HD
+http://89.187.191.41/ATV-HD-TR/video.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Kanal D HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/d7c5d3d5-2942-4715-872f-73be070dc201.png" group-title="TURKIYE DEATHLESS",TR:Kanal D HD
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web
+#EXTINF:-1 tvg-id="" tvg-name="TR:Kanal D HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/d7c5d3d5-2942-4715-872f-73be070dc201.png" group-title="TURKIYE DEATHLESS",TR:Kanal D HD
+http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Show TV HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/04fb743d-4a72-4907-8c54-f53b72c3600a.png" group-title="TURKIYE DEATHLESS",TR:Show TV HD
 https://ciner.daioncdn.net/showtv/showtv.m3u8?app=showtv_web
+#EXTINF:-1 tvg-id="" tvg-name="TR:Show TV HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/04fb743d-4a72-4907-8c54-f53b72c3600a.png" group-title="TURKIYE DEATHLESS",TR:Show TV HD
+https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Star  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4a7901e4-dbc5-491d-b014-6da6fa236e99.png" group-title="TURKIYE DEATHLESS",TR:Star  HD
 https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web
+#EXTINF:-1 tvg-id="" tvg-name="TR:Star  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4a7901e4-dbc5-491d-b014-6da6fa236e99.png" group-title="TURKIYE DEATHLESS",TR:Star  HD
+http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Now HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/25c7c620-dfe4-4c78-9d9b-185d8a91885f.png" group-title="TURKIYE DEATHLESS",TR:Now HD
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TR:Now HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/25c7c620-dfe4-4c78-9d9b-185d8a91885f.png" group-title="TURKIYE DEATHLESS",TR:Now HD
+http://116.202.238.88/FOXTV_TR/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tv 8 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/ab41b407-70c4-4634-8ed4-bf9be8cf81e2.png" group-title="TURKIYE DEATHLESS",TR:Tv 8 HD
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tv 8,5 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/812f4ba5-846e-4ae9-90fc-8f9f481156b5.png" group-title="TURKIYE DEATHLESS",TR: Tv 8,5 HD
@@ -30,8 +44,7 @@ https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tv 100 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/e2291af0-569b-4260-94f3-5505d1a40e76.png" group-title="TURKIYE DEATHLESS",TR:Tv 100 HD
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Kon HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/6a265ee4-81f8-4a57-80ba-41ddb0663aaf.png" group-title="TURKIYE DEATHLESS",TR:Kon HD
-#EXTVLCOPT:http-referrer=https://turkcanli.tv
-https://helga.iptv2022.com/sh/kon_tv/index.m3u8
+https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/kon_tv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Cnbc-e HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/16752eb5-4001-4b31-860c-ab947ed2c86d.png" group-title="TURKIYE DEATHLESS",TR:Cnbc-e HD
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Gzt Tv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/86c1a901-3b47-41e6-bf9b-b433ec170fdd.png" group-title="TURKIYE DEATHLESS",TR:Gzt Tv HD
@@ -46,8 +59,6 @@ https://str.yodacdn.net/tmb_tr_app/index.m3u8
 https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Bengü Türk HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6edd1622-84fd-4ebf-a50b-7e95787ee427.png" group-title="TURKIYE DEATHLESS",TR:Bengü Türk HD
 https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="TR:Trt 2  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/14a65b49-958f-497f-be22-52d958ef8498.png" group-title="TURKIYE DEATHLESS",TR:Trt 2  HD
-https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Trt Haber  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/8c07dd0b-0100-4a56-9a8c-9f810a184bd4.png" group-title="TURKIYE DEATHLESS",TR:Trt Haber  HD
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:A Haber HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/1c207549-826b-4c8e-8dd3-bbd488258430.png" group-title="TURKIYE DEATHLESS",TR:A Haber HD
@@ -55,8 +66,7 @@ https://trn03.tulix.tv/gt-ahabertv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Ntv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/344f452e-fa44-4f00-8005-1b8898186888.png" group-title="TURKIYE DEATHLESS",TR:Ntv HD
 https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
 #EXTINF:-1 tvg-id="" tvg-name="TR:Cnn Türk HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/3686a1f5-9c4d-401f-9c7b-031ca66454a0.png" group-title="TURKIYE DEATHLESS",TR:Cnn Türk HD
-#EXTVLCOPT:http-referrer=https://turkcanli.tv
-https://helga.iptv2022.com/cnn_turk/index.m3u8
+https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:24 Tv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/216cade3-b4a7-4c8b-8d62-aab7a3431a89.png" group-title="TURKIYE DEATHLESS",TR:24 Tv HD
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tgrt Haber  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a5773592-d40c-4d84-a64a-21c422cc7eb3.png" group-title="TURKIYE DEATHLESS",TR:Tgrt Haber  HD
@@ -92,13 +102,11 @@ https://ekoltv-live.ercdn.net/ekolsport/ekolsport.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Halk Tv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/c9acd31e-5cc0-4b5d-bdef-7c9f8b577c42.png" group-title="TURKIYE DEATHLESS",TR:Halk Tv HD
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Szc Tv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/2fdd6eb0-bd9e-44ef-ad0e-7f2c4cf3a8a7.png" group-title="TURKIYE DEATHLESS",TR:Szc Tv HD
-#EXTVLCOPT:http-referrer=https://turkcanli.tv
-https://helga.iptv2022.com/szc_tv/index.m3u8
+https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/szc_tv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tv 5  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/043eff4d-bde2-493c-9c7d-c07a698bb0be.png" group-title="TURKIYE DEATHLESS",TR:Tv 5  HD
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Lider Haber HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/ccf5746a-1eda-45ed-9afc-5e281fa7a704.png" group-title="TURKIYE DEATHLESS",TR:Lider Haber HD
-#EXTVLCOPT:http-referrer=https://www.liderhaber.com.tr
-https://lidertv.radyotelekom.com.tr/player/m3u8/9217b6e91d17c38f7d171eb2b3670349/chunklist_w1214941309.m3u8
+https://liderhaber.han686314.workers.dev/?url=https://lidertv.radyotelekom.com.tr/player/m3u8/9217b6e91d17c38f7d171eb2b3670349/chunklist_w1214941309.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tele 1 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/50921da2-0f81-40cf-971b-1b3db26245d7.png" group-title="TURKIYE DEATHLESS",TR:Tele 1 HD
 https://tele1-live.ercdn.net/tele1/tele1.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:As Tv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/bb23721e-664b-48c6-a9f4-5e55f890f026.png" group-title="TURKIYE DEATHLESS",TR:As Tv HD
@@ -114,11 +122,11 @@ https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Trt Belgesel HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/6925f7f0-2d64-4a15-99ec-e4a19c117279.png" group-title="TURKIYE DEATHLESS",TR:Trt Belgesel HD
 http://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Krt Tv HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/be5ace80-d03f-40f1-8c6b-a6e66ca96927.png" group-title="TURKIYE DEATHLESS",TR:Krt Tv HD
-https://uzayakaczekiye81.mywire.org/index.php?ID=UCVKWwHoLwUMMa80cu_1uapA
+https://teknobaba.han686314.workers.dev/Krt_Tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Cartoon Network HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/4c47b639-2916-4563-9e40-0f2a7925b2ea.png" group-title="TURKIYE DEATHLESS",TR:Cartoon Network HD
-https://uzayakaczekiye81.mywire.org/index.php?ID=UCehmwSZGPod7JFbHJspmxzQ
+https://youtube.jitendra-kumar.workers.dev/wanda.m3u8?id=tf_nh2e80eU
 #EXTINF:-1 tvg-id="" tvg-name="TR:Ulusal Kanal HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/5f895c30-fa0a-4f74-b4b6-ee562fb27e26.png" group-title="TURKIYE DEATHLESS",TR:Ulusal Kanal HD
-https://uzayakaczekiye81.mywire.org/index.php?ID=UC6T0L26KS1NHMPbTwI1L4Eg
+https://teknobaba.han686314.workers.dev/Ulusal_Kanal.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Trt Spor HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/46319886-6c97-4640-8d63-8e4b11511c74.png" group-title="TURKIYE DEATHLESS",TR:Trt Spor HD
 https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:A Spor HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png" group-title="TURKIYE DEATHLESS",TR:A Spor HD
@@ -146,17 +154,17 @@ http://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Dream Türk HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/63d6800d-1ecb-40b6-bc2b-01a225f0d3ec.png" group-title="TURKIYE DEATHLESS",TR:Dream Türk HD
 https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 1 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 1 HD
-https://cdn18.yayin.com.tr/nowplay/tracks-v1a1/mono.m3u8
+https://teknobaba.han686314.workers.dev/Yesilcam_Tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 2 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 2 HD
 https://mediaserver1.castpin.com/hls/filbox/1_2/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 3 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 3 HD
-https://a8.radyotelekom.com.tr:3899/stream/play.m3u8
+https://teknobaba.han686314.workers.dev/Kemal_Sunal_Tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 4 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 4 HD
 https://raw.githubusercontent.com/Elvin4K/restream/refs/heads/pro4k/1siriustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 5 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 5 HD
 https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 6 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 6 HD
-https://cdn-cine5.yayin.com.tr/cine5/cine5/chunklist.m3u8
+https://host.onlineradyotv.net:8081/cine5tv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 7 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 7 HD
 https://ip100.radyotelekomtv.com:3303/stream/play.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 8 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 8 HD
@@ -164,10 +172,8 @@ https://host.onlineradyotv.net:8081/sdmtv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 9 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 9 HD
 https://cdn-onstv.yayin.com.tr/onstv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 10 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 10 HD
-https://live.artidijitalmedya.com/artidijital_bikanal/bikanal/chunks.m3u8
+https://trn03.tulix.tv/gt-tivi6/tracks-v1a1/rewind-588800.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 11 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 11 HD
 https://live.artidijitalmedya.com/artidijital_cine1/cine1/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 12 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 12 HD
 https://ip100.radyotelekomtv.com:3784/stream/play.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="TR:Sinema TV 13 HD" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="TURKIYE DEATHLESS",TR:Sinema TV 13 HD
-https://trn03.tulix.tv/gt-tivi6/tracks-v1a1/rewind-588800.m3u8
