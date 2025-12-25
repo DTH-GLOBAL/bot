@@ -5,7 +5,6 @@ on:
     # Her gün Türkiye saatiyle gece 03:00'da çalışır (UTC 00:00)
     - cron: '0 0 * * *'
   workflow_dispatch:
-    # Bu seçenek GitHub üzerinden "Run workflow" butonuyla manuel çalıştırmayı sağlar
 
 jobs:
   build:
@@ -14,6 +13,8 @@ jobs:
     steps:
     - name: Depoyu Kontrol Et
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0   # rebase için gerekli
 
     - name: Python Kurulumu
       uses: actions/setup-python@v4
@@ -32,6 +33,17 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+
         git add film-panel-3.m3u
-        git diff --quiet && git diff --staged --quiet || git commit -m "Güncel M3U Listesi: $(date)"
-        git push
+
+        if ! git diff --cached --quiet; then
+          git commit -m "Güncel M3U Listesi: $(date -u)"
+          
+          # 🔑 ÖNCE remote değişiklikleri al
+          git pull origin main --rebase
+          
+          # sonra push
+          git push origin main
+        else
+          echo "Değişiklik yok, commit atılmadı."
+        fi
