@@ -16,7 +16,7 @@ jobs:
     - name: Depoyu Kontrol Et
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0 # Tüm geçmişi çekerek çakışma riskini azaltır
+        fetch-depth: 0
 
     - name: Python Kurulumu
       uses: actions/setup-python@v4
@@ -33,19 +33,24 @@ jobs:
 
     - name: Dosyayı Kaydet ve Zorla Gönder
       run: |
+        # Git kimlik bilgilerini ayarla
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Uzaktaki değişiklikleri al ve yerel ile birleştir (hata almamak için)
-        git pull origin main --rebase
-        
+        # Dosyayı ekle
         git add film-panel-3.m3u
         
-        # Değişiklik varsa commit et ve pushla
-        if [ -n "$(git status --porcelain)" ]; then
+        # Değişiklik varsa commit yap
+        if ! git diff --cached --quiet; then
           git commit -m "Güncel M3U Listesi: $(date)"
-          # Çakışma olsa bile senin ürettiğin son dosyayı kabul ettirir
+          
+          # HATA VEREN PULL/REBASE YERİNE: 
+          # Uzaktaki dalı (main) getir ama birleştirme (merge) yapma
+          git fetch origin main
+          
+          # Yerel commit'i uzak dalın üzerine 'zorla' yerleştir
+          # Bu kısım tüm çakışmaları (conflict) ezer geçer
           git push origin main --force
         else
-          echo "Değişiklik yok, işlem atlanıyor."
+          echo "Değişiklik yok, push atlanıyor."
         fi
