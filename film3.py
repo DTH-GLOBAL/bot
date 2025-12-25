@@ -6,7 +6,7 @@ import time
 # Ayarlar
 BASE_URL = "https://filmdizionline.com"
 START_PAGE = 1
-END_PAGE = 2
+END_PAGE = 104
 OUTPUT_FILE = "film-panel-3.m3u"
 
 headers = {
