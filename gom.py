@@ -12,7 +12,7 @@ HEADERS = {
 # TARANACAK KATEGORİ SAYFALARI BURADA SABİT
 TARGET_PAGES = [
     "https://dizigom104.com/dc-comics-dizileri-hd1/",
-    "https://dizigom104.com/dc-comics-dizileri-hd1/page/2/"
+    "https://dizigom104.com/dc-comics-dizileri-hd1/#p=2"
 ]
 
 def check_link_is_active(url):
