@@ -14,6 +14,9 @@ jobs:
     steps:
       - name: Repoyu Klonla
         uses: actions/checkout@v4
+        with:
+          # Geçmişi tam çekmek çakışmaları önlemeye yardımcı olur
+          fetch-depth: 0
 
       - name: Python Kurulumu
         uses: actions/setup-python@v5
@@ -33,6 +36,14 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add dizigom-dc.m3u
-          # Sadece değişiklik varsa commit yap, yoksa hata verme
-          git diff --quiet && git diff --staged --quiet || git commit -m "Oto-Güncelleme: $(date +'%Y-%m-%d %H:%M')"
-          git push
+          
+          # Değişiklik kontrolü ve commit
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "Değişiklik yok, işlem atlanıyor."
+          else
+            git commit -m "Oto-Güncelleme: $(date +'%Y-%m-%d %H:%M')"
+            # Önce en güncel halini çek (rebase ile çakışmayı önle), sonra yükle
+            git pull --rebase origin main
+            git push
+          fi
+          
