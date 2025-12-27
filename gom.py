@@ -101,7 +101,7 @@ def get_embed_from_episode(episode_url):
         return None
 
 def main():
-    m3u_filename = "dizigom-dc-ozel.m3u"
+    m3u_filename = "dizigom-dc.m3u"
     print(f"Bot başlatıldı, '{m3u_filename}' dosyası oluşturuluyor...")
     
     with open(m3u_filename, "w", encoding="utf-8") as f:
