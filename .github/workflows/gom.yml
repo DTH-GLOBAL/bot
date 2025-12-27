@@ -2,10 +2,9 @@ name: Dizigom Güncelleyici
 
 on:
   schedule:
-    # Her gece 00:00 UTC'de (Türkiye saatiyle 03:00) çalışır.
+    # Her gece 00:00 UTC'de (Türkiye saatiyle 03:00)
     - cron: '0 0 * * *'
   workflow_dispatch:
-    # GitHub üzerinden manuel olarak başlatmanı sağlar.
 
 jobs:
   build:
@@ -15,7 +14,6 @@ jobs:
       - name: Repoyu Klonla
         uses: actions/checkout@v4
         with:
-          # Geçmişi tam çekmek çakışmaları önlemeye yardımcı olur
           fetch-depth: 0
 
       - name: Python Kurulumu
@@ -35,15 +33,19 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
+          # dizigom-dc.m3u yoksa oluştur
+          if [ ! -f dizigom-dc.m3u ]; then
+            echo "# Otomatik oluşturuldu" > dizigom-dc.m3u
+          fi
+
           git add dizigom-dc.m3u
-          
-          # Değişiklik kontrolü ve commit
+
+          # Değişiklik var mı kontrol et
           if git diff --quiet && git diff --staged --quiet; then
-            echo "Değişiklik yok, işlem atlanıyor."
+            echo "Değişiklik yok, commit atlanıyor."
           else
             git commit -m "Oto-Güncelleme: $(date +'%Y-%m-%d %H:%M')"
-            # Önce en güncel halini çek (rebase ile çakışmayı önle), sonra yükle
             git pull --rebase origin main
             git push
           fi
-          
