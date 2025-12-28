@@ -31,7 +31,7 @@ output.write("#EXTM3U\n\n")
 total_series = 0
 
 # 🔥 SADECE İLK SAYFA
-for page in range(1, 1):
+for page in range(1, 2):
     print(f"\n[+] Arşiv sayfası: {page}")
     try:
         soup = get_soup(ARCHIVE.format(page))
