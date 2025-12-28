@@ -47,7 +47,10 @@ for page in range(1, 2):
 
         if link.startswith(BASE):
             img = a.find("img")
-            logo = img["src"] if img else ""
+            if img:
+                logo = img.get("data-src") or img.get("src", "")
+            else:
+                logo = ""
             series_on_page[link] = (name, logo)
 
     print(f"  ➜ {page}. sayfada {len(series_on_page)} dizi bulundu.")
