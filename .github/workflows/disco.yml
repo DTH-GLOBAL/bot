@@ -1,10 +1,10 @@
 name: Disco M3U Generator
 
 on:
-  workflow_dispatch: # Bu satır manuel çalıştırma butonunu aktif eder
+  workflow_dispatch:
 
 permissions:
-  contents: write # Repoya dosya yazabilmesi için gerekli izin
+  contents: write
 
 jobs:
   build:
@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 🔴 ÇOK ÖNEMLİ: full history alır
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,7 +33,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git pull origin main --rebase
+
           git add disco.m3u
-          git commit -m "Update disco.m3u [$(date)]" || echo "No changes to commit"
-          git push
-          
+          git commit -m "Update disco.m3u [$(date -u)]" || echo "No changes to commit"
+
+          git push origin main
