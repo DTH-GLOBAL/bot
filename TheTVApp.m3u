@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed" group-title="Live",A&E US Eastern Feed
-https://tvpass.org/live/AEEast/sd
+https://v18.thetvapp.to/hls/AEEast/tracks-v1a1/mono.m3u8?token=NXjRNw1hRT5Uvd2u9bKG3Q&expires=1768930347&user_id=NC4yMzYuMTU4LjUx
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles" group-title="Live",ABC (KABC) Los Angeles
-https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
+https://v18.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=pn_tr921GU7St54WJUmjNA&expires=1768930348&user_id=NC4yMzYuMTU4LjUx
 #EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY" group-title="Live",ABC (WABC) New York, NY
 https://tvpass.org/live/WABCDT1/sd
 #EXTINF:-1 tvg-id="acc-network" tvg-name="ACC Network" group-title="Live",ACC Network
@@ -34,15 +34,15 @@ https://tvpass.org/live/BravoEast/sd
 #EXTINF:-1 tvg-id="cspan" tvg-name="C-SPAN" group-title="Live",C-SPAN
 https://tvpass.org/live/CSPAN/sd
 #EXTINF:-1 tvg-id="cspan-2" tvg-name="C-SPAN 2" group-title="Live",C-SPAN 2
-https://v18.thetvapp.to/hls/CSPAN2/tracks-v1a1/mono.m3u8?token=llds0iCqhy-TW7tRZg-vBw&expires=1768928520&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/CSPAN2/sd
 #EXTINF:-1 tvg-id="cartoon-network-usa-eastern-feed" tvg-name="Cartoon Network USA Eastern Feed" group-title="Live",Cartoon Network USA Eastern Feed
-https://v18.thetvapp.to/hls/CartoonNetworkEast/tracks-v1a1/mono.m3u8?token=yGFGltTF-X6KcAT9pZ35sA&expires=1768928521&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/CartoonNetworkEast/sd
 #EXTINF:-1 tvg-id="cbs-kcbs-los-angeles-ca" tvg-name="CBS (KCBS) Los Angeles" group-title="Live",CBS (KCBS) Los Angeles
-https://v18.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v1a1/mono.m3u8?token=y5JnZeC6HKKLbpE98mz8Qg&expires=1768928522&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/cbs-kcbs-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="cbs-wcbs-new-york-ny" tvg-name="CBS (WCBS) New York, NY" group-title="Live",CBS (WCBS) New York, NY
-https://v18.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=aND-XUoo0DMBlpIFcIyeqw&expires=1768928523&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/WCBSDT1/sd
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA" group-title="Live",CBS Sports Network USA
-https://v18.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=G8bH1qVr3O5MQPEuN9LE2Q&expires=1768928524&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/CBSSportsNetworkUSA/sd
 #EXTINF:-1 tvg-id="chicago-sports-network" tvg-name="Chicago Sports Network" group-title="Live",Chicago Sports Network
 https://tvpass.org/live/chicago-sports-network/sd
 #EXTINF:-1 tvg-id="cinemax-eastern-feed" tvg-name="Cinemax Eastern Feed" group-title="Live",Cinemax Eastern Feed
@@ -116,15 +116,15 @@ https://tvpass.org/live/fanduel-sports-network-wisconsin/sd
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-georgia" tvg-name="Fanduel Sports Southeast Georgia" group-title="Live",Fanduel Sports Southeast Georgia
 https://tvpass.org/live/fanduel-sports-southeast-georgia/sd
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-north-carolina" tvg-name="Fanduel Sports Southeast North Carolina" group-title="Live",Fanduel Sports Southeast North Carolina
-https://v15.thetvapp.to/hls/fanduel-sports-southeast-north-carolina/tracks-v1a1/mono.m3u8?token=dEEWQcOI_24_q3RsKKE__A&expires=1768928550&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/fanduel-sports-southeast-north-carolina/sd
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-south-carolina" tvg-name="Fanduel Sports Southeast South Carolina" group-title="Live",Fanduel Sports Southeast South Carolina
-https://v15.thetvapp.to/hls/fanduel-sports-southeast-south-carolina/tracks-v1a1/mono.m3u8?token=YnOwJmWbwR0rpqLX1DdlSA&expires=1768928551&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/fanduel-sports-southeast-south-carolina/sd
 #EXTINF:-1 tvg-id="fanduel-sports-southeast-tennessee-nashville" tvg-name="Fanduel Sports Southeast Tennessee Nashville" group-title="Live",Fanduel Sports Southeast Tennessee Nashville
-https://v15.thetvapp.to/hls/fanduel-sports-southeast-tennessee-nashville/tracks-v1a1/mono.m3u8?token=w8lSdN6hB1IZVUxU7BDVWg&expires=1768928552&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/fanduel-sports-southeast-tennessee-nashville/sd
 #EXTINF:-1 tvg-id="bally-sports-sun" tvg-name="Fanduel Sports Sun" group-title="Live",Fanduel Sports Sun
-https://v15.thetvapp.to/hls/fanduel-sports-sun/tracks-v1a1/mono.m3u8?token=nm4ATDL_aXgB_dhS9J9UvA&expires=1768928553&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/fanduel-sports-sun/sd
 #EXTINF:-1 tvg-id="fanduel-sports-tennessee-east" tvg-name="Fanduel Sports Tennessee East" group-title="Live",Fanduel Sports Tennessee East
-https://v15.thetvapp.to/hls/fanduel-sports-tennessee-east/tracks-v1a1/mono.m3u8?token=64dIruE0SCFTbsbuC5YIJQ&expires=1768928555&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/fanduel-sports-tennessee-east/sd
 #EXTINF:-1 tvg-id="food-network-usa-eastern-feed" tvg-name="Food Network USA Eastern Feed" group-title="Live",Food Network USA Eastern Feed
 https://tvpass.org/live/FoodNetworkEast/sd
 #EXTINF:-1 tvg-id="fox-kttv-los-angeles-ca" tvg-name="FOX (KTTV) Los Angeles" group-title="Live",FOX (KTTV) Los Angeles
@@ -198,15 +198,15 @@ https://tvpass.org/live/metv-toons/sd
 #EXTINF:-1 tvg-id="metv-wjlp-new-jerseynew-york" tvg-name="MeTV Wjlp New Jerseynew York" group-title="Live",MeTV Wjlp New Jerseynew York
 https://tvpass.org/live/metv-wjlp-new-jerseynew-york/sd
 #EXTINF:-1 tvg-id="midatlantic-sports-network" tvg-name="Midatlantic Sports Network" group-title="Live",Midatlantic Sports Network
-https://v12.thetvapp.to/hls/midatlantic-sports-network/tracks-v1a1/mono.m3u8?token=u5HRbbO7XCM_QDtaG8jCzg&expires=1768928581&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/midatlantic-sports-network/sd
 #EXTINF:-1 tvg-id="mlb-network" tvg-name="MLB Network" group-title="Live",MLB Network
-https://v12.thetvapp.to/hls/MLBNetwork/tracks-v1a1/mono.m3u8?token=u4UGPlyuDtWzSMKT1WSeew&expires=1768928582&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/MLBNetwork/sd
 #EXTINF:-1 tvg-id="monumental-sports-network" tvg-name="Monumental Sports Network" group-title="Live",Monumental Sports Network
-https://v12.thetvapp.to/hls/monumental-sports-network/tracks-v1a1/mono.m3u8?token=hk1ZKgI-zZbVOUBOFw0eQg&expires=1768928583&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/monumental-sports-network/sd
 #EXTINF:-1 tvg-id="moremax-eastern" tvg-name="MoreMax Eastern" group-title="Live",MoreMax Eastern
-https://v12.thetvapp.to/hls/MoreMaxEast/tracks-v1a1/mono.m3u8?token=lTAe8AHR_TYmmAdhqT_ADA&expires=1768928584&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/MoreMaxEast/sd
 #EXTINF:-1 tvg-id="motor-trend-hd" tvg-name="Motor Trend HD" group-title="Live",Motor Trend HD
-https://v12.thetvapp.to/hls/Motortrend/tracks-v1a1/mono.m3u8?token=dlQZ2lRRADA_GL45AcHUQA&expires=1768928585&user_id=NTcuMTUxLjEyOC4xOTY=
+https://tvpass.org/live/Motortrend/sd
 #EXTINF:-1 tvg-id="moviemax-max-6-east" tvg-name="MovieMax (Max 6) East" group-title="Live",MovieMax (Max 6) East
 https://tvpass.org/live/MovieMaxEast/sd
 #EXTINF:-1 tvg-id="msg-madison-square-gardens" tvg-name="MSG Madison Square Gardens" group-title="Live",MSG Madison Square Gardens
