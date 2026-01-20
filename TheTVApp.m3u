@@ -1,10 +1,10 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed" group-title="Live",A&E US Eastern Feed
-https://tvpass.org/live/AEEast/sd
+https://v18.thetvapp.to/hls/AEEast/tracks-v1a1/mono.m3u8?token=QoV3Ki-5gnsomQWjNlD2aQ&expires=1768939239&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles" group-title="Live",ABC (KABC) Los Angeles
-https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
+https://v18.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=E0Kk8H1lQ6P9VTMTM61JyA&expires=1768939240&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY" group-title="Live",ABC (WABC) New York, NY
-https://tvpass.org/live/WABCDT1/sd
+https://v18.thetvapp.to/hls/WABCDT1/tracks-v1a1/mono.m3u8?token=95NBiBT4zNL8vJkBY-w-ig&expires=1768939241&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="acc-network" tvg-name="ACC Network" group-title="Live",ACC Network
 https://tvpass.org/live/ACCNetwork/sd
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver" group-title="Live",Altitude Sports Denver
@@ -30,31 +30,31 @@ https://tvpass.org/live/BloombergTV/sd
 #EXTINF:-1 tvg-id="boomerang" tvg-name="Boomerang" group-title="Live",Boomerang
 https://tvpass.org/live/Boomerang/sd
 #EXTINF:-1 tvg-id="bravo-usa-eastern-feed" tvg-name="Bravo USA Eastern Feed" group-title="Live",Bravo USA Eastern Feed
-https://tvpass.org/live/BravoEast/sd
+https://v3.thetvapp.to/hls/BravoEast/tracks-v1a1/mono.m3u8?token=6S8o_IKstOEOXVDuLzp-0w&expires=1768939251&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cspan" tvg-name="C-SPAN" group-title="Live",C-SPAN
-https://e2.thetvapp.to/hls/CSPAN/tracks-v1a1/mono.m3u8?token=O9Q6o23uPJo34-EssFE7Ug&expires=1768937381&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/CSPAN/tracks-v1a1/mono.m3u8?token=qeVWXGwDjJWBqmyFv_Hx8Q&expires=1768939252&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cspan-2" tvg-name="C-SPAN 2" group-title="Live",C-SPAN 2
-https://e2.thetvapp.to/hls/CSPAN2/tracks-v1a1/mono.m3u8?token=M-nLtkjdnUgzhpIU-Hqeug&expires=1768937382&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/CSPAN2/tracks-v1a1/mono.m3u8?token=a7A_pG9OeyQ1jEJOd-nu6g&expires=1768939254&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cartoon-network-usa-eastern-feed" tvg-name="Cartoon Network USA Eastern Feed" group-title="Live",Cartoon Network USA Eastern Feed
-https://e2.thetvapp.to/hls/CartoonNetworkEast/tracks-v1a1/mono.m3u8?token=zmJa4iau-yrE7gOhqyJdMA&expires=1768937383&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/CartoonNetworkEast/tracks-v1a1/mono.m3u8?token=d-EgTIwDHXEjO25_r79vRg&expires=1768939255&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cbs-kcbs-los-angeles-ca" tvg-name="CBS (KCBS) Los Angeles" group-title="Live",CBS (KCBS) Los Angeles
-https://e2.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v1a1/mono.m3u8?token=F_M9GSo4iZ17oSRFlN1TcA&expires=1768937383&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v1a1/mono.m3u8?token=Ncn2_Rkh_GIjLwAWmOedqA&expires=1768939256&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cbs-wcbs-new-york-ny" tvg-name="CBS (WCBS) New York, NY" group-title="Live",CBS (WCBS) New York, NY
-https://e2.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=wMdpybbujBUnUSCOq3XVbg&expires=1768937384&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=35fq8nRicJ1CNYkI0g4zTQ&expires=1768939257&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA" group-title="Live",CBS Sports Network USA
-https://e2.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=fJrbjcWCD0zRnY2oisCK5g&expires=1768937385&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=mU6pxHQtjpgJ4Bimh6vQlA&expires=1768939258&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="chicago-sports-network" tvg-name="Chicago Sports Network" group-title="Live",Chicago Sports Network
-https://e2.thetvapp.to/hls/chicago-sports-network/tracks-v1a1/mono.m3u8?token=vL6ShDS01WdCleU6V-7S8Q&expires=1768937386&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/chicago-sports-network/tracks-v1a1/mono.m3u8?token=O8ic5bZ316IWwZgu-j24AA&expires=1768939259&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cinemax-eastern-feed" tvg-name="Cinemax Eastern Feed" group-title="Live",Cinemax Eastern Feed
-https://e2.thetvapp.to/hls/CinemaxEast/tracks-v1a1/mono.m3u8?token=JPjyD4NW00-SvdI0Em8yHA&expires=1768937387&user_id=MjAuNTUuMTI3LjIyOA==
+https://v3.thetvapp.to/hls/CinemaxEast/tracks-v1a1/mono.m3u8?token=a3sGtRRWmRFCFK_EaaE4iw&expires=1768939260&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="cmt-us-eastern-feed" tvg-name="CMT US Eastern Feed" group-title="Live",CMT US Eastern Feed
-https://e2.thetvapp.to/hls/CMTEast/tracks-v1a1/mono.m3u8?token=54Jd3X7hqBQjjOEuysBt1g&expires=1768937387&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/CMTEast/sd
 #EXTINF:-1 tvg-id="cnbc-usa" tvg-name="CNBC USA" group-title="Live",CNBC USA
-https://e2.thetvapp.to/hls/CNBC/tracks-v1a1/mono.m3u8?token=hC6L26rgdkfkkVTO31aSWQ&expires=1768937388&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/CNBC/sd
 #EXTINF:-1 tvg-id="cnn" tvg-name="CNN US" group-title="Live",CNN US
-https://e2.thetvapp.to/hls/CNN/tracks-v1a1/mono.m3u8?token=WVRDPa1sAY_oqUgF1X1nmg&expires=1768937389&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/CNN/sd
 #EXTINF:-1 tvg-id="comedy-central-us-eastern-feed" tvg-name="Comedy Central (US) Eastern Feed" group-title="Live",Comedy Central (US) Eastern Feed
-https://e2.thetvapp.to/hls/ComedyCentralEast/tracks-v1a1/mono.m3u8?token=X64_TLvvHLkDPk8EEd6S8Q&expires=1768937390&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/ComedyCentralEast/sd
 #EXTINF:-1 tvg-id="crime-investigation-network-usa-hd" tvg-name="Crime & Investigation Network USA HD" group-title="Live",Crime & Investigation Network USA HD
 https://tvpass.org/live/CrimePlusInvestigation/sd
 #EXTINF:-1 tvg-id="cw-kfmbtv2-san-diego-ca" tvg-name="CW (KFMB-TV2) San Diego" group-title="Live",CW (KFMB-TV2) San Diego
@@ -152,69 +152,69 @@ https://tvpass.org/live/FXXEast/sd
 #EXTINF:-1 tvg-id="fyi-usa-eastern" tvg-name="FYI USA Eastern" group-title="Live",FYI USA Eastern
 https://tvpass.org/live/FYIEast/sd
 #EXTINF:-1 tvg-id="game-show-network-east" tvg-name="Game Show Network East" group-title="Live",Game Show Network East
-https://tvpass.org/live/game-show-network-east/sd
+https://v15.thetvapp.to/hls/game-show-network-east/tracks-v1a1/mono.m3u8?token=EpMgSPtuk1XbvoRkpp7IZw&expires=1768939298&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="golf-channel-usa" tvg-name="Golf Channel USA" group-title="Live",Golf Channel USA
-https://tvpass.org/live/GolfChannel/sd
+https://v15.thetvapp.to/hls/GolfChannel/tracks-v1a1/mono.m3u8?token=pu9OWSEw24ZEVl3j5dNT_g&expires=1768939299&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hallmark-eastern-feed" tvg-name="Hallmark Eastern Feed" group-title="Live",Hallmark Eastern Feed
-https://tvpass.org/live/HallmarkChannelEast/sd
+https://v15.thetvapp.to/hls/HallmarkChannelEast/tracks-v1a1/mono.m3u8?token=ZFmnu7mPXrE3pUtQSsQa_g&expires=1768939300&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hallmark-family-hd" tvg-name="Hallmark Family HD" group-title="Live",Hallmark Family HD
-https://tvpass.org/live/HallmarkDrama/sd
+https://v15.thetvapp.to/hls/HallmarkDrama/tracks-v1a1/mono.m3u8?token=qwT8rT_p5inl_nzr9C5zeg&expires=1768939301&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hallmark-mystery-eastern-hd" tvg-name="Hallmark Mystery Eastern HD" group-title="Live",Hallmark Mystery Eastern HD
-https://tvpass.org/live/HallmarkMoviesMysteriesEast/sd
+https://v15.thetvapp.to/hls/HallmarkMoviesMysteriesEast/tracks-v1a1/mono.m3u8?token=4YXYhPE0xJMTQHOhsXMXGA&expires=1768939302&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hbo-eastern-feed" tvg-name="HBO Eastern Feed" group-title="Live",HBO Eastern Feed
-https://tvpass.org/live/HBOEast/sd
+https://v15.thetvapp.to/hls/HBOEast/tracks-v1a1/mono.m3u8?token=Uu2fmNdjWVkAzuuq8TvVsQ&expires=1768939303&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hbo-2-eastern-feed" tvg-name="HBO 2 Eastern Feed" group-title="Live",HBO 2 Eastern Feed
-https://tvpass.org/live/HBO2East/sd
+https://v15.thetvapp.to/hls/HBO2East/tracks-v1a1/mono.m3u8?token=m_mNXS35KY3pY8DZ_oXI1A&expires=1768939304&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hbo-comedy-hd-east" tvg-name="HBO Comedy HD East" group-title="Live",HBO Comedy HD East
-https://v18.thetvapp.to/hls/HBOComedyEast/tracks-v1a1/mono.m3u8?token=vQrEWQmsNHDoG5woM4xqow&expires=1768937419&user_id=MjAuNTUuMTI3LjIyOA==
+https://v15.thetvapp.to/hls/HBOComedyEast/tracks-v1a1/mono.m3u8?token=zcmgPacEGYdff_5sCrFTAw&expires=1768939305&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hbo-family-eastern-feed" tvg-name="HBO Family Eastern Feed" group-title="Live",HBO Family Eastern Feed
-https://v18.thetvapp.to/hls/HBOFamilyEast/tracks-v1a1/mono.m3u8?token=eak9NMEQ-L_hHJkhLlLsTQ&expires=1768937420&user_id=MjAuNTUuMTI3LjIyOA==
+https://v15.thetvapp.to/hls/HBOFamilyEast/tracks-v1a1/mono.m3u8?token=L-sCJKlu8d2C9XiqRljE9A&expires=1768939306&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hbo-signature-hbo-3-eastern" tvg-name="HBO Signature (HBO 3) Eastern" group-title="Live",HBO Signature (HBO 3) Eastern
-https://v18.thetvapp.to/hls/HBOSignatureEast/tracks-v1a1/mono.m3u8?token=2u5_b7e1FelR4r-YN5HGFg&expires=1768937421&user_id=MjAuNTUuMTI3LjIyOA==
+https://v15.thetvapp.to/hls/HBOSignatureEast/tracks-v1a1/mono.m3u8?token=xLDMNVbo3UW5-Hfp22MrOw&expires=1768939307&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="hbo-zone-hd-east" tvg-name="HBO Zone HD East" group-title="Live",HBO Zone HD East
-https://v18.thetvapp.to/hls/HBOZoneEast/tracks-v1a1/mono.m3u8?token=1TxI3zpbloGio0cAAPNivQ&expires=1768937422&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/HBOZoneEast/sd
 #EXTINF:-1 tvg-id="hgtv-usa-eastern-feed" tvg-name="HGTV USA Eastern Feed" group-title="Live",HGTV USA Eastern Feed
-https://v18.thetvapp.to/hls/HGTVEast/tracks-v1a1/mono.m3u8?token=LrBRvv4AJZuR3F9h0fE2qw&expires=1768937422&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/HGTVEast/sd
 #EXTINF:-1 tvg-id="history-channel-us-eastern-feed" tvg-name="History Channel US Eastern Feed" group-title="Live",History Channel US Eastern Feed
-https://v18.thetvapp.to/hls/HistoryEast/tracks-v1a1/mono.m3u8?token=0RoZfREu4KGNXinu2TDWmg&expires=1768937423&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/HistoryEast/sd
 #EXTINF:-1 tvg-id="hln" tvg-name="HLN" group-title="Live",HLN
-https://v18.thetvapp.to/hls/HLN/tracks-v1a1/mono.m3u8?token=RTz-VBMatmj6d10w-gBV0A&expires=1768937424&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/HLN/sd
 #EXTINF:-1 tvg-id="independent-film-channel-us" tvg-name="Independent Film Channel US" group-title="Live",Independent Film Channel US
-https://v18.thetvapp.to/hls/IFCEast/tracks-v1a1/mono.m3u8?token=LRJrIPXVTMyQR3sh4DulMg&expires=1768937425&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/IFCEast/sd
 #EXTINF:-1 tvg-id="investigation-discovery-usa-eastern" tvg-name="Investigation Discovery USA Eastern" group-title="Live",Investigation Discovery USA Eastern
-https://v18.thetvapp.to/hls/InvestigationDiscoveryEast/tracks-v1a1/mono.m3u8?token=CDtLGx78QcrWVv6kXC_hPw&expires=1768937425&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/InvestigationDiscoveryEast/sd
 #EXTINF:-1 tvg-id="ion-eastern-feed" tvg-name="ION Eastern Feed" group-title="Live",ION Eastern Feed
-https://v18.thetvapp.to/hls/IONTVEast/tracks-v1a1/mono.m3u8?token=kBARRpMrRgME0nf494o5NQ&expires=1768937426&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/IONTVEast/sd
 #EXTINF:-1 tvg-id="lifetime-movies-east" tvg-name="Lifetime Movies East" group-title="Live",Lifetime Movies East
-https://v18.thetvapp.to/hls/LifetimeMoviesEast/tracks-v1a1/mono.m3u8?token=ZPDVGlmBsD9g2MNfSckkfg&expires=1768937427&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/LifetimeMoviesEast/sd
 #EXTINF:-1 tvg-id="lifetime-network-us-eastern-feed" tvg-name="Lifetime Network US Eastern Feed" group-title="Live",Lifetime Network US Eastern Feed
-https://v16.thetvapp.to/hls/LifetimeEast/tracks-v1a1/mono.m3u8?token=hHj3Z0ySeBUIuWA6ltbGFw&expires=1768937428&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/LifetimeEast/sd
 #EXTINF:-1 tvg-id="logo-east" tvg-name="LOGO East" group-title="Live",LOGO East
-https://v16.thetvapp.to/hls/LogoEast/tracks-v1a1/mono.m3u8?token=rIJki7ceayHZuX_XOKHdzQ&expires=1768937429&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/LogoEast/sd
 #EXTINF:-1 tvg-id="marquee-sports-network" tvg-name="Marquee Sports Network" group-title="Live",Marquee Sports Network
-https://v16.thetvapp.to/hls/marquee-sports-network/tracks-v1a1/mono.m3u8?token=WVdLR-ybmr3CXgLToyxGww&expires=1768937429&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/marquee-sports-network/sd
 #EXTINF:-1 tvg-id="metv-toons-wjlp2-new-jersey" tvg-name="MeTV Toons (WJLP2) New Jersey" group-title="Live",MeTV Toons (WJLP2) New Jersey
-https://v16.thetvapp.to/hls/metv-toons/tracks-v1a1/mono.m3u8?token=VnSbNkJpvQW-Ht-xcRhIYg&expires=1768937430&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/metv-toons/sd
 #EXTINF:-1 tvg-id="metv-wjlp-new-jerseynew-york" tvg-name="MeTV Wjlp New Jerseynew York" group-title="Live",MeTV Wjlp New Jerseynew York
-https://v16.thetvapp.to/hls/metv-wjlp-new-jerseynew-york/tracks-v1a1/mono.m3u8?token=rZ2WfQ65at-4zBhfA-i3rQ&expires=1768937431&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/metv-wjlp-new-jerseynew-york/sd
 #EXTINF:-1 tvg-id="midatlantic-sports-network" tvg-name="Midatlantic Sports Network" group-title="Live",Midatlantic Sports Network
-https://v16.thetvapp.to/hls/midatlantic-sports-network/tracks-v1a1/mono.m3u8?token=zDWIn0eVNXJ9YsMqGXPRhg&expires=1768937432&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/midatlantic-sports-network/tracks-v1a1/mono.m3u8?token=nT9-iexYxFsy5E3h-GDChg&expires=1768939318&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="mlb-network" tvg-name="MLB Network" group-title="Live",MLB Network
-https://v16.thetvapp.to/hls/MLBNetwork/tracks-v1a1/mono.m3u8?token=TIS6evjMwzvaLaFUTtLCfg&expires=1768937433&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/MLBNetwork/tracks-v1a1/mono.m3u8?token=Y_GZi8Mj9-T6H4PY44f4OQ&expires=1768939319&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="monumental-sports-network" tvg-name="Monumental Sports Network" group-title="Live",Monumental Sports Network
-https://v16.thetvapp.to/hls/monumental-sports-network/tracks-v1a1/mono.m3u8?token=oKCE3Gr_PDkzGa7nVwc6ug&expires=1768937433&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/monumental-sports-network/tracks-v1a1/mono.m3u8?token=z06NQ6tDFybEedEvaxTWpw&expires=1768939320&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="moremax-eastern" tvg-name="MoreMax Eastern" group-title="Live",MoreMax Eastern
-https://v16.thetvapp.to/hls/MoreMaxEast/tracks-v1a1/mono.m3u8?token=pXlGKdd8BLlUUEGVjwug7w&expires=1768937434&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/MoreMaxEast/tracks-v1a1/mono.m3u8?token=nWmVs0NDApcuQOSd6044Jw&expires=1768939321&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="motor-trend-hd" tvg-name="Motor Trend HD" group-title="Live",Motor Trend HD
-https://v16.thetvapp.to/hls/Motortrend/tracks-v1a1/mono.m3u8?token=79F-XPIYGon2JxUt475-iQ&expires=1768937435&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/Motortrend/tracks-v1a1/mono.m3u8?token=qbNFabew3eMcrKXCyZlfhw&expires=1768939322&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="moviemax-max-6-east" tvg-name="MovieMax (Max 6) East" group-title="Live",MovieMax (Max 6) East
-https://v16.thetvapp.to/hls/MovieMaxEast/tracks-v1a1/mono.m3u8?token=j0o8UwiaFY9FdybeQn9xOg&expires=1768937436&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/MovieMaxEast/tracks-v1a1/mono.m3u8?token=21vz4yvUp9Czb7trbG8gGQ&expires=1768939323&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="msg-madison-square-gardens" tvg-name="MSG Madison Square Gardens" group-title="Live",MSG Madison Square Gardens
-https://v16.thetvapp.to/hls/msg-madison-square-gardens/tracks-v1a1/mono.m3u8?token=FlciZMishmeIbJtlfHWEow&expires=1768937436&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/msg-madison-square-gardens/tracks-v1a1/mono.m3u8?token=i17rOnQmlkmGTTQfKyvM6g&expires=1768939324&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="msg-plus" tvg-name="MSG Plus" group-title="Live",MSG Plus
-https://v16.thetvapp.to/hls/msg-plus/tracks-v1a1/mono.m3u8?token=DJ5ImHsdxNwoN39cIzqCDw&expires=1768937437&user_id=MjAuNTUuMTI3LjIyOA==
+https://e2.thetvapp.to/hls/msg-plus/tracks-v1a1/mono.m3u8?token=-lud4se0nSGm7WiVZ8CC_Q&expires=1768939325&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="msnbc-usa" tvg-name="MSNBC USA" group-title="Live",MSNBC USA
-https://tvpass.org/live/MSNBC/sd
+https://e2.thetvapp.to/hls/MSNBC/tracks-v1a1/mono.m3u8?token=UZ9C6Us_MGS9PMB5ePFzLQ&expires=1768939326&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="mtv-2-east" tvg-name="MTV 2 East" group-title="Live",MTV 2 East
 https://tvpass.org/live/mtv-2-east/sd
 #EXTINF:-1 tvg-id="mtv-usa-eastern-feed" tvg-name="MTV USA Eastern Feed" group-title="Live",MTV USA Eastern Feed
@@ -294,21 +294,21 @@ https://tvpass.org/live/sportsnet-pittsburgh/sd
 #EXTINF:-1 tvg-id="sportsnet-west" tvg-name="Sportsnet West" group-title="Live",Sportsnet West
 https://tvpass.org/live/sportsnet-west/sd
 #EXTINF:-1 tvg-id="starz-eastern" tvg-name="Starz Eastern" group-title="Live",Starz Eastern
-https://tvpass.org/live/StarzEast/sd
+https://v18.thetvapp.to/hls/StarzEast/tracks-v1a1/mono.m3u8?token=MfzFEmKuNsJjOWG1aPpAsQ&expires=1768939354&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="sundancetv-usa-east" tvg-name="SundanceTV USA East" group-title="Live",SundanceTV USA East
-https://tvpass.org/live/SundanceTVEast/sd
+https://v18.thetvapp.to/hls/SundanceTVEast/tracks-v1a1/mono.m3u8?token=UqodMJXpq5-i1IRiN89xhA&expires=1768939356&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="syfy-eastern-feed" tvg-name="Syfy Eastern Feed" group-title="Live",Syfy Eastern Feed
-https://tvpass.org/live/SyfyEast/sd
+https://v18.thetvapp.to/hls/SyfyEast/tracks-v1a1/mono.m3u8?token=r7ONeOXIlnbPlujnzc6SAA&expires=1768939357&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="tbs-east" tvg-name="TBS East" group-title="Live",TBS East
-https://tvpass.org/live/TBSEast/sd
+https://v18.thetvapp.to/hls/TBSEast/tracks-v1a1/mono.m3u8?token=l0SXPi8yu8Z4X2IPsbcqlQ&expires=1768939358&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="teennick-eastern" tvg-name="TeenNick Eastern" group-title="Live",TeenNick Eastern
-https://tvpass.org/live/TeenNickEast/sd
+https://v18.thetvapp.to/hls/TeenNickEast/tracks-v1a1/mono.m3u8?token=o8bR9qRyVMIVdNdW6XPd1g&expires=1768939359&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="telemundo-eastern-feed" tvg-name="Telemundo Eastern Feed" group-title="Live",Telemundo Eastern Feed
-https://tvpass.org/live/TelemundoEast/sd
+https://v18.thetvapp.to/hls/TelemundoEast/tracks-v1a1/mono.m3u8?token=jlFXX1DTKQwC20O-ME8MOQ&expires=1768939360&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="the-cooking-channel" tvg-name="The Cooking Channel" group-title="Live",The Cooking Channel
-https://tvpass.org/live/CookingChannel/sd
+https://v18.thetvapp.to/hls/CookingChannel/tracks-v1a1/mono.m3u8?token=XsL_EKKUS9uE1TVIRCWU1A&expires=1768939361&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="the-tennis-channel" tvg-name="The Tennis Channel" group-title="Live",The Tennis Channel
-https://tvpass.org/live/TennisChannel/sd
+https://v18.thetvapp.to/hls/TennisChannel/tracks-v1a1/mono.m3u8?token=iXjcdMzwrCG39RsLfvOKvA&expires=1768939362&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="the-weather-channel" tvg-name="The Weather Channel" group-title="Live",The Weather Channel
 https://tvpass.org/live/TheWeatherChannel/sd
 #EXTINF:-1 tvg-id="tlc-usa-eastern" tvg-name="TLC USA Eastern" group-title="Live",TLC USA Eastern
@@ -332,21 +332,21 @@ https://tvpass.org/live/tsn4/sd
 #EXTINF:-1 tvg-id="tsn5" tvg-name="TSN5" group-title="Live",TSN5
 https://tvpass.org/live/tsn5/sd
 #EXTINF:-1 tvg-id="turner-classic-movies-usa" tvg-name="Turner Classic Movies USA" group-title="Live",Turner Classic Movies USA
-https://tvpass.org/live/TCMEast/sd
+https://v8.thetvapp.to/hls/TCMEast/tracks-v1a1/mono.m3u8?token=yHnD4jLIFBFH_O4viAtIAg&expires=1768939371&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="tv-land-eastern" tvg-name="TV Land Eastern" group-title="Live",TV Land Eastern
-https://tvpass.org/live/tv-land-eastern/sd
+https://v8.thetvapp.to/hls/tv-land-eastern/tracks-v1a1/mono.m3u8?token=8u0UlkUIhApeV1FVaBmz5g&expires=1768939372&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="tv-one" tvg-name="TV One" group-title="Live",TV One
-https://tvpass.org/live/TVOne/sd
+https://v8.thetvapp.to/hls/TVOne/tracks-v1a1/mono.m3u8?token=mw7DhL09odaH32nLihXOlg&expires=1768939373&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="universal-kids" tvg-name="Universal Kids" group-title="Live",Universal Kids
-https://tvpass.org/live/UniversalKidsEast/sd
+https://v8.thetvapp.to/hls/UniversalKidsEast/tracks-v1a1/mono.m3u8?token=j-NGJZBM0qSHmKpUGkfIKw&expires=1768939374&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="univision-eastern-feed" tvg-name="Univision Eastern Feed" group-title="Live",Univision Eastern Feed
-https://tvpass.org/live/UnivisionEast/sd
+https://v8.thetvapp.to/hls/UnivisionEast/tracks-v1a1/mono.m3u8?token=WKNt-v9PwZXKQfkeN-bx1w&expires=1768939375&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="usa-network-east-feed" tvg-name="USA Network East Feed" group-title="Live",USA Network East Feed
-https://tvpass.org/live/USANetworkEast/sd
+https://v8.thetvapp.to/hls/USANetworkEast/tracks-v1a1/mono.m3u8?token=6GgkuyCyjzn-yRF_si_GVQ&expires=1768939376&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="vh1-eastern-feed" tvg-name="VH1 Eastern Feed" group-title="Live",VH1 Eastern Feed
-https://tvpass.org/live/VH1East/sd
+https://v8.thetvapp.to/hls/VH1East/tracks-v1a1/mono.m3u8?token=z_unkndzLDxivDKDES6HHQ&expires=1768939377&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="vice" tvg-name="VICE" group-title="Live",VICE
-https://tvpass.org/live/VICETV/sd
+https://v8.thetvapp.to/hls/VICETV/tracks-v1a1/mono.m3u8?token=LqtF__12AjaRwayiXqp75w&expires=1768939379&user_id=MjAuMTY4LjEwNy4yMTI=
 #EXTINF:-1 tvg-id="we-womens-entertainment-eastern" tvg-name="WE (Women's Entertainment) Eastern" group-title="Live",WE (Women's Entertainment) Eastern
 https://tvpass.org/live/WeTVEast/sd
 #EXTINF:-1 tvg-id="wpix-new-york-superstation" tvg-name="WPIX New York (SUPERSTATION)" group-title="Live",WPIX New York (SUPERSTATION)
@@ -392,4 +392,4 @@ https://tvpass.org/live/NHL23/sd
 #EXTINF:-1 tvg-id="" tvg-name="New York Islanders @ Vancouver Canucks (01/19 10:00 PM ET)" group-title="NHL",New York Islanders @ Vancouver Canucks (01/19 10:00 PM ET)
 https://tvpass.org/live/NHL09/sd
 #EXTINF:-1 tvg-id="" tvg-name="Miami Heat @ Golden State Warriors (01/19 10:10 PM ET)" group-title="NBA",Miami Heat @ Golden State Warriors (01/19 10:10 PM ET)
-https://v3.thetvapp.to/hls/NBA09/tracks-v1a1/mono.m3u8?token=1bgQrWtlvmucOIH_7GUf_w&expires=1768937483&user_id=MjAuNTUuMTI3LjIyOA==
+https://tvpass.org/live/NBA09/sd
