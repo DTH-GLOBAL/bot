@@ -13,7 +13,7 @@ HEADERS = {
 }
 TIMEOUT_VAL = 15
 PROXY_URL = "https://seep.eu.org/"
-OUTPUT_FILENAME = "kanallar.txt"
+OUTPUT_FILENAME = "tgbot.txt"
 
 # Kanal listesi (İlk kodundaki isimler ve ID'ler)
 SELCUK_NAMES = {
