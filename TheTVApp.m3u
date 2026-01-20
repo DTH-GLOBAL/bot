@@ -1,10 +1,10 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed" group-title="Live",A&E US Eastern Feed
-https://tvpass.org/live/AEEast/sd
+https://v5.thetvapp.to/hls/AEEast/tracks-v1a1/mono.m3u8?token=3K1xynz0xOdd9BNCIowJVg&expires=1768952801&user_id=NTIuMTU5LjI0Ny4xNDQ=
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles" group-title="Live",ABC (KABC) Los Angeles
-https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
+https://v5.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=A0afn0e_tqst4LHnQ3uFbw&expires=1768952803&user_id=NTIuMTU5LjI0Ny4xNDQ=
 #EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY" group-title="Live",ABC (WABC) New York, NY
-https://tvpass.org/live/WABCDT1/sd
+https://v5.thetvapp.to/hls/WABCDT1/tracks-v1a1/mono.m3u8?token=RTgDC9AMbsqMhcIZTi6Myg&expires=1768952804&user_id=NTIuMTU5LjI0Ny4xNDQ=
 #EXTINF:-1 tvg-id="acc-network" tvg-name="ACC Network" group-title="Live",ACC Network
 https://tvpass.org/live/ACCNetwork/sd
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver" group-title="Live",Altitude Sports Denver
@@ -36,13 +36,13 @@ https://tvpass.org/live/CSPAN/sd
 #EXTINF:-1 tvg-id="cspan-2" tvg-name="C-SPAN 2" group-title="Live",C-SPAN 2
 https://tvpass.org/live/CSPAN2/sd
 #EXTINF:-1 tvg-id="cartoon-network-usa-eastern-feed" tvg-name="Cartoon Network USA Eastern Feed" group-title="Live",Cartoon Network USA Eastern Feed
-https://v12.thetvapp.to/hls/CartoonNetworkEast/tracks-v1a1/mono.m3u8?token=gOpFOJX7Nvp1CKUtUVsElA&expires=1768950917&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/CartoonNetworkEast/sd
 #EXTINF:-1 tvg-id="cbs-kcbs-los-angeles-ca" tvg-name="CBS (KCBS) Los Angeles" group-title="Live",CBS (KCBS) Los Angeles
-https://v12.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v1a1/mono.m3u8?token=9Gdt_2vKBfdLmgGlG15BkA&expires=1768950918&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/cbs-kcbs-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="cbs-wcbs-new-york-ny" tvg-name="CBS (WCBS) New York, NY" group-title="Live",CBS (WCBS) New York, NY
-https://v12.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=bZhf9JbTZhDCi4S3uP6-zA&expires=1768950919&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/WCBSDT1/sd
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA" group-title="Live",CBS Sports Network USA
-https://v12.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=cd6lb_bJTurGA_eBf0U0QA&expires=1768950920&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/CBSSportsNetworkUSA/sd
 #EXTINF:-1 tvg-id="chicago-sports-network" tvg-name="Chicago Sports Network" group-title="Live",Chicago Sports Network
 https://tvpass.org/live/chicago-sports-network/sd
 #EXTINF:-1 tvg-id="cinemax-eastern-feed" tvg-name="Cinemax Eastern Feed" group-title="Live",Cinemax Eastern Feed
@@ -190,15 +190,15 @@ https://tvpass.org/live/LifetimeMoviesEast/sd
 #EXTINF:-1 tvg-id="lifetime-network-us-eastern-feed" tvg-name="Lifetime Network US Eastern Feed" group-title="Live",Lifetime Network US Eastern Feed
 https://tvpass.org/live/LifetimeEast/sd
 #EXTINF:-1 tvg-id="logo-east" tvg-name="LOGO East" group-title="Live",LOGO East
-https://e5.thetvapp.to/hls/LogoEast/tracks-v1a1/mono.m3u8?token=RMHLLiGagX6J41Fh4RoZCQ&expires=1768950977&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/LogoEast/sd
 #EXTINF:-1 tvg-id="marquee-sports-network" tvg-name="Marquee Sports Network" group-title="Live",Marquee Sports Network
-https://e5.thetvapp.to/hls/marquee-sports-network/tracks-v1a1/mono.m3u8?token=oO-uRi7Mp6j3LMit7ocnNg&expires=1768950978&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/marquee-sports-network/sd
 #EXTINF:-1 tvg-id="metv-toons-wjlp2-new-jersey" tvg-name="MeTV Toons (WJLP2) New Jersey" group-title="Live",MeTV Toons (WJLP2) New Jersey
-https://e5.thetvapp.to/hls/metv-toons/tracks-v1a1/mono.m3u8?token=jHbm5TtSY82znDfPJm6Xjg&expires=1768950979&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/metv-toons/sd
 #EXTINF:-1 tvg-id="metv-wjlp-new-jerseynew-york" tvg-name="MeTV Wjlp New Jerseynew York" group-title="Live",MeTV Wjlp New Jerseynew York
-https://e5.thetvapp.to/hls/metv-wjlp-new-jerseynew-york/tracks-v1a1/mono.m3u8?token=y0faZH_NttcJTMwyF5Defw&expires=1768950981&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/metv-wjlp-new-jerseynew-york/sd
 #EXTINF:-1 tvg-id="midatlantic-sports-network" tvg-name="Midatlantic Sports Network" group-title="Live",Midatlantic Sports Network
-https://e5.thetvapp.to/hls/midatlantic-sports-network/tracks-v1a1/mono.m3u8?token=u_VxKDAJldNsiO6_RJ-N4w&expires=1768950982&user_id=NTIuMTU5LjIyNy4x
+https://tvpass.org/live/midatlantic-sports-network/sd
 #EXTINF:-1 tvg-id="mlb-network" tvg-name="MLB Network" group-title="Live",MLB Network
 https://tvpass.org/live/MLBNetwork/sd
 #EXTINF:-1 tvg-id="monumental-sports-network" tvg-name="Monumental Sports Network" group-title="Live",Monumental Sports Network
