@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ae-us-eastern-feed" tvg-name="A&E US Eastern Feed" group-title="Live",A&E US Eastern Feed
-https://v18.thetvapp.to/hls/AEEast/tracks-v1a1/mono.m3u8?token=NXjRNw1hRT5Uvd2u9bKG3Q&expires=1768930347&user_id=NC4yMzYuMTU4LjUx
+https://tvpass.org/live/AEEast/sd
 #EXTINF:-1 tvg-id="abc-kabc-los-angeles-ca" tvg-name="ABC (KABC) Los Angeles" group-title="Live",ABC (KABC) Los Angeles
-https://v18.thetvapp.to/hls/abc-kabc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=pn_tr921GU7St54WJUmjNA&expires=1768930348&user_id=NC4yMzYuMTU4LjUx
+https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="abc-wabc-new-york-ny" tvg-name="ABC (WABC) New York, NY" group-title="Live",ABC (WABC) New York, NY
 https://tvpass.org/live/WABCDT1/sd
 #EXTINF:-1 tvg-id="acc-network" tvg-name="ACC Network" group-title="Live",ACC Network
@@ -304,17 +304,17 @@ https://tvpass.org/live/TBSEast/sd
 #EXTINF:-1 tvg-id="teennick-eastern" tvg-name="TeenNick Eastern" group-title="Live",TeenNick Eastern
 https://tvpass.org/live/TeenNickEast/sd
 #EXTINF:-1 tvg-id="telemundo-eastern-feed" tvg-name="Telemundo Eastern Feed" group-title="Live",Telemundo Eastern Feed
-https://tvpass.org/live/TelemundoEast/sd
+https://v15.thetvapp.to/hls/TelemundoEast/tracks-v1a1/mono.m3u8?token=iMo2QRIrPexU3tUs55z95g&expires=1768931415&user_id=MjAuMTA5LjM4LjE3OQ==
 #EXTINF:-1 tvg-id="the-cooking-channel" tvg-name="The Cooking Channel" group-title="Live",The Cooking Channel
-https://tvpass.org/live/CookingChannel/sd
+https://v15.thetvapp.to/hls/CookingChannel/tracks-v1a1/mono.m3u8?token=d8kZZO26CmaqRWwiu8N-8g&expires=1768931416&user_id=MjAuMTA5LjM4LjE3OQ==
 #EXTINF:-1 tvg-id="the-tennis-channel" tvg-name="The Tennis Channel" group-title="Live",The Tennis Channel
-https://tvpass.org/live/TennisChannel/sd
+https://v15.thetvapp.to/hls/TennisChannel/tracks-v1a1/mono.m3u8?token=CLXz50kCFgRpCy1OrS6W2A&expires=1768931417&user_id=MjAuMTA5LjM4LjE3OQ==
 #EXTINF:-1 tvg-id="the-weather-channel" tvg-name="The Weather Channel" group-title="Live",The Weather Channel
-https://tvpass.org/live/TheWeatherChannel/sd
+https://v15.thetvapp.to/hls/TheWeatherChannel/tracks-v1a1/mono.m3u8?token=HUB61DDZNKeGbjlqKNKGyw&expires=1768931418&user_id=MjAuMTA5LjM4LjE3OQ==
 #EXTINF:-1 tvg-id="tlc-usa-eastern" tvg-name="TLC USA Eastern" group-title="Live",TLC USA Eastern
-https://tvpass.org/live/TLCEast/sd
+https://v15.thetvapp.to/hls/TLCEast/tracks-v1a1/mono.m3u8?token=llRpG4IQI6CB_WpBJooQRQ&expires=1768931419&user_id=MjAuMTA5LjM4LjE3OQ==
 #EXTINF:-1 tvg-id="tmc-us-eastern-feed" tvg-name="TMC (US) Eastern Feed" group-title="Live",TMC (US) Eastern Feed
-https://tvpass.org/live/TheMovieChannelEast/sd
+https://v15.thetvapp.to/hls/TheMovieChannelEast/tracks-v1a1/mono.m3u8?token=f0GWbC5q1NVBN3aiouz6oA&expires=1768931420&user_id=MjAuMTA5LjM4LjE3OQ==
 #EXTINF:-1 tvg-id="tnt-eastern-feed" tvg-name="TNT Eastern Feed" group-title="Live",TNT Eastern Feed
 https://tvpass.org/live/TNTEast/sd
 #EXTINF:-1 tvg-id="travel-us-east" tvg-name="Travel US East" group-title="Live",Travel US East
