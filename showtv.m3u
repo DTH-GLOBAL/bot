@@ -1,16 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 1. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/12/02/ver1764866649/128FF40E56A11F01031840CDCFCAEB4F_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 1. Bölüm
-https://vmcdn.ciner.com.tr/ht/2025/12/02/128FF40E56A11F01031840CDCFCAEB4F.m3u8
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 2. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/12/09/ver1765456458/3882B62ABBED735B704C81460395E859_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 2. Bölüm
-https://vmcdn.ciner.com.tr/ht/2025/12/09/3882B62ABBED735B704C81460395E859.m3u8
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 4. Bölüm " tvg-logo="https://mo.ciner.com.tr/video/2025/12/24/ver1766739922/4B53DA8ED93E0D9FCEE317A6BB1173B3_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 4. Bölüm 
-https://vmcdn.ciner.com.tr/ht/2025/12/24/4B53DA8ED93E0D9FCEE317A6BB1173B3.m3u8
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 5. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/12/30/ver1767335306/77DC506C2205C2DB36F058525EDB4246_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 5. Bölüm
-https://vmcdn.ciner.com.tr/ht/2025/12/30/77DC506C2205C2DB36F058525EDB4246.m3u8
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 6. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2026/01/06/ver1767901788/F5480CFB69BB0CB56E738741C121676F_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 6. Bölüm
-https://vmcdn.ciner.com.tr/ht/2026/01/06/F5480CFB69BB0CB56E738741C121676F.m3u8
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 7. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2026/01/13/ver1768583603/066F1F99B548C58C80847781005057D6_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 7. Bölüm
-https://vmcdn.ciner.com.tr/ht/2026/01/13/066F1F99B548C58C80847781005057D6.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Veliaht 1. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/09/11/ver1759844760/C6437C080D5CFEB117D142CC82CD60CF_320x180.jpg" group-title="SHOWTV Dizileri",TR: Veliaht 1. Bölüm
 https://vmcdn.ciner.com.tr/ht/2025/09/11/C6437C080D5CFEB117D142CC82CD60CF.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Veliaht 2. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/09/18/ver1759325815/FAB6DADCE6659DD196BD04A1228F1109_320x180.jpg" group-title="SHOWTV Dizileri",TR: Veliaht 2. Bölüm
@@ -283,8 +271,20 @@ https://vmcdn.ciner.com.tr/ht/2025/12/19/F3E6BC0AFA518AACE78AE8BD9BB1B0E7.m3u8
 https://vmcdn.ciner.com.tr/ht/2025/12/26/CCC980D782651AE57B0EFAF744CEBA0D.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kızılcık Şerbeti 120. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2026/01/09/ver1768198396/EBC59A977669F305C06B2E5DC0A22F59_320x180.jpg" group-title="SHOWTV Dizileri",TR: Kızılcık Şerbeti 120. Bölüm
 https://vmcdn.ciner.com.tr/ht/2026/01/09/EBC59A977669F305C06B2E5DC0A22F59.m3u8
-#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kızılcık Şerbeti 121. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2026/01/16/ver1768598267/16D92093B4F3366BF0960B5413ACB1F6_320x180.jpg" group-title="SHOWTV Dizileri",TR: Kızılcık Şerbeti 121. Bölüm
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Kızılcık Şerbeti 121. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2026/01/16/ver1768805344/16D92093B4F3366BF0960B5413ACB1F6_320x180.jpg" group-title="SHOWTV Dizileri",TR: Kızılcık Şerbeti 121. Bölüm
 https://vmcdn.ciner.com.tr/ht/2026/01/16/16D92093B4F3366BF0960B5413ACB1F6.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 1. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/12/02/ver1764866649/128FF40E56A11F01031840CDCFCAEB4F_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 1. Bölüm
+https://vmcdn.ciner.com.tr/ht/2025/12/02/128FF40E56A11F01031840CDCFCAEB4F.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 2. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/12/09/ver1765456458/3882B62ABBED735B704C81460395E859_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 2. Bölüm
+https://vmcdn.ciner.com.tr/ht/2025/12/09/3882B62ABBED735B704C81460395E859.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 4. Bölüm " tvg-logo="https://mo.ciner.com.tr/video/2025/12/24/ver1766739922/4B53DA8ED93E0D9FCEE317A6BB1173B3_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 4. Bölüm 
+https://vmcdn.ciner.com.tr/ht/2025/12/24/4B53DA8ED93E0D9FCEE317A6BB1173B3.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 5. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/12/30/ver1767335306/77DC506C2205C2DB36F058525EDB4246_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 5. Bölüm
+https://vmcdn.ciner.com.tr/ht/2025/12/30/77DC506C2205C2DB36F058525EDB4246.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 6. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2026/01/06/ver1767901788/F5480CFB69BB0CB56E738741C121676F_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 6. Bölüm
+https://vmcdn.ciner.com.tr/ht/2026/01/06/F5480CFB69BB0CB56E738741C121676F.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Rüya Gibi 7. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2026/01/13/ver1768583603/066F1F99B548C58C80847781005057D6_320x180.jpg" group-title="SHOWTV Dizileri",TR: Rüya Gibi 7. Bölüm
+https://vmcdn.ciner.com.tr/ht/2026/01/13/066F1F99B548C58C80847781005057D6.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Bahar 1. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2024/02/22/ver1726038663/BE61B566AEA5219082D29427519A065D_320x180.jpg" group-title="SHOWTV Dizileri",TR: Bahar 1. Bölüm
 https://vmcdn.ciner.com.tr/ht/2024/02/22/BE61B566AEA5219082D29427519A065D.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Bahar 2. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2024/03/19/ver1726038663/80C5A2284D6B877BCEE1729D6DFF883E_320x180.jpg" group-title="SHOWTV Dizileri",TR: Bahar 2. Bölüm
@@ -1267,6 +1267,8 @@ https://vmcdn.ciner.com.tr/ht/2023/05/05/B82AD8D49B00B635081664B43FB7C895.m3u8
 https://vmcdn.ciner.com.tr/ht/2023/05/11/BE6532E4C7FC2C4A24B2C38E06AF5B1D.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Gelsin Hayat Bildiği Gibi 40. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2023/05/18/ver1726038663/C1B5AC854B2B35CF9551494A3DD1D913_320x180.jpg" group-title="SHOWTV Dizileri",TR: Gelsin Hayat Bildiği Gibi 40. Bölüm
 https://vmcdn.ciner.com.tr/ht/2023/05/18/C1B5AC854B2B35CF9551494A3DD1D913.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Gelsin Hayat Bildiği Gibi Final Bölümü" tvg-logo="https://mo.ciner.com.tr/video/2023/05/25/ver1726038663/8181F28AAD7B0D80B15F53CCBD52806B_320x180.jpg" group-title="SHOWTV Dizileri",TR: Gelsin Hayat Bildiği Gibi Final Bölümü
+https://vmcdn.ciner.com.tr/ht/2023/05/25/8181F28AAD7B0D80B15F53CCBD52806B.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Bereketli Topraklar 2. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/11/09/ver1762889767/052B597EA3C0653E2F1C176415F9F9D1_320x180.jpg" group-title="SHOWTV Dizileri",TR: Bereketli Topraklar 2. Bölüm
 https://vmcdn.ciner.com.tr/ht/2025/11/09/052B597EA3C0653E2F1C176415F9F9D1.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Bereketli Topraklar 3. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2025/11/16/ver1763534089/858151952C35318366B6926A95EA9C32_320x180.jpg" group-title="SHOWTV Dizileri",TR: Bereketli Topraklar 3. Bölüm
@@ -1439,6 +1441,8 @@ https://vmcdn.ciner.com.tr/ht/2022/12/06/F768D010DF11CED09B7F00E4CF051F3F.m3u8
 https://vmcdn.ciner.com.tr/ht/2022/12/21/432845787A0B2C5C7D7339DB72DD8BB8.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Baba 29. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2022/12/21/ver1726038663/B2410425CE13AA220F580A153498B76E_320x180.jpg" group-title="SHOWTV Dizileri",TR: Baba 29. Bölüm
 https://vmcdn.ciner.com.tr/ht/2022/12/21/B2410425CE13AA220F580A153498B76E.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Baba Final Bölümü" tvg-logo="https://mo.ciner.com.tr/video/2022/12/27/ver1726038663/46879AD3C474935076308F77B28FB43C_320x180.jpg" group-title="SHOWTV Dizileri",TR: Baba Final Bölümü
+https://vmcdn.ciner.com.tr/ht/2022/12/27/46879AD3C474935076308F77B28FB43C.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Üç Kuruş 1. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2021/11/08/ver1726038663/7F3AB1ECD43D016B41E2AD3ECFB0D7B8_320x180.jpg" group-title="SHOWTV Dizileri",TR: Üç Kuruş 1. Bölüm
 https://vmcdn.ciner.com.tr/ht/2021/11/08/7F3AB1ECD43D016B41E2AD3ECFB0D7B8.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Üç Kuruş 2. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2021/11/10/ver1726038663/076BEB92A38ABD60524B291D1DBBC473_320x180.jpg" group-title="SHOWTV Dizileri",TR: Üç Kuruş 2. Bölüm
@@ -1493,6 +1497,8 @@ https://vmcdn.ciner.com.tr/ht/2022/05/11/22E5D241F9D21A96039F69243991171B.m3u8
 https://vmcdn.ciner.com.tr/ht/2022/05/21/80BCF474AF9E1EA2AC75E5BC48C696A1.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Üç Kuruş 27. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2022/05/23/ver1726038663/D733F8625E5162B5D689F981F15A0EA9_320x180.jpg" group-title="SHOWTV Dizileri",TR: Üç Kuruş 27. Bölüm
 https://vmcdn.ciner.com.tr/ht/2022/05/23/D733F8625E5162B5D689F981F15A0EA9.m3u8
+#EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Üç Kuruş Final Bölümü" tvg-logo="https://mo.ciner.com.tr/video/2022/06/07/ver1726038663/622B94E2DB41E994AEFA844DA7A98E75_320x180.jpg" group-title="SHOWTV Dizileri",TR: Üç Kuruş Final Bölümü
+https://vmcdn.ciner.com.tr/ht/2022/06/07/622B94E2DB41E994AEFA844DA7A98E75.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Aziz 1. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2021/11/05/ver1726038663/726E656596919DBDD5D5683F4499CB10_320x180.jpg" group-title="SHOWTV Dizileri",TR: Aziz 1. Bölüm
 https://vmcdn.ciner.com.tr/ht/2021/11/05/726E656596919DBDD5D5683F4499CB10.m3u8
 #EXTINF:-1 tvg-id="vod.tr" tvg-name="TR: Aziz 2. Bölüm" tvg-logo="https://mo.ciner.com.tr/video/2021/11/12/ver1726038663/05652968534966CD3064E59043903827_320x180.jpg" group-title="SHOWTV Dizileri",TR: Aziz 2. Bölüm
