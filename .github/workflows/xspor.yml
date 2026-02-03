@@ -1,0 +1,33 @@
+name: Update M3U Every 10 Mins
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # Her 10 dakikada bir çalışır
+  workflow_dispatch: # Manuel çalıştırmak için buton ekler
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Scraper
+        run: python xspor.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add deathless-xsportv.m3u
+          git commit -m "Auto-update M3U" || exit 0
+          git push
+          
